@@ -1,0 +1,39 @@
+; Sample memory initialization file for Single Port Block Memory, 
+; v3.0 or later.
+;
+; This .COE file specifies initialization values for a block 
+; memory of depth=512, and width=32. In this case, values are 
+; specified in hexadecimal format.
+;
+; 00631816, 			xor R3, R3, R3 (mv R3, #0) Resultado						0x00000000	000000 00011 00011 00011 00000 010110
+; 00842016,  			xor R4, R4, R4 (mv R4, #0) Para tener un cero				0x00000004	000000 00100 00100 00100 00000 010110
+; 8C80002C, 			lw R0, 44(R4)	(lw A, R0)									0x00000008	100011 00100 00000 0000000000101100
+; 8C810030, 			lw R1, 48(R4)  (lw B, R1)									0x0000000C	100011 00100 00001 0000000000110000
+; 8C820034, 			lw R2, 52(R4)  (lw UNO, R2)									0x00000010	100011 00100 00010 0000000000110100
+; 10240003, WHILE:	    beq R1, R4, FIN												0x00000014	000100 00001 00100 0000000000000011
+; 00601820, 			add R3, R3, R0												0x00000018	000000 00011 00000 00011 00000 100000
+; 00220822, 			sub R1, R1, R2												0x0000001C	000000 00001 00010 00001 00000 100010
+; 1000FFFC, 			beq R0, R0, WHILE											0x00000020	000100 00000 00000 1111111111111100
+; AC830038, FIN: 		sw R3, 56(R4)  (sw R3, C) 									0x00000024	101011 00100 00011 0000000000111000
+; 1000FFFF, FINAL:	    beq R0, R0, FINAL											0x00000028	000100 00000 00000 1111111111111111
+; 00000007, 			VALOR A ¿Sin tabla de literales para simplificar?			0x0000002C	0x00000007
+; 00000003, 			VALOR B														0x00000030	0x00000003
+; 00000001; 			VALOR UNO													0x00000034	0x00000001
+;  						VALOR C = A*B												0x00000038	
+;
+memory_initialization_radix=16;
+memory_initialization_vector=
+00631816,
+00842016,
+8C80002C,
+8C810030,
+8C820034,
+10240003,
+00601820,
+00220822,
+1000FFFC,
+AC830038,
+1000FFFF,
+00000007,
+00000003,
+00000001;

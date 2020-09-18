@@ -1,0 +1,1 @@
+clock fga pasarlo por divisor de frecuencia
