@@ -1,0 +1,5 @@
+FICHEROS
+Parse en level, move y gameObject
+Load (ayuda del profe) (cambiar orden de las cosas al meter)
+Mejora calidad del codigo
+Constructoras GameObjectGenerator y parse

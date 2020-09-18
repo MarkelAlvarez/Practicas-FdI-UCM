@@ -1,0 +1,128 @@
+COMÚN
+=====
+  GameObject
+  ----------
+	public static final String labelRefSeparator = " - ";
+	protected int label = 0;
+
+SAVE:
+====
+  Destroyer Alien
+  ---------------
+	private static int currentSerialNumber;
+
+	private void initialiseLabelling() 
+	{
+		currentSerialNumber = 1;
+	}
+
+	private String generateSerializingLabel()
+	{
+		label = currentSerialNumber;
+		currentSerialNumber++;
+
+		return labelRefSeparator + label;
+	}
+	
+	public String serialize()
+	{
+		if (!game.isSerializing())
+		{
+			game.setSerializing();
+			initialiseLabelling();
+		}
+
+		return super.serialize() + generateSerializingLabel();
+	}
+
+  Bomb
+  ----
+	// call to getLabel assumes owner already serialized (so label already generated)
+	public String generateSerialRef()
+	{
+		return labelRefSeparator + owner.getLabel();
+	}
+
+	public String serialize()
+	{
+		return super.serialize() + generateSerialRef();
+	}
+
+  GameObject
+  ----------
+	public int getLabel()
+	{
+		return label;
+	}
+
+  Game
+  ----
+	private boolean serializing = false;
+	
+	public void setSerializing()
+	{
+		serializing = true;
+	}
+	
+	public boolean isSerializing()
+	{
+		return serializing;
+	}
+
+	public String serialize()
+	{
+		serializing = false;
+		// ...
+	}
+
+LOAD
+====
+Bomb
+----
+	// call to getBombOwner assumes owner already deserialized (so ref points to valid object)
+	public Bomb createInstance(Game game, int x, int y)
+	{
+		return new Bomb(game, x, y, game.getBombOwner(ownerRef));
+	}
+
+Game
+----
+	public DestroyerAlien getBombOwner(int ref)
+	{
+		return (DestroyerAlien) board.getLabelOwner(ref);  // ugly cast
+	}
+
+GameObjectBoard
+---------------
+	public GameObject getLabelOwner(int ref)
+	{
+		for (int i=0; i<currentObjects; i++)
+		{
+			if (objects[i].isOwner(ref))
+			{
+				return objects[i];
+			}
+		}
+		return null;
+	}
+
+GameObject
+----------
+	public boolean isOwner(int ref)
+	{
+		return label == ref;
+	}
+	
+Destroyer Alien
+---------------
+	public boolean isOwner(int ref)
+	{
+		boolean itsMe = super.isOwner(ref);
+		
+		if (itsMe)
+		{
+			canShootBomb = false;
+		}
+
+		return itsMe;
+	}
