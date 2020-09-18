@@ -1,0 +1,8 @@
+TITULO
+Casas escalonadas
+
+AUTOR
+Markel Alvarez Martinez
+
+DESCRIPCION
+Estas formas simetricas por niveles recuerdan a casas minimalistas.

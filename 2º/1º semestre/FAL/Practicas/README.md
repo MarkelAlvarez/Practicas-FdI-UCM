@@ -1,0 +1,1 @@
+Las prácticas puede que no funcionen, no recuerdo si llegué a acabar todas y hacer que funcionaran o no. Tiempo disponible para la realización de cada practica 1 hora.
