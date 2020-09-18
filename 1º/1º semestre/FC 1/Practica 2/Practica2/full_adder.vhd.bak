@@ -1,0 +1,22 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.std_logic_arith.all;
+use IEEE.std_logic_unsigned.all;
+use IEEE.numeric_std.all
+
+entity sumador2bits is
+	port (
+		cin, a, a1, b, b1: in std_logic;
+		cout, s, s1: out std_logic
+	);
+end sumador2bits;
+
+architecture sumador2bits_arch of sumador2bits is
+	signal z: std_logic_vector(2 downto 0);
+
+	begin
+		z <= (a & a1) + (b & b1) + cin;
+		s <= z(0);
+		s1 <= z(1);
+		cout <= z(2);
+end sumador2bits_arch;

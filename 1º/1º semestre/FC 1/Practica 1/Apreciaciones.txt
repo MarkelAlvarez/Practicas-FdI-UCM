@@ -1,0 +1,1 @@
+Hacer primero sumador 1bit y enseñar, hacer segundo sumador 1bit y enseñar, despues juntar salida con entrada y listo
