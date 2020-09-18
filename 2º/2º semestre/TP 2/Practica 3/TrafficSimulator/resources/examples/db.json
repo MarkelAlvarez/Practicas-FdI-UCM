@@ -1,0 +1,16 @@
+{
+	"tests": [
+		{
+			"file": "ex1",
+			"ticks": 300
+		},
+		{
+			"file": "ex2",
+			"ticks": 300
+		},
+		{
+			"file": "ex3",
+			"ticks": 150
+		}
+	]
+}

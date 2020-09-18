@@ -1,0 +1,48 @@
+{
+  "events": 
+  [
+   {
+     "type" : "new_junction",
+     "data" : {
+     	 "time" : 1,
+         "id"   : "j1",
+      	 "coor" : [100,200],
+      	 "ls_strategy" : { "type" : "round_robin_lss", "data" : {"timeslot" : 5} },
+      	 "dq_strategy" : { "type" : "move_first_dqs",  "data" : {} }
+   	 }
+   },	
+   {
+     "type" : "new_junction",
+     "data" : {
+     	 "time" : 1,
+         "id"   : "j2",
+      	 "coor" : [100,200],
+      	 "ls_strategy" : { "type" : "round_robin_lss", "data" : {"timeslot" : 5} },
+      	 "dq_strategy" : { "type" : "move_first_dqs",  "data" : {} }
+   	 }
+   },	
+   {
+	  "type" : "new_city_road",
+  	  "data" : {
+    	  "time"     : 1,
+    	   "id"       : "r1",
+           "src"      : "j1",
+           "dest"     : "j2",
+           "length"   : 10000,
+           "co2limit" : 500,
+           "maxspeed" : 120,
+           "weather"  : "SUNNY"
+   	  }
+   	},
+   	{
+	  "type" : "new_vehicle",
+  	  "data" : {
+          "time"      : 1,
+          "id"        : "v1",
+          "maxspeed"  : 80,
+          "class"     : 1,
+          "itinerary" : ["j1", "j2"]
+      }
+    }
+   ]
+}

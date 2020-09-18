@@ -1,0 +1,99 @@
+{
+  "events": 
+  [
+   {
+     "type" : "new_junction",
+     "data" : {
+     	 "time" : 1,
+         "id"   : "j1",
+      	 "coor" : [50,50],
+      	 "ls_strategy" : { "type" : "round_robin_lss", "data" : {"timeslot" : 5} },
+      	 "dq_strategy" : { "type" : "move_first_dqs",  "data" : {} }
+   	 }
+   },	
+   {
+     "type" : "new_junction",
+     "data" : {
+     	 "time" : 1,
+         "id"   : "j2",
+      	 "coor" : [150,50],
+      	 "ls_strategy" : { "type" : "round_robin_lss", "data" : {"timeslot" : 5} },
+      	 "dq_strategy" : { "type" : "move_first_dqs",  "data" : {} }
+   	 }
+   },	
+   {
+     "type" : "new_junction",
+     "data" : {
+     	 "time" : 1,
+         "id"   : "j3",
+      	 "coor" : [250,50],
+      	 "ls_strategy" : { "type" : "round_robin_lss", "data" : {"timeslot" : 5} },
+      	 "dq_strategy" : { "type" : "move_first_dqs",  "data" : {} }
+   	 }
+   },	
+   {
+	  "type" : "new_city_road",
+  	  "data" : {
+    	  "time"     : 1,
+    	   "id"       : "r1",
+           "src"      : "j1",
+           "dest"     : "j2",
+           "length"   : 10000,
+           "co2limit" : 500,
+           "maxspeed" : 120,
+           "weather"  : "SUNNY"
+   	  }
+   	},
+    {
+	  "type" : "new_city_road",
+  	  "data" : {
+    	  "time"     : 1,
+    	   "id"       : "r2",
+           "src"      : "j2",
+           "dest"     : "j3",
+           "length"   : 10000,
+           "co2limit" : 500,
+           "maxspeed" : 120,
+           "weather"  : "SUNNY"
+   	  }
+   	},
+   	{
+	  "type" : "new_vehicle",
+  	  "data" : {
+          "time"      : 1,
+          "id"        : "v1",
+          "maxspeed"  : 80,
+          "class"     : 1,
+          "itinerary" : ["j1", "j2", "j3"]
+      }
+    },
+   	{
+	  "type" : "new_vehicle",
+  	  "data" : {
+          "time"      : 1,
+          "id"        : "v2",
+          "maxspeed"  : 50,
+          "class"     : 0,
+          "itinerary" : ["j1", "j2", "j3"]
+      }
+    },
+	{
+  	  "type" : "set_weather",
+      "data" : {
+          "time"     : 100,
+          "info"     : [ { "road" : "r1", "weather": "SUNNY" }, 
+                         { "road" : "r2", "weather": "STORM" }, 
+	                   ]
+  	  }
+    },
+    {
+      "type" : "set_cont_class",
+      "data" : {
+          "time"     : 50,
+          "info"     : [ { "vehicle" : "v1", "class": 5 }, 
+                         { "vehicle" : "v2", "class": 2 }, 
+                       ]
+      }
+    }  
+   ]
+}
