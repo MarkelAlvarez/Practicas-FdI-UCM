@@ -1,0 +1,6 @@
+1.- Properties
+Enlazar script
+2.- Debug Configuration
+GDB hardware Debugging
+3.- Abrir OpenOCD
+4.- Abrir debug
