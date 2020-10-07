@@ -1,1 +1,1 @@
-Menos la práctica 6 creo recordar que todas las demás están bien.
+Menos la práctica 2 que casi está bien del todo y la práctica 6 todas las demás están bien.
