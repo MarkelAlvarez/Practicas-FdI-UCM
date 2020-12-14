@@ -1,0 +1,2 @@
+#define VAR 100
+
