@@ -1,0 +1,107 @@
+DES> % Procesa las consultas
+
+
+DES> /process consultas.ra
+
+Info: Processing file 'consultas.ra' ...
+
+DES> select true (vista1);
+
+answer(vista1.dni:string) ->
+{
+  answer('4')
+}
+Info: 1 tuple computed.          
+
+DES> select true (vista2);
+
+answer(vista2.dni:string,vista2.horas:int) ->
+{
+  answer('1',20),
+  answer('2',40),
+  answer('3',40),
+  answer('4',40),
+  answer('5',40),
+  answer('6',0),
+  answer('7',0)
+}
+Info: 7 tuples computed.          
+
+DES> select true (vista3);
+
+answer(vista3.dni:string,vista3.nombre:string,vista3.proyecto:string) ->
+{
+  answer('1','Jacinto','P1'),
+  answer('1','Jacinto','P3'),
+  answer('2','Herminia','P1'),
+  answer('3','Calixto','P3'),
+  answer('4','Teodora','P1'),
+  answer('4','Teodora','P2'),
+  answer('4','Teodora','P3'),
+  answer('4','Teodora','P4'),
+  answer('5','Evaristo','P3'),
+  answer('5','Evaristo','P4'),
+  answer('6','Luciana',null),
+  answer('7','Nicodemo',null)
+}
+Info: 12 tuples computed.          
+
+DES> select true (vista4);
+
+answer(vista4.dni:string,vista4.nombre:string) ->
+{
+  answer('7','Nicodemo')
+}
+Info: 1 tuple computed.          
+
+DES> select true (vista5);
+
+answer(vista5.dni:string,vista5.n�mero:float) ->
+{
+  answer('1',10.0),
+  answer('4',10.0)
+}
+Info: 2 tuples computed.          
+
+DES> select true (vista6);
+
+answer(vista6.dni:string,vista6.c�digopr:string,vista6.horas:float) ->
+{
+  answer('2','P1',48.0)
+}
+Info: 1 tuple computed.          
+
+DES> select true (vista7);
+
+answer(vista7.dni:string) ->
+{
+  answer('4')
+}
+Info: 1 tuple computed.          
+
+DES> select true (vista8);
+
+answer(vista8.dni:string) ->
+{
+  answer('4')
+}
+Info: 1 tuple computed.          
+
+DES> select true (vista9);
+
+answer(vista9.dni:string) ->
+{
+  answer('1'),
+  answer('2'),
+  answer('3'),
+  answer('4')
+}
+Info: 4 tuples computed.          
+
+DES> 
+
+
+Info: Batch file processed.
+
+
+DES> /nolog

@@ -1,0 +1,132 @@
+DES> select * from vista1;
+answer(vista1.dni:string) ->
+{
+  answer('1'),
+  answer('2'),
+  answer('3'),
+  answer('4'),
+  answer('5'),
+  answer('6'),
+  answer('7')
+}
+Info: 7 tuples computed.          
+DES> select * from vista2;
+answer(vista2.dni:string) ->
+{
+  answer('4')
+}
+Info: 1 tuple computed.          
+DES> select * from vista3;
+answer(vista3.dni:string) ->
+{
+  answer('7')
+}
+Info: 1 tuple computed.          
+DES> select * from vista4;
+answer(vista4.código:string) ->
+{
+  answer('P5')
+}
+Info: 1 tuple computed.          
+DES> select * from vista5;
+answer(vista5.dni:string) ->
+{
+  answer('5'),
+  answer('6')
+}
+Info: 2 tuples computed.          
+DES> select * from vista6;
+answer(vista6.descripción:string,vista6.nombre:string,vista6.horas:int) ->
+{
+  answer('Clientes','Teodora',20),
+  answer('Contabilidad','Teodora',10),
+  answer('Nómina','Herminia',40),
+  answer('Nómina','Jacinto',10),
+  answer('Nómina','Teodora',5),
+  answer('Producción','Calixto',40),
+  answer('Producción','Jacinto',10),
+  answer('Producción','Teodora',5)
+}
+Info: 8 tuples computed.          
+DES> select * from vista7;
+answer(vista7.teléfono:string) ->
+{
+  answer('91-8888888')
+}
+Info: 1 tuple computed.          
+DES> select * from vista8;
+answer(vista8.dni:string) ->
+{
+  answer('4')
+}
+Info: 1 tuple computed.          
+DES> select * from vista9;
+answer(vista9.dni:string,vista9.horas:int) ->
+{
+  answer('1',20),
+  answer('2',40),
+  answer('3',40),
+  answer('4',40),
+  answer('5',40)
+}
+Info: 5 tuples computed.          
+DES> select * from vista10;
+answer(vista10.dni:string,vista10.nombre:string,vista10.proyecto:string) ->
+{
+  answer('1','Jacinto','P1'),
+  answer('1','Jacinto','P3'),
+  answer('2','Herminia','P1'),
+  answer('3','Calixto','P3'),
+  answer('4','Teodora','P1'),
+  answer('4','Teodora','P2'),
+  answer('4','Teodora','P3'),
+  answer('4','Teodora','P4'),
+  answer('5','Evaristo','P3'),
+  answer('5','Evaristo','P4'),
+  answer('6','Luciana',null),
+  answer('7','Nicodemo',null)
+}
+Info: 12 tuples computed.          
+DES> select * from vista11;
+answer(vista11.dni:string,vista11.nombre:string) ->
+{
+  answer('7','Nicodemo')
+}
+Info: 1 tuple computed.          
+DES> select * from vista12;
+answer(vista12.dni:string) ->
+{
+  answer('1'),
+  answer('4')
+}
+Info: 2 tuples computed.          
+DES> select * from vista13;
+answer(vista13.dni:string) ->
+{
+  answer('4'),
+  answer('5')
+}
+Info: 2 tuples computed.          
+DES> select * from vista14;
+answer(vista14.dni:string) ->
+{
+  answer('4'),
+  answer('5')
+}
+Info: 2 tuples computed.          
+DES> select * from vista15;
+answer(vista15.códigoPr:string,vista15.dni:string,vista15.horas:float) ->
+{
+  answer('P1','2',48.0)
+}
+Info: 1 tuple computed.          
+DES> select * from vista16;
+answer(vista16.nombre:string) ->
+{
+  answer('Calixto'),
+  answer('Herminia'),
+  answer('Jacinto'),
+  answer('Teodora')
+}
+Info: 4 tuples computed.          
+DES> /nolog
