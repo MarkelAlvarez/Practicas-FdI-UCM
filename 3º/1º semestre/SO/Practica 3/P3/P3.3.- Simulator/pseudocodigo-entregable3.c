@@ -60,6 +60,7 @@ el autobús se pare en dicha parada y subirá. El id_usuario puede utilizarse pa
 proporcionar información de depuración */
 void Subir_Autobus(int id_usuario, int origen)
 {
+	// Se bloquea el mutex, gestion de condiciones y pasajeros, se desbloquea el mutex
 	pthread_mutex_lock(&mutex);
 	esperando_parada[origen]++;
 	printf("Usuario [%d] esperando en la parada [%d] para SUBIR.\n", id_usuario, origen);
@@ -69,23 +70,24 @@ void Subir_Autobus(int id_usuario, int origen)
 		pthread_cond_wait(&en_parada, &mutex);
 	}
 
+	printf("Usuario [%d] en la parada [%d] acaba de SUBIR al autobus.\n", id_usuario, origen);
 	n_ocupantes++;
 	esperando_parada[origen]--;
-	printf("Usuario [%d] en la parada [%d] acaba de SUBIR al autobus.\n", id_usuario, origen);
 
-	if (esperando_parada[origen] == 0 && esperando_parada[origen] == 0)
+	if (esperando_bajar[origen] == 0 && esperando_parada[origen] == 0)
 	{
 		pthread_cond_signal(&autobus);
 	}
-		
+
 	pthread_mutex_unlock(&mutex);
 }
 
 /* El usuario indicará que quiere bajar en la parada ’destino’, esperará a que
-el autobús se pare en dicha parada y bajará. El id_usuario puede utilizarse para
-proporcionar información de depuración */
+	el autobús se pare en dicha parada y bajará. El id_usuario puede utilizarse para
+	proporcionar información de depuración */
 void Bajar_Autobus(int id_usuario, int destino)
 {
+	//Se bloquea el mutex, gestion de condiciones y pasajeros, se desbloquea el mutex
 	pthread_mutex_lock(&mutex);
 	esperando_bajar[destino]++;
 	printf("Usuario [%d] esperando para BAJAR en la parada [%d].\n", id_usuario, destino);
@@ -95,14 +97,14 @@ void Bajar_Autobus(int id_usuario, int destino)
 		pthread_cond_wait(&en_parada, &mutex);
 	}
 
+	printf("Usuario [%d] en la parada [%d] acaba de BAJAR del autobus.\n", id_usuario, destino);
 	n_ocupantes--;
 	esperando_bajar[destino]--;
-	printf("Usuario [%d] en la parada [%d] acaba de BAJAR del autobus.\n", id_usuario, destino);
-	
+
 	if (esperando_bajar[destino] == 0 && esperando_parada[destino] == 0)
 	{
 		pthread_cond_signal(&autobus);
 	}
-	
+
 	pthread_mutex_unlock(&mutex);
 }
