@@ -64,7 +64,7 @@ void Subir_Autobus(int id_usuario, int origen)
 	esperando_parada[origen]++;
 	printf("Usuario [%d] esperando en la parada [%d] para SUBIR.\n", id_usuario, origen);
 
-	while (parada_actual != origen || estado != EN_PARADA)
+	while (n_ocupantes < MAX_USUARIOS && estado == EN_PARADA && parada_actual != origen)
 	{
 		pthread_cond_wait(&en_parada, &mutex);
 	}
@@ -73,7 +73,7 @@ void Subir_Autobus(int id_usuario, int origen)
 	esperando_parada[origen]--;
 	printf("Usuario [%d] en la parada [%d] acaba de SUBIR al autobus.\n", id_usuario, origen);
 
-	if (esperando_parada[origen] == 0)
+	if (esperando_parada[origen] == 0 && esperando_parada[origen] == 0)
 	{
 		pthread_cond_signal(&autobus);
 	}
@@ -90,7 +90,7 @@ void Bajar_Autobus(int id_usuario, int destino)
 	esperando_bajar[destino]++;
 	printf("Usuario [%d] esperando para BAJAR en la parada [%d].\n", id_usuario, destino);
 
-	while (parada_actual != destino || estado != EN_PARADA)
+	while (estado == EN_PARADA && parada_actual != destino)
 	{
 		pthread_cond_wait(&en_parada, &mutex);
 	}
@@ -98,9 +98,11 @@ void Bajar_Autobus(int id_usuario, int destino)
 	n_ocupantes--;
 	esperando_bajar[destino]--;
 	printf("Usuario [%d] en la parada [%d] acaba de BAJAR del autobus.\n", id_usuario, destino);
-	if (esperando_bajar[destino] == 0)
+	
+	if (esperando_bajar[destino] == 0 && esperando_parada[destino] == 0)
 	{
 		pthread_cond_signal(&autobus);
 	}
+	
 	pthread_mutex_unlock(&mutex);
 }
