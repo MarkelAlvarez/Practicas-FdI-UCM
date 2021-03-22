@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pedido</title>
+</head>
+<body>
+	<form action="proceso.php" method="post">
+	<fieldset>
+		<legend>Datos personales</legend>
+			Nombre:<br> <input type="text" name="nom"><br>
+			Teléfono: <br> <input type="text" name="tel"><br>
+			E-mail:<br> <input type="text" name="mail"><br>
+			Dirección:<br> <input type="text" name="dir"><br>	
+	</fieldset>
+	<fieldset>
+		<legend>Datos del pedido</legend>
+		Primer plato: 
+		<select name="primero">
+			<option>aaa</option>
+			<option>bbb</option>
+			<option>ccc</option>
+		</select><br>
+		Segundo plato: 
+		<select name="segundo">
+			<option>xxx</option>
+			<option>yyy</option>
+			<option>zzz</option>
+		</select><br>
+		Café o té:<br>
+		<input type="radio" name="cafeote" value="C">Café <br>
+		<input type="radio" name="cafeote" value="T">Té <br>
+		Observaciones:<br>  <textarea name="obs"></textarea> <br>
+		<input type="checkbox" name="condi" value="ok">Acepto las condiciones del servicio
+	</fieldset>
+	<input type="submit" name="aceptar">	
+	</form>
+
+</body>
+</html>

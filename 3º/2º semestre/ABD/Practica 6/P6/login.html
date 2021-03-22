@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>Iniciar sesión | P6</title>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+	<body class=>
+		<div class="login">
+			<h1>Iniciar sesión</h1>
+			<form action="proceso.php" method="post">
+				<div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
+					<label for="username"><i class="fas fa-user"></i>&nbsp;&nbsp;Usuario</label>
+					<input type="text" name="username" placeholder="Usuario" id="username" class="form-control">
+					<span class="help-block"><?php echo $username_err; ?></span>
+				</div>
+				<div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+					<label for="password"><i class="fas fa-lock"></i>&nbsp;&nbsp;Contraseña</label>
+					<input type="password" name="password" placeholder="Contraseña" id="password" class="form-control">
+					<span class="help-block"><?php echo $password_err; ?></span>
+				</div>
+				
+                <input type="submit" value="Iniciar sesión">
+			</form>
+		</div>
+	</body>
+</html>
