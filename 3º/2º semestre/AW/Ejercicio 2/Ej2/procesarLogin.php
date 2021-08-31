@@ -18,6 +18,7 @@
 		$username = trim($_POST["username"]);
 		$password = trim($_POST["password"]);
 		
+        // NUNCA HAGAIS ESTO EN LA VIDA REAL!
 		if ($_POST["username"] == "admin" && $_POST["password"] == "adminpass")
         {
             session_regenerate_id();
@@ -28,6 +29,7 @@
 
             header('Location: contenido.php');
         }
+        // Y ESTO TAMPOCO!
         else if ($_POST["username"] == "user" && $_POST["password"] == "userpass")
         {
             session_regenerate_id();

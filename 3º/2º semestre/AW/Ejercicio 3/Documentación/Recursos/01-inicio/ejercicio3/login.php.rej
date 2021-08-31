@@ -1,0 +1,10 @@
+diff a/login.php b/login.php	(rejected hunks)
+@@ -5,8 +5,6 @@
+  $form = new FormularioLogin();
+  $htmlFormLogin = $form->gestiona();
+  
+- $tituloPagina = 'Login';
+- 
+ -?><!DOCTYPE html>
+ -<html>
+ -<head>

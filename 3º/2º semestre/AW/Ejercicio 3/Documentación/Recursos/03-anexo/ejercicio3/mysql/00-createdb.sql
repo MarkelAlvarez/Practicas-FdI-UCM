@@ -1,0 +1,1 @@
+CREATE DATABASE IF NOT EXISTS `ejercicio3` DEFAULT CHARSET=utf8mb4 COLLATE utf8mb4_general_ci;
