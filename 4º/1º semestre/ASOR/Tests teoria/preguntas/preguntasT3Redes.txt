@@ -1,0 +1,560 @@
+¿Cómo está implementado DNS?
+a) Como una base de datos relacional
+b) Como una base de datos distribuida
+c) Como una base de datos centralizada
+b
+Indica cual de las siguientes afirmaciones es falsa
+a) DNS está implementado como una BD distribuida
+b) DNS está definido en aproximadamente 107 RFCs
+c) DNS además de tener la base de datos, es el encargado de tener los algoritmos para hacer consultas sobre la misma
+b
+Indica cuál es correcta
+a) DNS recibe y realiza consultas sobre los nombres de dominio
+b) DNS recibe y realiza consultas sobre las IPs
+c) Ambas son correctas
+a
+Indica cuál es la respuesta correcta
+a) Cada sitio guarda información únicamente de sus sistemas
+b) Cada sitio guarda información únicamente de sí mismo
+c) Cada sitio guarda información de todo
+a
+Indica cuál es correcta
+a) DNS está implementada como una BD relacional
+b) Está definido en aproximadamente 202 RFCs
+c) DNS se intercambia y comparte la información con otros sitios
+c
+¿Cuál es la implementación que hemos elegido para implementar DNS?
+a) BIND
+b) Microsoft DNS
+c) Unbound
+a
+Indica cuál de las siguientes afirmaciones es correcta
+a) DNS define un mecanismo para encontrar servicios de red
+b) DNS define herramientas servidor (resolvers) para consultar la BD
+c) DNS define un espacio de nombres distribuido de dominios y direcciones IP
+a
+Indica cuál de las siguientes afirmaciones es correcta
+a) DNS define un mecanismo para encontrar servicios de applicación
+b) DNS define herramientas cliente (resolvers) para consultar la BD
+c) DNS define un espacio de nombres distribuido de dominios y direcciones IP
+b
+Indica cuál de las siguientes afirmaciones es correcta
+a) DNS define un mecanismo para encontrar servicios de applicación
+b) DNS define herramientas servidor (resolvers) para consultar la BD
+c) DNS define un espacio de nombres jerárquico de nombres de dominio y direcciones IP
+c
+La parte de arriba de la jerarquía se denomina...
+a) raíz y es el primer nivel compuesto por 13 servidores de nombres
+b) raíz y es el primer nivel compuesto por 12 servidores de nombres
+c) raíz y es el primer nivel compuesto por 11 servidores de nombres
+a
+La parte de Dominio raíz en DNS está compuesta por 13 servidores de nombres, cuyas máquinas son...
+a) unicast
+b) multicast
+c) anycast
+c
+La parte de Dominio raíz en DNS está compuesta por 13 servidores de nombres, cuyas máquinas son...
+a) anycast
+b) multicast
+c) broadcast
+a
+¿Cómo se llama a los Dominios de primer nivel?
+a) TLDs
+b) Zona
+c) ICANN
+a
+¿Por qué organización están gestionados los dominios de primer nivel?
+a) CDN
+b) IANA
+c) ICANN
+c
+¿Qué incluye cada zona en los dominios de primer nivel?
+a) Incluye los servidores de nombres de los subdominios
+b) Incluye los servidores de nombres autorizados y los servidores de nombres de los subdominios
+c) Ninguna es correcta
+b
+¿Cómo se denomina a los nombres de dominio completamente cualificados?
+a) FCDN
+b) FQDN
+c) DNSF
+b
+¿Cuál es el dominio que se encarga de las resoluciones inversas en DNS?
+a) Prototcolo INDS (Inverse Name Domain Server)
+b) [a-m].root-servers.net
+c) in-addr.arpa
+c
+¿Cuál sería el FQDN de la IP 147.96.80.3/24?
+a) 3.80.96.147.in-addr.arpa.
+b) 3.80.96.147
+c) 147.96.80.3.in-addr.arpa.
+a
+¿Cuál sería el FQDN de la IP 63.173.189.1/24?
+a) 1.189.173.63.in-addr.arpa.
+b) 1.189.173.63
+c) 63.173.189.1.in-addr.arpa.
+a
+¿Qué consulta DNS se debe hacer para averiguar el nombre de dominio asociado a la IP 147.96.1.2?
+a) 147.96.1.2.in-addr.arpa PTR
+b) 2.1.96.147.in-addr.arpa PTR
+c) 1.2.96.147.in-addr.arpa PTR
+b
+Indica la restricción en los nombres de dominios que sea falsa
+a) No hay límite en el número de subdominios de la jerarquía
+b) El FQDN puede ocupar un máximo de 256 caracteres (incluyendo los puntos)
+c) Cada sección del FQDN puede tener un máximo de 64 caracteres
+c
+Indica la restricción en los nombres de dominios que sea falsa
+a) No hay límite en el número de subdominios de la jerarquía
+b) El FQDN puede ocupar un máximo de 128 caracteres (incluyendo los puntos)
+c) Cada sección del FQDN puede tener un máximo de 63 caracteres
+b
+Indica la restricción en los nombres de dominios que sea falsa
+a) Hay un límite en el número de subdominios de la jerarquía
+b) El FQDN puede ocupar un máximo de 256 caracteres (incluyendo los puntos)
+c) Cada sección del FQDN puede tener un máximo de 63 caracteres
+a
+Indica la restricción en los nombres de dominios que sea falsa
+a) No hay límite en el número de subdominios de la jerarquía
+b) Formados por caracteres alfanuméricos, guiones y especiales
+c) No diferencia entre mayúsculas y minúsculas
+b
+Indica la restricción en los nombres de dominios que sea falsa
+a) Cada sección del FQDN puede tener un máximo de 256 caracteres
+b) El FQDN puede ocupar un máximo de 63 caracteres (incluyendo los puntos)
+c) Ambas
+c
+Indica la restricción en los nombres de dominios que sea falsa
+a) Hay diferencia entre mayúsculas y minúsculas
+b) Formados por caracteres alfanuméricos y guiones
+c) No hay límite en el número de subdominios de la jerarquía
+a
+¿Un dominio puede ser diferente a otro si el mismo está en minúsculas o mayúsculas?
+a) Sí, son dominios diferentes
+b) No, ambos son el mismo dominio
+c) No, ya que tienen diferentes IPs asociadas
+b
+¿Podríamos poner la ñ en nuestro dominio por ejemplo en españa?
+a) Si se puede, de ello se encarga el Punycode que codifica caracteres inválidos por otros válidos
+b) No se puede ya que solamente permite formatos alfanuméricos y guiones
+c) No se puede, solo permite caracteres en formato ASCII y no en UTF-8
+a
+La BD de DNS se estructura en...
+a) tablas
+b) ficheros
+c) registros
+c
+Los servidores guardan los registros de sus dominios en...
+a) tablas
+b) ficheros de zona
+c) registros
+b
+¿Los registros son estándar, independientemente de la implementación?
+a) Sí
+b) No
+c) No, cada implementación tiene los suyos
+a
+DNS especifica el protocolo de transmisión o de transferencia de datos entre los servidores ¿Qué transporte utiliza principalmente el protocolo DNS?
+a) Principalmente, UDP en el puerto 53
+b) Principalmente, TCP en el puerto 53
+c) Cualquiera de los dos protocolos
+c
+¿Qué transporte utiliza principalmente el protocolo DNS cuando las consultas son muy grandes de más de 512 bytes?
+a) Principalmente, UDP en el puerto 53
+b) TCP
+c) Cualquiera de los dos protocolos
+b
+Indica cual es falsa
+a) Cachear la resolución de direcciones mejora notablemente la eficiencia
+b) La relación nombre-IP es prácticamente estática
+c) Las respuestas se cachean durante un TTL que es fijo
+c
+Indica cual es falsa
+a) Cachear la resolución de direcciones no mejora notablemente la eficiencia
+b) La relación nombre-IP es prácticamente estática
+c) Las respuestas se cachean durante un TTL que puede variar según en el nivel que esté
+a
+Indica cual es falsa
+a) Cachear la resolución de direcciones mejora notablemente la eficiencia
+b) La relación nombre-IP es prácticamente dinámica
+c) Las respuestas se cachean durante un TTL que puede variar según en el nivel que esté
+b
+Los certificados de seguridad se emiten al
+a) Nombre del Dominio
+b) A la dirección IP
+c) Al servidor donde está el dominio
+a
+¿En qué casos la cache es negativa?
+a) Ningún dominio encaja en la IP
+b) El registro solicitado existe para el recurso
+c) El servidor no responde o no se puede alcanzar por problemas de red
+c
+¿En qué casos la cache es negativa?
+a) Ningún dominio encaja en el nombre buscado
+b) El registro solicitado no existe para el recurso
+c) a y b correctas
+c
+¿Qué servidores de nombres hay?
+a) Autoritativos, De cache, recursivos y no-recursivos
+b) Autoritativos, De cache, recursivos
+c) Autoritativos, De cache
+a
+¿Qué servidores de nombres representan oficialmente a la zona?
+a) Autoritativos
+b) De cache
+c) Recursivos y no-recursivos
+a
+¿Qué servidores de nombres parten de una lista de servidores del dominio raíz?
+a) Autoritativos
+b) De cache
+c) Recursivos y no-recursivos
+b
+¿Qué servidores de nombres guardan los resultados de las búsquedas realizadas y reducen la latencia de las consultas y el tráfico DNS en la red?
+a) Autoritativos
+b) De cache
+c) Recursivos y no-recursivos
+b
+¿Qué servidores de nombres cuando no disponen el registro de la consulta devuelven una referencia al servidor de nombres que puede tenerlo?
+a) Autoritativos
+b) No-recursivos
+c) Recursivos 
+b
+¿Qué servidores de nombres resuelven cada referencia hasta devolver la respuesta al cliente?
+a) Autoritativos
+b) No-recursivos
+c) Recursivos 
+c
+Los servidores Autoritativos suelen ser...
+a) De cache
+b) Recursivos
+c) No recursivos
+c
+En la configuración de los clientes deben usarse servidores...
+a) De cache
+b) Recursivos
+c) No recursivos
+b
+La especificación de DNS establece que debe haber...
+a) Un servidor primario y al menos uno secundario por zona
+b) Un servidor primario por zona
+c) Dos servidores primarios mínimo por zona
+a
+Formato del registro (RFCs 1034 y 2181)
+a) [name] [ttl] [class] type data
+b) [name] [ttl] type data
+c) [name] [ttl] [class] type
+a
+¿Un mismo NS puede tener más de una IP?
+a) sí
+b) No
+c) Sí pero solo una IPV4 y otra IPV6
+a
+Sin DNS, ¿el correo electrónico funcionaría?
+a) No
+b) Puede dar fallos
+c) Sí por el protocolo SMTP
+a
+¿Cuál tiene mayor prioridad?
+a) example.com. IN MX 30 mail
+b) example.com. IN MX 20 mail2.example.com.
+c) example.com. IN MX 10 mail3
+c
+Indica cuál es incorrecta
+a) CNAME permite definir un alias para el nombre canónico
+b) Los registros CNAME deben siempre apuntar a una IP
+c) Un alias definido por un CNAME no debe tener otros registros
+b
+Indica cuál es incorrecta
+a) CNAME permite definir un alias para el nombre canónico
+b) Los registros CNAME deben siempre apuntar a un dominio (nunca a una IP)
+c) Un alias definido por un CNAME puede tener otros registros
+c
+Indica cuál es incorrecta
+a) MX y NS pueden apuntar a un CNAME
+b) Los registros CNAME deben siempre apuntar a un dominio (nunca a una IP)
+c) Un alias definido por un CNAME no debe tener otros registros
+a
+Indica cual sería el tipo de resgistro para web.ucm.es TIPO www.ucm.es
+a) A
+b) CNAME
+c) NS
+b
+Indica cual sería el tipo de resgistro para 147.96.1.2 TIPO www.ucm.es
+a) PTR
+b) NS
+c) A
+a
+Indica cual sería el tipo de resgistro para www.ucm.es TIPO 147.96.1.2 
+a) PTR
+b) A
+c) NS
+b
+Indica cual sería el tipo de resgistro para ucm.es TIPO mail.ucm.es
+a) A
+b) NS
+c) MX
+c
+¿Firewall es lo mismo que filtrado de paquetes?
+a) Sí es lo mismo
+b) No es lo mismo 
+c) Sí es lo mismo solamente que el firewall es la base principal de seguridad
+b
+Indica cuál de estas afirmaciones es correcta
+a) El firewall es lo mismo que el filtrado de paquetes
+b) El firewall se contruye a partir del filtrado de paquetes
+c) Ninguna es correcta
+b
+Indica cuál de estas afirmaciones es correcta
+a) Un firewall establece las políticas de seguridad que luego son implementadas con sus funciones: filtrado de paquetes de red, registro de actividad, traducción de direcciones
+b) El firewall es lo mismo que el filtrado de paquetes y sus funciones son: filtrado de paquetes de red (IPTABLES), registro de actividad, traducción de direcciones
+c) Hay tres tipos de firewalls: en función del estado (stateless/stateful), en función de la capa(de red o aplicación) y en función de filtrado de paquetes(iptables)
+a
+La connection tracking (conntrack) solo sirve para...
+a) Sirve para todo tipo de protocolos incluso ICMP
+b) Protocolos orientados a conexión como TCP
+c) Para protocolos de la capa de transporte: TCP y UDP 
+a
+¿Qué es el connection tracking (conntrack)?
+a) Una componente del Kernel de Linux que sirve para ver el estado de la conexión si es TCP y se utiliza en el filtrado de paquetes
+b) Una componente del Kernel de Linux que sirve para ver el estado de la conexión si está establecida y coincide con un protocolo de transporte y se utiliza en el filtrado de paquetes
+c) Una componente del Kernel de Linux que sigue la pista de si un paquete pertenece o no a una conexión o está relacionado con otros paquetes
+c
+¿Qué función tiene IPTABLES?
+a) Filtrado de paquetes y Resgistro de actividad
+b) Única y exclusivamente filtrado de paquetes
+c) Filtrado de paquetes y traducción de direcciones
+b
+¿Qué partes forman una regla en IPTABLES?
+a) Patrón y acción
+b) Patrón, acción y número de la regla
+c) Protocolo, condiciones y número de la regla
+a
+¿Qué es el patrón de una regla en el filtrado de paquetes?
+a) Si se le aplica esa regla, el patrón es si se acepta o se rechaza el paquete
+b) El patrón nos indica solamente la red en la que se aplica la regla de filtrado
+c) Son las condiciones que deben darse en el paquete para aplicar las acciones de regla
+c
+¿Qué es la acción de una regla en el filtrado de paquetes?
+a) ACCEPT, REJECT, DROP
+b) El acción nos indica solamente la red en la que se aplica la regla de filtrado
+c) Son las condiciones que deben darse en el paquete para aplicar la regla
+a
+¿Cuándo se realiza la acción de la regla en el filtrado de paquetes?
+a) Si el patrón encaja con nuestro paquete
+b) Si estamos en la red correcta
+c) Cuando la regla es genérica siempre, si es particular tenemos que ver si encaja con nuestro patrón
+a
+¿Qué reglas se aplican primero?
+a) Las reglas genéricas
+b) Las reglas particulares
+c) No importa el orden
+b
+¿Cómo se estructuran un conjunto de reglas?
+a) Ficheros especiales
+b) En un fichero específico dentro del Kernel de Linux
+c) Tablas
+c
+Imaginemos que tenemos una tabla de reglas, su tuvieramos tres y ninguna se aplica, ¿Qué pasaría?
+a) Se aplica la acción por defecto
+b) No se aplica ninguna regla
+c) Pasaríamos a la siguiente tabla
+a
+Listas de reglas que se aplican en orden a los paquetes en un punto determinado de su procesamiento ¿Cómo se llaman?
+a) Conjunto de reglas
+b) Cadenas
+c) Tablas
+b
+Conjunto de cadenas destinados a diferentes tipos de procesamiento, ¿Qué son?
+a) Tablas
+b) Cadenas
+c) Conjunto de reglas
+a
+Indica qué afirmación es correcta
+a) Una regla puede mover un paquete a otra cadena
+b) Todo paquete de entrada/salida del sistema atraviesa al menos dos cadenas
+c) Si un paquete no encaja en ninguna de las reglas, no se aplica la política de la cadena
+a
+Indica qué afirmación es falsa
+a) Una regla puede mover un paquete a otra cadena
+b) Todo paquete de entrada/salida del sistema atraviesa al menos una cadena
+c) Si un paquete no encaja en ninguna de las reglas, no se aplica la política de la cadena
+c
+Indica qué afirmación es correcta
+a) Una regla no puede mover un paquete a otra cadena
+b) Todo paquete de entrada/salida del sistema atraviesa al menos una cadena
+c) Si un paquete no encaja en ninguna de las reglas, no se aplica la política de la cadena
+b
+Indica qué afirmación es correcta
+a) Una regla no puede mover un paquete a otra cadena
+b) Todo paquete de entrada/salida del sistema atraviesa al menos dos cadenas
+c) Si un paquete no encaja en ninguna de las reglas, se aplica la política de la cadena
+c
+¿Cuál es la tabla que bloquea o permite el tránsito de un paquete?
+a) Tabla Mangle
+b) Tabla NAT
+c) Tabla Filter
+c
+¿Cuál es la tabla que reescribe las direcciones origen o destino y puertos de un paquete?
+a) Tabla Filter
+b) Tabla NAT
+c) Tabla Mangle
+b
+¿Cuál es la tabla que todo paquete del sistema atraviesa?
+a) Tabla Filter
+b) Tabla NAT
+c) Tabla Mangle
+a
+¿Cuál es la tabla que sirve para cambiar algunos campos del paquete?
+a) Tabla Filter
+b) Tabla NAT
+c) Tabla Mangle
+c
+¿Cuál es la tabla que altera la cabecera del tráfico (MTUs, MSS o TOS) y que tiene todas las cadenas?
+a) Tabla Filter
+b) Tabla NAT
+c) Tabla Mangle
+c
+¿A qué tabla pertenecen las cadenas INPUT, OUTPUT Y FORWARD?
+a) Tabla Filter
+b) Tabla NAT
+c) Tabla Mangle
+a
+¿A qué tabla pertenecen las cadenas PREROUTING, POSTROUTING Y OUTPUT?
+a) Tabla Filter
+b) Tabla NAT
+c) Tabla Mangle
+b
+¿A qué cadena pertenecen los paquetes destinados al sistema?
+a) FORWARD
+b) OUTPUT
+c) INPUT
+c
+¿A qué cadena pertenecen los paquetes generados en el sistema?
+a) FORWARD
+b) OUTPUT
+c) INPUT
+b
+¿A qué cadena pertenecen los paquetes que atraviesan el sistema (encaminados)?
+a) FORWARD
+b) OUTPUT
+c) INPUT
+a
+¿A qué cadena pertenecen los paquetes de entrada antes de la decisión de encaminamiento?
+a) PREROUTING
+b) POSTROUTING
+c) OUTPUT
+a
+¿A qué cadena pertenecen los paquetes de salida después de la decisión de encaminamiento?
+a) PREROUTING
+b) POSTROUTING
+c) OUTPUT
+b
+¿A qué cadena pertenecen los paquetes de salida generados localmente?
+a) PREROUTING
+b) POSTROUTING
+c) OUTPUT
+c
+¿Qué cadena se usa en DNAT?
+a) PREROUTING
+b) POSTROUTING
+c) OUTPUT
+a
+¿Qué cadena se usa en SNAT?
+a) PREROUTING
+b) POSTROUTING
+c) OUTPUT
+b
+¿Qué pasa en mi ordenador cuando llega un paquete?
+a) Pasa por la regla INPUT
+b) Pasa por la regla PREROUTING
+c) Pasa por la regla FORWARD
+b
+Indica cuales son los objetivos de las reglas
+a) INPUT, OUTPUT, FORWARD
+b) ACCEPT, REJECT, DROP, LOG
+c) ACCEPT, REJECT, DROP
+b
+¿Qué objetivo es igual que DROP pero envía un ICMP de un tipo que puede definirse?
+a) LOG
+b) REJECT
+c) Ninguno
+b
+¿Qué parámetro sirve para establecer la política por defecto para cadenas INPUT, OUTPUT y FORWARD?
+a) -P
+b) -A
+c) -S
+a
+¿Cuáles son la definición de reglas según el estado de la conexión?
+a) NEW, ESTABLISHED, RELATED, INVALID, CLOSED
+b) NEW, ESTABLISHED, RELATED, FIN
+c) NEW, ESTABLISHED, RELATED, INVALID
+c
+¿En qué consiste en NAT la traducción estática?
+a) Asignación de N dirrecciones privadas a N direcciones públicas
+b) Asignación de N direcciones privadas a 1 dirección pública
+c) Asignación de N dirrecciones privadas a M direcciones públicas siendo (M < N)
+a
+¿En qué consiste en NAT la traducción estática?
+a) Asignación de N dirrecciones privadas a N direcciones públicas
+b) Asignación fija
+c) Ambas
+c
+¿En qué consiste en NAT la traducción Dinámica?
+a) Asignación de N dirrecciones privadas a M direcciones públicas siendo (M < N)
+b) Asignación dinámica, sólo pueden acceder a Internet M máquinas a la vez
+c) Ambas
+c
+¿En qué consiste en NAT la traducción Dinámica?
+a) Asignación de N dirrecciones privadas a M direcciones públicas siendo (M < N)
+b) Asignación dinámica, sólo pueden acceder a Internet N máquinas a la vez
+c) Asignación de N dirrecciones privadas a N direcciones públicas
+a
+¿En qué consiste en NAT la traducción Dinámica?
+a) Asignación de N dirrecciones privadas a M direcciones públicas siendo (M <= N)
+b) Asignación dinámica, sólo pueden acceder a Internet M máquinas a la vez
+c) Asignación de N dirrecciones privadas a M direcciones públicas siendo (M > N)
+b
+¿En qué consiste en NAT la traducción Dinámica?
+a) Asignación de N dirrecciones privadas a M direcciones públicas siendo (M < N)
+b) Asignación dinámica, sólo pueden acceder a Internet N máquinas a la vez
+c) Asignación de N dirrecciones privadas a M direcciones públicas siendo (M > N)
+a
+¿En qué consiste en NAT el NAPT - Masquerading?
+a) Asignación de N direcciones privadas a 1 dirección pública
+b) Asignación de N direcciones públicas a 1 dirección privada
+c) Asignación de N direcciones privadas a M direcciones públicas
+a
+¿Cuál es el propósito del objetivo MASQUERADE en una regla de iptables?
+a) Realizar DNAT con direcciones públicas dinámicas
+b) Realizar SNAT con direcciones públicas dinámicas
+c) Realizar SNAT con direcciones públicas estáticas
+b
+¿En qué consiste en NAT el Port Forwarding - Virtual Servers?
+a) Asignación de N direcciones privadas a 1 dirección pública
+b) Asignación de 1 dirección pública a N direcciones privadas
+c) Asignación de N direcciones privadas a M direcciones públicas
+b
+¿Qué cadenas se usan para NAT el Port Forwarding - Virtual Servers?
+a) DNAT por lo que PREROUTING y también OUTPUT
+b) SNAT por lo que POSTROUTING y también OUTPUT
+c) DNAT por lo que POSTROUTING y también OUTPUT
+a
+La tabla Filter de iptables sirve para…
+a) Cambiar algunos campos de un paquete, como TOS o TTL.
+b) Bloquear o permitir el tránsito de un paquete.
+c) Reescribir las direcciones origen/destino y puertos de un paquete.
+b
+La tabla NAT de iptables sirve para…
+a) Cambiar algunos campos de un paquete, como TOS o TTL.
+b) Bloquear o permitir el tránsito de un paquete.
+c) Reescribir las direcciones y puertos origen/destino de un paquete.
+c
+Respecto a las direcciones IP, el servicio de nombres de dominio (DNS)... 
+a) Establece un dominio específico para buscar su nombre de dominio asociado.
+b) DNS solo maneja la traducción de nombres de dominio en IP.
+c) Solo permite las búsquedas inversas para los dominios TLD (top level domains).
+a
+Los servidores autoritativos de una base de datos DNS…
+a) Guardan los resultados de las búsquedas realizadas.
+b) Suelen ser recursivos.
+c) Representan oficialmente a la zona.
+c

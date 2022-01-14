@@ -1,0 +1,425 @@
+¿Cómo distingo que el tráfico de entrada o salida corresponde a una u otra aplicación?
+a) Por su dirección IP
+b) Por su puerto
+c) Por su dirección MAC
+b
+¿Cómo se identifica un segmento TCP)
+a) Con el primer byte que forma el segmento
+b) Con un número de secuencia SEQ
+c) a y b son correctas
+c
+¿En cuantás zonas se divide el flujo de bytes de información con el mecanismo de la ventana deslizante en la ventana de envío?
+a) 3 fases: segmentos enviados y no confirmados, segmentos no enviados y que se pueden enviar, segmentos no enviados y que no se pueden enviar
+b) 3 fases: segmentos confirmados y consumidos, confirmados y no consumidos, buffer de segmentos
+c) 4 fases: segmentos enviados y confirmados, segmentos enviados y no confirmados, segmentos no enviados y que se pueden enviar, segmentos no enviados y que no se pueden enviar
+c
+¿Cómo es fijado el tamaño de la ventana de envío?
+a) Por el emisor
+b) Por el receptor
+c) El router
+b
+Indica cuál de estas afirmaciones es cierta
+a) Si la ventana de envíos se hace más grande, implica más envíos simultáneos y si la ventana se hace más pequeña, implica menos envíos simultáneos
+b) Si la ventana de envíos se hace más grande, implica menos envíos simultáneos y si la ventana se hace más pequeña, implica menos envíos simultáneos
+c) Si la ventana de envíos se hace más grande, implica menos envíos simultáneos y si la ventana se hace más pequeña, implica más envíos simultáneos
+a
+¿En cuantás zonas se divide el flujo de bytes de información con el mecanismo de la ventana deslizante en la ventana de recepción?
+a) 3 fases: segmentos enviados y no confirmados, segmentos no enviados y que se pueden enviar, segmentos no enviados y que no se pueden enviar
+b) 3 fases: segmentos confirmados y consumidos, confirmados y no consumidos, buffer de segmentos
+c) 4 fases: segmentos confirmados y consumidos, confirmados y no consumidos, segmentos ni confirmados ni consumidos, buffer de segmentos
+b
+¿Que es un ACK?
+a) Identificador del siguiente segmento que se espera confirmar en orden
+b) Identificador del siguiente segmento que se espera confirmar sin orden
+c) Identificador del segmento que se ha recibido correctamente
+a
+¿Qué significa que los ACKs son acumulativos?
+a) Cuando se confirma un segmento, se confirman todos sus anteriores
+b) Que espera que se acumulen antes de confirmarlos
+c) Que al confirmarlo se envía con datos para aprovechar el mensaje
+a
+¿Qué es piggybacking?
+a) Enviar la confirmación (ACK) junto con datos para ahorrar en mensajes y hacer la comunicación más eficientes
+b) Solapar los envíos con las confirmaciones para optimizar la tasa de comunicación
+c) Ambas son correctas
+c
+¿Cuáles de estos flags se encuentran en un segmento TCP?
+a) URG, ACK, PSH, RST, SYN, FIN
+b) URG, ACK, PSH, RST, FIN
+c) URG, ACK, PSH, RST, FIN, TCP
+a
+¿De las contramedidas estudiadas para un ataque TCP SYN Flooding, cuál es la más efectiva?
+a) Filtrar conexiones, limitar el número de clientes que se conectan o detectar IPs suplantadas
+b) Aumentar los recursos del servidor
+c) Usando SYN Cookies, retrasar la asignación de recursos
+c
+¿En qué consiste SYN Cookies?
+a) Guardar el estado de la conexión en el propio número de secuencia que envío de vuelta en el número de la confirmación y si es una conexión lícita, ya reservo los recursos
+b) Realizo la asignación de recursos si detectamos que la IP no está en nuestra lista de suplantadas
+c) Es un ataque DoS (Denegación de servicios)
+a
+¿En qué fase se fija el tamaño máximo del segmento (MSS)?
+a) Establecimiento de la conexión
+b) Transferencia
+c) Finalización
+b
+¿Por quién es fijado el tamaño máximo del segmento (MSS) que se puede enviar?
+a) Es fijado por el emisor
+b) Es fijado por el receptor
+c) Es fijado por cada extremo de forma independiente
+c
+¿Qué o quién limita el máximo tamaño del segmento (MSS) que se puede enviar?
+a) Emisor
+b) Receptor
+c) MTU, no podemos enviar un segmento más grande que lo que entra en un paquete IP
+c
+¿Qué mensaje no tiene el flag ACK activo?
+a) Todos menos el primero
+b) Todos los mensajes
+c) Todos menos el último
+a
+Estamos en el estado LISTEN, recibo un mensaje con el flag SYN activado, mandamos un mensaje SYN+ACK, a qué estado nos vamos?
+a) SYN-SENT
+b) SYN-RCVD
+c) ESTABLISHED
+b
+Estamos en el estado CLOSED, recibo un mensaje con el flag SYN+ACK activado, mandamos un mensaje ACK, a qué estado nos vamos?
+a) SYN-SENT
+b) SYN-RCVD
+c) ESTABLISHED
+a
+Cuando nos intentamos conectar a un puerto que no está abierto o cuando se quiere cerrar una comunicación de forma abrupta, ¿que flag mandamos?
+a) RST
+b) FIN
+c) URG
+a
+¿Cuántos milisegundos máximo se puede retrasar una confirmación?
+a) 100ms
+b) 200ms
+c) 500ms
+c
+Si recibimos un segmento y no tenemos que enviar nada en el otro sentido, ¿esperamos a enviar la confirmación (ACK)?
+a) si
+b) no, enviamos la confirmación al instante
+c) si, esperamos hasta un máximo de 500ms
+c
+Si recibimos un segmento y no tenemos que enviar nada en el otro sentido, ¿esperamos a enviar la confirmación (ACK) si no los tenemos en orden?
+a) si
+b) no, enviamos la confirmación al instante
+c) si, esperamos hasta un máximo de 500ms
+b
+Si recibimos un segmento duplicado y no tenemos que enviar nada en el otro sentido, ¿esperamos a enviar la confirmación (ACK)?
+a) si
+b) no, enviamos la confirmación al instante
+c) si, esperamos hasta un máximo de 500ms
+b
+Si recibimos un segmento que rellena un hueco y no tenemos que enviar nada en el otro sentido, ¿esperamos a enviar la confirmación (ACK)?
+a) si
+b) no, enviamos la confirmación al instante
+c) si, esperamos hasta un máximo de 500ms
+b
+¿Es lo mismo ACK que un SACK?
+a) Si podemos utilizar ambos indistintamente
+b) No, SACK solo es informativo para el emisor
+c) Si ya que además SACK sirve para hacer optimizaciones en los envíos
+b
+¿Cómo se da cuenta de que un segmento no ha llegado?
+a) Nos informa un mensaje ICMP
+b) Porque no recibe el ACK
+c) Se para la comunicación
+b
+¿Cuántos temporizadores de retransmisión tenemos en una comunicación TCP?
+a) Un temporizador por cada conexión
+b) Un temporizador por cada segmento que envío
+c) Un temporizador por cada mensaje
+a
+¿Cuando el temporizador de retransmisión expira, qué segmento enviamos?
+a) El primer segmento de mi ventana
+b) El siguiente segmento que tenía para transmitir
+c) El primer segmento que tengo sin confirmar en mi ventana
+c
+¿Cuándo se resetea el temporizador de retransmisión?
+a) Cada vez que se recibe un ACK
+b) Cada vez que se envía un segmento
+c) Ninguna de las anteriores
+a
+¿Cuándo se para el temporizador de retransmisión?
+a) Si todos han sido confirmados
+b) Si ha expirado el tiempo
+c) Si todavía hay pendientes por confirmar
+a
+Si tenemos 5 conexiones abiertas, ¿cuántos temporizadores tenemos?
+a) Solo 5 temporizadores
+b) Podemos tener tantos como envíos hagamos
+c) Podemos tener 2 por conéxión, por lo que 10 temporizadores
+a
+¿Qué pasa si se pierden los ACK?
+a) La pérdida de un ACK lo recupera uno posterior o se soluciona con la retransmisión por el temporizador del segmento que no se ha confirmado su recepción
+b) Retransmitimos el ACK que se ha perdido
+c) No pasa nada
+a
+¿Qué temporizador TCP está asociado a comunicaciones que dejan de transmitir datos durante un instante?
+a) Temporizador KEEPALIVE
+b) Temporizador TIMEWAIT
+c) Temporizador de persistencia
+a
+¿Qué temporizador TCP evita mantener conexiones indefinidamente?
+a) Temporizador KEEPALIVE
+b) Temporizador TIMEWAIT
+c) Temporizador de persistencia
+a
+¿Cuál es el parámetro para indicar el tiempo que se espera entre sonda y sonda en el temporizador keepalive del protocolo TCP?
+a) tcp_keepalive_time
+b) tcp_keepalive_probes
+c) tcp_keepalive_intvl
+c
+¿Cuál es el parámetro para indicar los segundos en los que una conexión puede estar en silencio en el temporizador keepalive del protocolo TCP?
+a) tcp_keepalive_time
+b) tcp_keepalive_probes
+c) tcp_keepalive_intvl
+a
+¿Cuál es el parámetro para indicar el número de sondas en el temporizador keepalive del protocolo TCP?
+a) tcp_keepalive_time
+b) tcp_keepalive_probes
+c) tcp_keepalive_intvl
+b
+¿Cuando se cierra la conexión?
+a) Cuando no se recibe ningún ACK y ha pasado el tiempo del temporizador KEEALIVE
+b) Cuando ya se han enviado todos los segmentos
+c) Cuando hemos recibido el último ACK
+a
+¿De que longitud se envía el segmento en una SONDA TCP?
+a) longitud 1
+b) longitud 0
+c) longitud con un número aleatorio
+b
+¿Que temporizador TCP utilizamos para ver si se ha caído el extremo o sigue vivo?
+a) Temporizador KEEPALIVE
+b) Temporizador TIMEWAIT
+c) Temporizador de persistencia
+a
+¿Que temporizador TCP está asociado a la finalización de la conexión?
+a) Temporizador KEEPALIVE
+b) Temporizador TIMEWAIT
+c) Temporizador de persistencia
+c
+¿Qué valor máximo toma el temporizador TIMEWAIT? MSL -> tiempo máximo de vida de un segmento en la red
+a) MSL (Maximum Segment Lifetime)
+b) 2 * MSL (Maximum Segment Lifetime)
+c) 3 * MSL (Maximum Segment Lifetime)
+b
+¿Qué temporizador se utiliza para evitar colisiones  de número de secuencias de dos conexiones distintas (nueva y vieja) puerto y nº de secuencia no se pueden reutilizar?
+a) Temporizador KEEPALIVE
+b) Temporizador TIMEWAIT
+c) Temporizador de persistencia
+b
+¿Qué temporizador limita el número de clientes simultáneos que podemos tener?
+a) Temporizador KEEPALIVE
+b) Temporizador de persistencia
+c) Temporizador TIMEWAIT
+c
+¿Qué temporizador está asociado a la recepción de un tamaño de ventana 0?
+a) Temporizador KEEPALIVE
+b) Temporizador de persistencia
+c) Temporizador TIMEWAIT
+b
+¿Qué temporizador está asociado al control de flujo?
+a) Temporizador KEEPALIVE
+b) Temporizador de persistencia
+c) Temporizador TIMEWAIT
+b
+¿Cuando se ve que el extremo tiene la ventana a 0, qué temporizador se arranca asociado a esa recepción de ventana 0?
+a) Temporizador KEEPALIVE
+b) Temporizador de persistencia
+c) Temporizador TIMEWAIT
+b
+¿Cuál es el tiempo de suavizado inicialmente?
+a) RTTs = RTTm
+b) RTTs = RTTm/2
+c) RTTs = (1-alfa) * RTTs + alfa * RTTm   alfa < 1
+a
+¿Cuál es el tiempo de desviación inicialmente?
+a) RTTd = RTTm
+b) RTTd = RTTm/2
+c) RTTd = (1-alfa) * RTTs + alfa * RTTm   alfa < 1
+b
+¿Cuál es el tiempo de suavizado siguientes?
+a) RTTs = RTTm
+b) RTTs = RTTm/2
+c) RTTs = (1-alfa) * RTTs + alfa * RTTm   alfa < 1
+c
+¿Cuál es el tiempo de desviación siguientes?
+a) RTTd = RTTm
+b) RTTd = RTTm/2
+c) RTTd = (1-beta) * RTTd + beta * |RTTs - RTTm|   beta < 1
+c
+¿A qué algoritmo pertenece RTO = y x RTTs (y = 2), fijamos el time-out a 2 veces el tiempo RTT estimado, la desviación no la consideramos?
+a) Jacobson
+b) Jacobson/Karels
+c) Karn
+a
+¿A qué algoritmo pertenece RTO = RTTs + 4 x RTTd?
+a) Jacobson
+b) Jacobson/Karels
+c) Karn
+b
+¿A qué algoritmo pertenece RTO = 2 X RTO exponential backoff?
+a) Jacobson
+b) Jacobson/Karels
+c) Karn
+c
+Calcular el RTO utilizando el algoritmo Jacobson/Karels con alfa = 1/8 y beta = 1/4 siendo RTTm = 1,5 segundos
+a) RTO = 6 segundos
+b) RTO = 4,5 segundos
+c) RTO = 3 segundos
+b
+¿Cómo se controla el flujo?
+a) Mediante el mecanismo de la ventana deslizante
+b) Mediante la ventana de envío, anunciada su tamaño en cada segmento enviado
+c) Mediante la ventana de recepción, anunciada su tamaño en cada ACK
+c
+¿Qué es el síndrome de la ventana trivial (silly window)?
+a) Uso ineficiente de la red cuando la aplicación emisora genera datos a un ritmo muy lento o cuando la aplicación receptora consume datos a un ritmo muy lento
+b) Uso correcto de la red cuando la aplicación emisora genera datos a un ritmo muy lento o cuando la aplicación receptora consume datos a un ritmo muy lento
+c) Uso ineficiente de la red cuando la aplicación emisora genera datos a un ritmo muy rápido o cuando la aplicación receptora consume datos a un ritmo muy lento
+a
+¿Cuál es la mejor solución que existe para el problema del sindrome de la ventana trivial (silly window) en el emisor?
+a) Retrasar los ACK
+b) Algoritmo de Nagle
+c) Algoritmo de Clark
+b
+¿Cuál es la mejor solución que existe para el problema del sindrome de la ventana trivial (silly window) en el receptor?
+a) Retrasar los ACK
+b) Algoritmo de Nagle
+c) Algoritmo de Clark
+c
+El control de la congestión y el flujo son ...
+a) dos cosas iguales
+b) dos cosas diferentes
+c) dos cosas iguales con algunas diferencias
+b
+La pérdida de paquetes en la mayoría de las veces se debe a un problema de ...
+a) flujo
+b) de congestión
+c) de otra cosa
+b
+El emisor utiliza el ritmo de llegada de confirmaciones para regular el ritmo de envío de segmentos de datos, ¿esto lo implementa a través de?
+a) La ventana de congestión CW
+b) La ventana de recepción RW
+c) El mecanismo de la ventana deslizante
+a
+Para el control de flujo se utiliza
+a) La ventana de congestión CW
+b) La ventana de recepción RW
+c) El mecanismo de la ventana deslizante
+b
+Cuando estamos en una situación en la que no hay congestión, es decir sin pérdida o retraso de segmentos, indica cual es la opción correcta
+a) La ventana de congestión alcanza el mismo tamaño que la ventana de recepción CW = RW
+b) La ventana de congestión es de mayor tamaño que la ventana de recepción CW > RW
+c) La ventana de congestión es de distinto tamaño que la ventana de recepción CW != RW
+a
+Cuando hay congestión, el tamaño de CW
+a) Se va reduciendo progresivamente
+b) Se va aumentando progresivamente
+c) Se queda igual
+a
+Cuando no hay congestión, el tamaño de CW
+a) Se va reduciendo progresivamente
+b) Se va aumentando progresivamente
+c) Se queda igual
+b
+¿Cuál es el máximo número de bytes que puede enviar el emisor, AW (Allowed Window)?
+a) AW = RW
+b) AW = min {RW, CW}
+c) AW = max {RW, CW}
+b
+La transmisión comienza con un tamaño de ventana de congestión de...
+a) CW = RW
+b) CW = 0
+c) CW = 1
+c
+Indica a qué fase pertenecen las siguientes características, la CW aumenta en 1 por cada segmento enviado y confirmado, tiene un crecimiento exponencial y esta fase termina cuando el tamaño de CW alcanza el umbral de arranque lento(SST), inicialmente SST = 64 Kbytes
+a) Fase de arranque lento (slow start)
+b) Fase de evitación de congestión (congestion avoidance) 
+c) Fase Constante
+a
+Indica a qué fase pertenecen las siguientes características, la CW se incrementa en 1 cada vez que se envía y se confirma una ventana completa, tiene un crecimiento lineal y esta fase termina cuando CW alcanza el tamaño de la ventana de recepción RW
+a) Fase de arranque lento (slow start)
+b) Fase de evitación de congestión (congestion avoidance) 
+c) Fase Constante
+b
+Indica a qué fase pertenecen las siguientes características, la CW se mantiene con el valor de RW (CW = RW)
+a) Fase de arranque lento (slow start)
+b) Fase de evitación de congestión (congestion avoidance) 
+c) Fase Constante
+c
+¿Cómo detectamos la congestión en la red?
+a) Recepción de 3 ACKs duplicados
+b) Expiración del temporizador de retransmisión (RTO)
+c) Con ambas
+c
+¿Cuándo es un nivel leve de congestión?
+a) Recepción de 3 ACKs duplicados
+b) Expiración del temporizador de retransmisión (RTO)
+c) Ambas
+a
+¿Cuándo es un nivel elevado de congestión?
+a) Recepción de 3 ACKs duplicados
+b) Expiración del temporizador de retransmisión (RTO)
+c) Ambas
+b
+Indica a qué nivel de control de congestión corresponde las siguientes características: se activa el método de recuperación rápida, se reduce el valor de CW, SST se reduce a la mitad del valor de CW y ejecutamos la fase de evitación de congestión
+a) Recepción de 3 ACKs duplicados (Nivel leve)
+b) Expiración del temporizador de retransmisión (RTO) (Nivel elevado)
+c) Expiración del temporizador de persistencia (Nivel elevado)
+a
+Indica a qué nivel de control de congestión corresponde las siguientes características: no llegan confirmaciones (tráfico en la red interrumpido), reducimos el valor de SST a la mitad de su CW, se inicializa CW a 1 y se ejecuta la fase de arranque lento
+a) Recepción de 3 ACKs duplicados (Nivel leve)
+b) Expiración del temporizador de retransmisión (RTO) (Nivel elevado)
+c) Expiración del temporizador de persistencia (Nivel elevado)
+b
+Los mecanismos que hemos estudiado para controlar la congestión, sirven para otros protocolos aparte de TCP?
+a) Si, sirven para otros además de TCP
+b) Sirven para TCP y UDP que son ambos protocolos de la capa de transporte
+c) Únicamente sirven para TCP
+c
+¿Qué es SST?
+a) Umbral de arranque lento
+b) Comienzo en el estado de transmisión
+c) Slow Start Thres
+a
+Indica en el control de la congestión cual es correcta en la fase de arranque
+a) CW <= SST
+b) CW >= SST
+c) CW = SST
+a
+Indica en el control de la congestión cual es correcta en la fase de evitación de la congestión
+a) SST <= CW < RW
+b) SST < CW < RW
+c) SST < CW <= RW
+b
+Indica en el control de la congestión cual es correcta en la fase de evitación de la congestión
+a) CW < SST < RW
+b) SST < CW < RW
+c) SST < RW < CW
+b
+Indica en el control de la congestión cual es correcta en la fase constante
+a) CW = RW
+b) SST < CW < RW
+c) CW <= SST
+a
+Cuando se recibe un segmento TCP con un número de secuencia que ya se ha recibido previamente...
+a) Se puede retrasar la confirmación del número de secuencia recibido.
+b) Se confirma inmediatamente el número de secuencia esperado.
+c) No es necesario confirmar nada
+b
+El estado TIME-WAIT del protocolo TCP sirve para...  
+a) Implementar el cierre ordenado de tres vías (3-way)
+b) Impedir una nueva conexión con los mismos parámetros
+c) Poder retransmitir los últimos datos enviados antes del cierre
+b
+Cuando se recibe un segmento TCP con un número de secuencia mayor al esperado...
+a) Se puede retrasar la confirmación del número de secuencia recibido.
+b) No es necesario confirmar nada.
+c) Se confirma inmediatamente el número de secuencia esperado.
+c

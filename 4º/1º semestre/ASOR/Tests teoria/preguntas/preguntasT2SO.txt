@@ -1,0 +1,360 @@
+Desde el punto de vista del usuario, qué son los sistemas de ficheros
+a) Colección de ficheros y directorios usados para guardar y organizar la información
+b) Conjunto de tablas y estructuras que permiten gestionar los ficheros y directorios
+c) Conjuntos de archivos que se almacenan en una base de datos gestionados por funciones
+a
+Desde el punto de vista del sistema operativo, qué son los sistemas de ficheros
+a) Colección de ficheros y directorios usados para guardar y organizar la información
+b) Conjunto de tablas y estructuras que permiten gestionar los ficheros y directorios
+c) Conjuntos de archivos que se almacenan en una base de datos gestionados por funciones
+b
+¿Desde qué punto de vista es la siguiente definición? -> Colección de ficheros y directorios usados para guardar y organizar la información
+a) Desde el punto de vista del usuario
+b) Desde el punto de vista del sistema operativo
+c) Desde el punto de vista de la red
+a
+¿Desde qué punto de vista es la siguiente definición? -> Conjunto de tablas y estructuras que permiten gestionar los ficheros y directorios
+a) Desde el punto de vista del usuario
+b) Desde el punto de vista del sistema operativo
+c) Desde el punto de vista de la red
+b
+¿Qué tipos de sistemas de ficheros diferentes existen?
+a) Basados en disco, en red y en memoria
+b) Basados en disco y memoria
+c) Basados en disco, en tablas, en red y en memoria
+a
+¿Qué tipo de sistema de fichero reside en soportes de almacenamiento físicos como discos, duros magnéticos, unidades de estado sólido...
+a) Basados en red (o distribuidos)
+b) Basados en memoria (o pseudo)
+c) Basados en disco
+c
+¿Qué tipo de sistema de fichero se utilizan para acceder a sistemas de ficheros remotos independientemente del tipo
+a) Basados en red (o distribuidos)
+b) Basados en memoria (o pseudo)
+c) Basados en disco
+a
+¿Qué tipo de sistema de fichero residen en memoria principal mientras el SO se está ejecutando
+a) Basados en red (o distribuidos)
+b) Basados en memoria (o pseudo)
+c) Basados en disco
+b
+¿En qué se basan los sistemas de ficheros NFS y SMB?
+a) Basados en red (o distribuidos)
+b) Basados en memoria (o pseudo)
+c) Basados en disco
+a
+¿Qué significa NFS?
+a) Node File System
+b) Network File System
+c) New File System
+b
+¿En qué se basan los sistemas de ficheros ext2-3-4, NTFS, FAT, ZFS?
+a) Basados en red (o distribuidos)
+b) Basados en memoria (o pseudo)
+c) Basados en disco
+c
+¿En qué se basan los sistemas de ficheros procfs, tmpfs?
+a) Basados en red (o distribuidos)
+b) Basados en memoria (o pseudo)
+c) Basados en disco
+b
+¿Qué sistema de ficheros es fiable y tiene un buen rendimiento pero tiene problemas para garantizar la consistencia de las estructuras de datos compartidas
+a) Basados en red (o distribuidos)
+b) Basados en memoria (o pseudo)
+c) Basados en disco
+a
+¿Qué sistema de ficheros no es persistente?
+a) Basados en red (o distribuidos)
+b) Basados en memoria (o pseudo)
+c) Basados en disco
+b
+¿Qué sistema de ficheros es mejor utilizar cuando necesitamos muy buen rendimiento y guardamos datos volátiles?
+a) Basados en red (o distribuidos)
+b) Basados en memoria (o pseudo)
+c) Basados en disco
+b
+¿La interfaz es distinta según el sistema de ficheros?
+a) Sí, existe una distinta por cada sistema de ficheros
+b) Sí, existen dos interfaces diferentes
+c) No, es la misma para todos los sistemas
+c
+¿Cuál es la afirmación correcta sobre los metadatos?
+a) Se escriben siempre en la bitácora inmediatamente, garantizando la consistencia del sistema de ficheros
+b) Se escriben siempre que hay una actualización, garantizando la consistencia del sistema de ficheros
+c) Se escriben en la memoria auxiliar siempre después de una actualización en el sistema
+a
+¿Qué afirmación NO es correcta respecto al Writeback y su modo de escritura de los datos?
+a) Los datos pueden escribirse después de que sus metadatos asociados hayan sido escritos en la bitácora y es el modo más rápido
+b) Pueden perderse datos y aparecer datos antiguos después de un fallo y recuperar el sistema de ficheros a partir de la bitácora
+c) Los datos se escriben en el sistema de ficheros antes de escribir los metadatos en la bitácora y es el modo por defecto en ext3
+c
+¿Qué afirmación SI es correcta respecto al Ordered y su modo de escritura de los datos?
+a) Los datos pueden escribirse después de que sus metadatos asociados hayan sido escritos en la bitácora y es el modo más rápido
+b) Los datos se escriben en el sistema de ficheros antes de escribir los metadatos en la bitácora y es el modo por defecto en ext3
+c) Ofrece mayor protección frente a fallos y es el modo más lento
+b
+¿Qué afirmación SI es correcta respecto al Journal y su modo de escritura de los datos?
+a) Los datos pueden escribirse después de que sus metadatos asociados hayan sido escritos en la bitácora y es el modo más rápido
+b) Los datos se escriben en el sistema de ficheros antes de escribir los metadatos en la bitácora y es el modo por defecto en ext3
+c) Ofrece mayor protección frente a fallos y es el modo más lento
+c
+¿Cómo se llama a la capa de abstracción que se situa por encima de todos los sistemas de ficheros distintos?
+a) Virtual File System
+b) Capa de Sistemas de Ficheros
+c) Fast File System
+a
+¿Cómo se llama a la capa de abstracción que se situa por encima de todos los sistemas de ficheros distintos?
+a) VFS
+b) VFAT
+c) SYNC
+a
+Indica cuál es correcta para el Virtual File System
+a) Establece un enlace bien definido entre el kernel del SO y los diferentes sistemas de ficheros
+b) Proporciona las diferentes llamadas para la gestión de ficheros, independientes del sistema de ficheros
+c) Ambas
+c
+Indica cuál es correcta para el Virtual File System
+a) Permite acceder a múltiples sistemas de ficheros distintos
+b) Permite acceder a un sistema de fichero
+c) Permite acceder simultáneamente a dos sistemas de ficheros únicamente
+a
+¿Cómo optimiza la entrada/salida la VFS (Virtual File System)?
+a) La cache de i-nodos y la cache entradas de directorio (dentry) de VFS
+b) La cache de buffers/páginas (sync)
+c) Ambas
+c
+El el journaling, ¿Cómo se llama al fichero especial que evita la corrupción de datos?
+a) XFS
+b) Bitácora
+c) FFS
+b
+La estructura de grupos de bloques del sistema de fichero está inspirado en...
+a) Bitácora
+b) VFS (Virtual File System)
+c) FFS (Fast File System)
+c
+¿A qué operaciones afecta el journal?
+a) Sólo lectura
+b) Sólo escritura
+c) Lectura y Escritura
+b
+¿Cuáles son las variantes de journaling?
+a) Writeback, Ordered, Journal
+b) Writeback, Readed, Journal
+c) Ninguna de las anteriores
+a
+¿Cuál es la variante de Journaling en la que primero se escriben los datos y luego los metadatos en la bitácora?
+a) Writeback
+b) Ordered
+c) Journal
+b
+¿Cuál es la variante de Journaling más lenta y que ofrece mayor protección?
+a) Writeback
+b) Ordered
+c) Journal
+c
+¿Cuál es la variante de Journaling que escribe tanto los datos como los metadatos en la bitácora?
+a) Writeback
+b) Ordered
+c) Journal
+c
+¿Cuál es la variante de Journaling por defecto en ext3?
+a) Writeback
+b) Ordered
+c) Journal
+b
+¿Cuál es la variante de Journaling más rápida?
+a) Writeback
+b) Ordered
+c) Journal
+a
+¿Qué afirmación NO es correcta respecto al Writeback y su modo de escritura de los datos?
+a) Los datos pueden escribirse después de que sus metadatos asociados hayan sido escritos en la bitácora y es el modo más rápido
+b) Pueden perderse datos y aparecer datos antiguos después de un fallo y recuperar el sistema de ficheros a partir de la bitácora
+c) Los datos se escriben en el sistema de ficheros antes de escribir los metadatos en la bitácora y es el modo por defecto en ext3
+c
+¿Qué afirmación SI es correcta respecto al Ordered y su modo de escritura de los datos?
+a) Los datos pueden escribirse después de que sus metadatos asociados hayan sido escritos en la bitácora y es el modo más rápido
+b) Los datos se escriben en el sistema de ficheros antes de escribir los metadatos en la bitácora y es el modo por defecto en ext3
+c) Ofrece mayor protección frente a fallos y es el modo más lento
+b
+¿Qué afirmación SI es correcta respecto al Journal y su modo de escritura de los datos?
+a) Los datos pueden escribirse después de que sus metadatos asociados hayan sido escritos en la bitácora y es el modo más rápido
+b) Los datos se escriben en el sistema de ficheros antes de escribir los metadatos en la bitácora y es el modo por defecto en ext3
+c) Ofrece mayor protección frente a fallos y es el modo más lento
+c
+Indica cuál es la correcta
+a) stat sigue enlaces simbólicos, mientras que lstat no
+b) stat sigue enlaces simbólicos, mientras que fstat no
+c) lstat obtiene el estado de un fichero mediante un descriptor (open())
+a
+Indica cuál es la correcta
+a) No se necesitan permisos sobre el fichero, pero sí para buscar en PATH
+b) stat sigue enlaces simbólicos, mientras que fstat no
+c) lstat obtiene el estado de un fichero mediante un descriptor (open())
+a
+¿Cúal de los siguientes métodos para obtener el estado de un fichero sigue enlaces simbólicos?
+a) int stat(const char *file_name, struct stat *buf);
+b) int lstat(const char *file_name, struct stat *buf);
+c) int fstat(int filedes, struct stat *buf);
+a
+¿Cúal de los siguientes métodos para obtener el estado de un fichero NO sigue enlaces simbólicos?
+a) int stat(const char *file_name, struct stat *buf);
+b) int lstat(const char *file_name, struct stat *buf);
+c) int fstat(int filedes, struct stat *buf);
+b
+¿Cúal de los siguientes métodos para obtener el estado de un fichero obtiene el estado de un fichero mediante un descriptor (open())?
+a) int stat(const char *file_name, struct stat *buf);
+b) int lstat(const char *file_name, struct stat *buf);
+c) int fstat(int filedes, struct stat *buf);
+c
+Indica cuál es la correcta
+a) int stat(int filedes, struct stat *buf);
+b) int lstat(int filedes, struct stat *buf);
+c) int fstat(int filedes, struct stat *buf);
+c
+¿Qué significa la 's' en los permisos de un fichero?
+a) Que se trata de un enlace simbólico
+b) Que el setuid está activado
+c) Que es un socket
+b
+¿Para qué 3 entidades se establecen los permisos?
+a) Propietario del fichero, grupo propietario, otros 
+b) Usuario, propietario del fichero, grupo propietario
+c) Usuario, grupo y otros
+a
+¿Qué instrucción utilizamos para cambiar los permisos?
+a) chmod
+b) umask
+c) stat
+a
+¿Indica qué tiene que ser cierto para realizar la modificación de los permisos de un fichero?
+a) El UID efectivo del proceso debe ser 0 (root) o coincidir con el del propietario
+b) El UID efectivo del proceso debe ser 1 (root) o coincidir con el del propietario
+c) El UID efectivo del proceso debe coincidir con el del propietario
+a
+¿De que tipo son los permisos de los ficheros?
+a) Lectura, escritura y ejecución
+b) Lectura, escritura y modificación
+c) Lectura, escritura y borrado
+a
+¿En qué orden están los permisos de los ficheros?
+a) rxw
+b) rwx
+c) wxr
+b
+¿Qué función para la creación y apertura de ficheros es correcta?
+a) void open(const char *path, int flags);
+b) int open(const char *path, int flags);
+c) char open(const char *path, int flags);
+b
+¿Qué devuelve la función open?
+a) Devuelve un entero con el tamaño del fichero
+b) Devuelve un descriptor de fichero con el puntero de acceso posicionado al principio del fichero, o -1 si ocurre un error
+c) Devuelve un número -1 si es error y cualquier otro si se ha abierto correctamente
+b
+Indica cuál es correcta
+a) Los permisos indicados en umask son borrados del argumento mode con mode & umask.
+b) Los permisos indicados en umask son borrados del argumento mode con mode & ~umask.
+c) Ninguna de las anteriores
+b
+¿Cuál es el valor por defecto de umask?
+a) 022
+b) S_IWGRP | S_IWOTH
+c) Ambas
+c
+¿Cuál es el valor por defecto de umask?
+a) 022
+b) 0777
+c) 027
+a
+¿Qué funciones del sistema se usan para leer, escribir ficheros?
+a) read, write
+b) fread, fwrite
+c) ambas
+a
+¿Qué funciones de librería se usan para leer, escribir ficheros?
+a) read, write
+b) fread, fwrite
+c) ambas
+b
+¿Qué función utilizamos para crear un enlace rígido (hard link)?
+a) int unlink(const char *name);
+b) int symlink(const char *exist, const char *new);
+c) int link (const char *exist, const char *new);
+c
+¿Qué función utilizamos para crear un enlace enlace simbólico (soft link o symlink)?
+a) int unlink(const char *name);
+b) int symlink(const char *exist, const char *new);
+c) int link (const char *exist, const char *new);
+b
+¿Se puede crear un enlace duro entre ficheros o directorios en distintos sistemas de ficheros, o a pesar de que el fichero original no exista?
+a) No, solo se pueden realizar sobre ficheros en el mismo sistema de ficheros
+b) Sí pero solo directorios, con ficheros no se puede
+c) Sí pero si ya existe el fichero
+a
+¿Al crear un enlace duro o simbólico sobre el nuevo fichero, será sobrescrito?
+a) Sí pero solo si el enlace es rígido
+b) Sí pero solo si el enlace es simbólico
+c) No será sobrescrito
+c
+¿Cón qué función podemos leer el contenido de la ruta de un enlace simbólico?
+a) int read(const char *path, char *b, size_t tb);
+b) int readlink(const char *path, char *b, size_t tb);
+c) int readlk(const char *path, char *b, size_t tb);
+b
+¿Con qué función puede determinarse el tamaño del enlace?
+a) lstat(2)
+b) fstat(2)
+c) stat(2)
+a
+¿Qué función se utiliza para los cerrojos, bloquear regiones de un fichero?
+a) int fcntl(int fd, int cmd);
+b) int fcntl(int fd, int cmd, long arg);
+c) int fcntl(int fd, int cmd, struct flock *lock);
+c
+¿Qué tipo de cerrojo es de lectura o compartido?
+a) F_RDLCK
+b) F_UNLCK
+c) F_WRLCK
+a
+¿Qué tipo de cerrojo es de escritura o exclusivo?
+a) F_RDLCK
+b) F_UNLCK
+c) F_WRLCK
+a
+¿Qué tipos de cerrojos pueden establecerse varios sobre una misma región?
+a) F_RDLCK
+b) F_UNLCK
+c) F_WRLCK
+a
+¿Qué tipo de cerrojo solo puede haber uno en una misma región?
+a) F_RDLCK
+b) F_UNLCK
+c) F_WRLCK
+c
+¿Qué función utilizamos para leer las entradas de un directorio?
+a) DIR *opendir(const char *name);
+b) struct dirent *readdir(DIR *dir);
+c) int mkdir(const char *path, mode_t mode);
+b
+¿Cómo se podrían fijar los permisos rw- r-- r-x de archivo.txt?
+a) $chmod 645 archivo.txt
+b) $chmod u+rw-x,g+r-wx,o+rx-w archivo.txt
+c) Ambas formas
+c
+¿Cuál sería la orden para fijar la máscara y que los nuevos ficheros no tengan permisos de escritura para el grupo y lectura y ejecución para otros?
+a) $umask 027
+b) $umask 025
+c) $umask 024
+b
+¿Qué tipo de enlaces se pueden crear para directorios?
+a) Enlaces rígidos y simbólicos si estamos en el mismo sistema de ficheros
+b) Enlaces rígidos y simbólicos
+c) Únicamente enlaces simbólicos
+c
+¿Cuál es la correcta si queremos redirigir la salida estándar y la salida estándar de error al fichero archivo.txt?
+a) ls > archivo.txt 2>&1
+b) ls 2&1 > archivo.txt
+c) Las dos están bien ya que no importa el orden de las redirecciones
+a

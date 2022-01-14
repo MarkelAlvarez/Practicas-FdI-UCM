@@ -1,0 +1,525 @@
+Dentro de las limitaciones de IPv4, ¿Cuántos bits tienen sus direcciones?
+a) 8
+b) 16
+c) 32
+c
+Además del uso de CIDR, ¿Cuál de las siguientes no es una solución al direccionamiento de IPv4?
+a) Uso de intranets con direcciones privadas (NAT)
+b) Uso de direcciones Unicast, Multicast y Anycast
+c) Uso de direcciones dinámicas (DHCP)
+b
+¿IPv4 tiene seguridad?
+a) Si, gracias al uso de DHCP
+b) Si, con la extensión IPSec
+c) No, no tiene seguridad
+b
+¿Cuántos bits forman el espacio de dirección en IPv6?
+a) 64
+b) 128
+c) 256
+b
+¿Cuál de las siguientes carácteristicas NO pertenece a IPv6?
+a) Longitud de direcciones de 128 bits
+b) Clases A, B y C o CIDR
+c) Unicast, Multicast, Anycast
+b
+¿Cuál de las siguientes carácteristicas NO pertenece a IPv6?
+a) Longitud de direcciones de 32 bits
+b) Direcciones sin clase
+c) Unicast, Multicast, Anycast
+a
+¿Cuál de las siguientes carácteristicas NO pertenece a IPv6?
+a) Longitud de direcciones de 128 bits
+b) Unicast, Multicast, Anycast
+c) Unicast, Multicast, Broadcast
+c
+¿Cuál de las siguientes carácteristicas SI pertenece a IPv6?
+a) Formato de cabecera simple. Longitud fija
+b) Formato de cabecera complejo. Longitud variable
+c) Formato de cabecera variable. Longitud estática
+a
+¿Cuál de las siguientes carácteristicas NO pertenece a IPv6?
+a) Unicast
+b) Multicast
+c) Broadcast
+c
+¿Cuál de las siguientes carácteristicas NO pertenece a IPv6?
+a) Seguridad
+b) Soporte tráfico en tiempo real
+c) Todas pertenecen a IPv6
+c
+¿Cuál de las siguientes carácteristicas NO pertenece a IPv6?
+a) Calidad de servicio
+b) Soporte tráfico en tiempo real
+c) Todas pertenecen a IPv6
+c
+¿IPv4 tiene direcciones de tipo anycast?
+a) No, es una característica de IPv6
+b) Si, viene de serie en IPv4
+c) Si, está implementado como un unicast compartido
+c
+¿IPv6 tiene direcciones de tipo broadcast?
+a) No, es una característica básica de IPv4
+b) Si, viene de serie en IPv6
+c) Si, está implementado como dirección multicast de un link local "all nodes"
+c
+¿Cuál de las siguientes carácteristicas NO tiene IPv4?
+a) Calidad de servicio, aunque no soportado totalmente
+b) Soporte de tráfico en tiempo real
+c) Seguridad, pero solamente a través de la extensión IPsec
+b
+¿Cómo se llama al tipo de dirección que identifica a un único interfaz en la red y un paquete dirigido a una dirección de este tipo se entregará únicamente al interfaz identificado con dicha dirección IP?
+a) Unicast
+b) Multicast
+c) Anycast
+a
+¿Cómo se llama al tipo de dirección que identifica a un grupo de interfaces, además un paquete dirigido a una dirección de este tipo se entrega a todos los interfaces identificados con esa dirección y no existe dirección de broadcast?
+a) Unicast
+b) Multicast
+c) Anycast
+b
+¿Cómo se llama al tipo de dirección que identifica a un grupo de interfaces, además un paquete dirigido a una dirección de este tipo se entrega a uno solo de los interfaces identificados con esa dirección, normalmente al más cercano, en función de la métrica usada por el protocolo de encaminamiento?
+a) Unicast
+b) Multicast
+c) Anycast
+c
+¿Cuál es la definición para Unicast?
+a) Dirección que identifica a un grupo de interfaces, además un paquete dirigido a una dirección de este tipo se entrega a todos los interfaces identificados con esa dirección y no existe dirección de broadcast
+b) Dirección que identifica a un único interfaz en la red y un paquete dirigido a una dirección de este tipo se entregará únicamente al interfaz identificado con dicha dirección IP
+c) Dirección que identifica a un grupo de interfaces, además un paquete dirigido a una dirección de este tipo se entrega a uno solo de los interfaces identificados con esa dirección, normalmente al más cercano, en función de la métrica usada por el protocolo de encaminamiento
+b
+¿Cuál es la definición para Multicast?
+a) Dirección que identifica a un único interfaz en la red y un paquete dirigido a una dirección de este tipo se entregará únicamente al interfaz identificado con dicha dirección IP
+b) Dirección que identifica a un grupo de interfaces, además un paquete dirigido a una dirección de este tipo se entrega a uno solo de los interfaces identificados con esa dirección, normalmente al más cercano, en función de la métrica usada por el protocolo de encaminamiento
+c) Dirección que identifica a un grupo de interfaces, además un paquete dirigido a una dirección de este tipo se entrega a todos los interfaces identificados con esa dirección y no existe dirección de broadcast
+c
+¿Cuál es la definición para Anycast?
+a) Dirección que identifica a un único interfaz en la red y un paquete dirigido a una dirección de este tipo se entregará únicamente al interfaz identificado con dicha dirección IP
+b) Dirección que identifica a un grupo de interfaces, además un paquete dirigido a una dirección de este tipo se entrega a todos los interfaces identificados con esa dirección y no existe dirección de broadcast
+c) Dirección que identifica a un grupo de interfaces, además un paquete dirigido a una dirección de este tipo se entrega a uno solo de los interfaces identificados con esa dirección, normalmente al más cercano, en función de la métrica usada por el protocolo de encaminamiento
+c
+¿Cuál es la definición para Unicast?
+a) Dirección que identifica a un grupo de interfaces, además un paquete dirigido a una dirección de este tipo se entrega a uno solo de los interfaces identificados con esa dirección, normalmente al más cercano, en función de la métrica usada por el protocolo de encaminamiento
+b) Dirección que identifica a un grupo de interfaces, además un paquete dirigido a una dirección de este tipo se entrega a todos los interfaces identificados con esa dirección y no existe dirección de broadcast
+c) Dirección que identifica a un único interfaz en la red y un paquete dirigido a una dirección de este tipo se entregará únicamente al interfaz identificado con dicha dirección IP
+c
+¿Cuál es la definición para Multicast?
+c) Dirección que identifica a un grupo de interfaces, además un paquete dirigido a una dirección de este tipo se entrega a todos los interfaces identificados con esa dirección y no existe dirección de broadcast
+a) Dirección que identifica a un único interfaz en la red y un paquete dirigido a una dirección de este tipo se entregará únicamente al interfaz identificado con dicha dirección IP
+b) Dirección que identifica a un grupo de interfaces, además un paquete dirigido a una dirección de este tipo se entrega a uno solo de los interfaces identificados con esa dirección, normalmente al más cercano, en función de la métrica usada por el protocolo de encaminamiento
+a
+¿Cuál es la definición para Anycast?
+a) Dirección que identifica a un único interfaz en la red y un paquete dirigido a una dirección de este tipo se entregará únicamente al interfaz identificado con dicha dirección IP
+b) Dirección que identifica a un grupo de interfaces, además un paquete dirigido a una dirección de este tipo se entrega a todos los interfaces identificados con esa dirección y no existe dirección de broadcast
+c) Dirección que identifica a un grupo de interfaces, además un paquete dirigido a una dirección de este tipo se entrega a uno solo de los interfaces identificados con esa dirección, normalmente al más cercano, en función de la métrica usada por el protocolo de encaminamiento
+c
+¿Cuántos grupos tiene la dirección IPv6?
+a) 8
+b) 12
+c) 16
+a
+¿Cuántos bits tiene cada grupo de la dirección IPv6?
+a) 8 bits
+b) 16 bits
+c) 32 bits
+b
+¿Qué es el Ámbito (scope)?
+a) Longitud fija de un área reservada en la red del ordenador, donde el programa almacena valores fijos
+b) Espacio en el sistema de almacenaje (memoria principal de un ordenador) y un nombre simbólico (un identificador) que está asociado a dicho espacio
+c) Determina la región de la topología de la red de validez de la dirección
+c
+¿Cómo se llama al Ámbito válido dentro del enlace en el que está conectado la interfaz de red (por ejemplo, una LAN)?
+a) Enlace local (link-local)
+b) Sitio local (site-local)
+c) Global
+a
+¿Cómo se llama al Ámbito válido dentro de un sitio, que puede estar formado por una o varias redes interconectadas mediante encaminadores (p.e. campus universitario)?
+a) Enlace local (link-local)
+b) Sitio local (site-local)
+c) Global
+b
+¿Cómo se llama al Ámbito válido en todo internet?
+a) Enlace local (link-local)
+b) Sitio local (site-local)
+c) Global
+c
+¿Cómo se llama a la región conexa de la red de un ámbito determinado?
+a) Área
+b) Zona
+c) Scope
+b
+¿Qué nombre recibe la siguiente dirección? -> ::/8
+a) Reserved Address
+b) Unique Local Address (ULA)
+c) Link-Local Unicast Address
+a
+¿Qué nombre recibe la siguiente dirección? -> ::/8
+a) Reserved Address
+b) Unique Local Address (ULA)
+c) Link-Local Unicast Address
+a
+¿Qué nombre recibe la siguiente dirección? -> 2000::/3
+a) Link-Local Unicast Address
+b) Unique Local Address (ULA)
+c) Global Unicast Address
+c
+¿Qué nombre recibe la siguiente dirección? -> FE80::/10
+a) Link-Local Unicast Address
+b) Site-Local Unicast Address 
+c) Unique Local Address (ULA)
+a
+¿Qué nombre recibe la siguiente dirección? -> FEC0::/10
+a) Link-Local Unicast Address
+b) Site-Local Unicast Address 
+c) Unique Local Address (ULA)
+b
+¿Qué nombre recibe la siguiente dirección? -> FC00::/7
+a) Link-Local Unicast Address
+b) Site-Local Unicast Address 
+c) Unique Local Address (ULA)
+c
+¿Qué nombre recibe la siguiente dirección? -> FF00::/8
+a) Reserved Address
+b) Multicast Address 
+c) Global Unicast Address
+b
+¿Cuál es la dirección correcta para el siguiente tipo de dirección? -> Reserved Address
+a) 2000::/3
+b) FEC0::/10
+c) ::/8
+c
+¿Cuál es la dirección correcta para el siguiente tipo de dirección? -> Global Unicast Address
+a) 2000::/3
+b) FEC0::/10
+c) FC00::/7
+a
+¿Cuál es la dirección correcta para el siguiente tipo de dirección? -> Link-Local Unicast Address
+a) FEC0::/10
+b) FE80::/10
+c) FC00::/7
+b
+¿Cuál es la dirección correcta para el siguiente tipo de dirección? -> Site-Local Unicast Address
+a) FE80::/10
+b) FC00::/7
+c) FEC0::/10
+c
+¿Cuál es la dirección correcta para el siguiente tipo de dirección? -> Unique Local Address (ULA)
+a) FEC0::/10
+b) FE80::/10
+c) FC00::/7
+c
+¿Cuál es la dirección correcta para el siguiente tipo de dirección? -> Multicast Address
+a) FF00::/8
+b) FE80::/10
+c) FC00::/7
+a
+¿IPv4 define un rango de direcciones para enlace local?
+a) Si, en 169.254/16 (RFC 3927)
+b) Si, con la extensión IPlocal
+c) No, IPv4 no tiene direcciones de enlace local
+a
+¿Cuál es la afirmación que NO es correcta respecto a los enlaces locales en IPv6?
+a) Una zona de enlace local consiste en un único enlace y todos los interfaces conectados a ese enlace
+b) Siempre se encaminan fuera de la zona de ámbito del enlace y es un espacio de direcciones plano
+c) Su principal uso es la autoconfiguración y el descubrimiento de vecinos
+b
+¿Cuál es la afirmación que NO es correcta respecto a Unique Local Address (ULA) en IPv6?
+a) Unique Local Addresses, definidas en el RFC 4193 para sustituir a las antiguas direcciones de sitio local (fec0::/10) definidas en el RFC 3879
+b) Direcciones multicast privadas que pueden usarse en intranets jerárquicas, pero son encaminables en Internet (aunque su ámbito es global)
+c) Permiten la auto-configuración
+b
+¿Cuál es la afirmación que NO es correcta respecto a direcciones Unicast Globales en IPv6?
+a) Todas las Direcciones Unicast Globales tienen 001 en sus tres bits de mayor peso, por lo que el prefijo es FE80::/10
+b) Permiten la auto-configuración
+c) Direcciones unicast globales, definidas en el RFC 3587
+a
+En una dirección IPv6 Multicast, ¿Qué significa el flag 0000?
+a) Permanent
+b) Transient
+c) Fleeting
+a
+En una dirección IPv6 Multicast, ¿Qué significa el flag 0001?
+a) Permanent
+b) Transient
+c) Fleeting
+b
+En una dirección IPv6 Multicast, ¿Qué significa el scope 0000?
+a) Reserved
+b) Interface local
+c) Link local
+a
+En una dirección IPv6 Multicast, ¿Qué significa el scope 0001?
+a) Site local
+b) Interface local
+c) Link local
+b
+En una dirección IPv6 Multicast, ¿Qué significa el scope 0010?
+a) Site local
+b) Link local
+c) Organizational local
+b
+En una dirección IPv6 Multicast, ¿Qué significa el scope 0101?
+a) Site local
+b) Link local
+c) Organizational local
+a
+En una dirección IPv6 Multicast, ¿Qué significa el scope 1000?
+a) Site local
+b) Link local
+c) Organizational local
+c
+En una dirección IPv6 Multicast, ¿Qué significa el scope 1110?
+a) Global
+b) Link local
+c) Reserved
+a
+En una dirección IPv6 Multicast, ¿Qué significa el scope 1111?
+a) Global
+b) Link local
+c) Reserved
+c
+En una dirección IPv6 Multicast, ¿Qué valor tiene el scope Reserved?
+a) 0000
+b) 1111
+c) Ambas opciones son válidas
+c
+En una dirección IPv6 Multicast, ¿Qué valor tiene el scope Interface local?
+a) 0001
+b) 0010
+c) 0101
+a
+En una dirección IPv6 Multicast, ¿Qué valor tiene el scope Link local?
+a) 0001
+b) 0010
+c) 0101
+b
+En una dirección IPv6 Multicast, ¿Qué valor tiene el scope Site local?
+a) 0001
+b) 0010
+c) 0101
+c
+En una dirección IPv6 Multicast, ¿Qué valor tiene el scope Organizational local?
+a) 1000
+b) 1110
+c) 0101
+a
+En una dirección IPv6 Multicast, ¿Qué valor tiene el scope Global?
+a) 1000
+b) 1110
+c) 0101
+b
+En una dirección para los computadores (IPv6 Multicast), ¿Qué ámbito tiene la siguiente dirección? -> FF01::1
+a) Site local
+b) Interface local
+c) Link local
+b
+En una dirección para los computadores (IPv6 Multicast), ¿Qué ámbito tiene la siguiente dirección? -> FF02::1
+a) Site local
+b) Interface local
+c) Link local
+c
+En una dirección para los computadores (IPv6 Multicast), ¿Qué dirección es de ámbito Interface local?
+a) FF00::1
+b) FF01::1
+c) FF02::1
+b
+En una dirección para los computadores (IPv6 Multicast), ¿Qué dirección es de ámbito Link local?
+a) FF00::1
+b) FF01::1
+c) FF02::1
+c
+En una dirección para los encaminadores (IPv6 Multicast), ¿Qué ámbito tiene la siguiente dirección? -> FF05::2
+a) Site local
+b) Interface local
+c) Link local
+a
+En una dirección para los encaminadores (IPv6 Multicast), ¿Qué ámbito tiene la siguiente dirección? -> FF02::9
+a) Site local
+b) Interface local
+c) Link local
+c
+En una dirección para los encaminadores (IPv6 Multicast), ¿Qué dirección es de ámbito Site local?
+a) FF02::9
+b) FF02::1
+c) FF05::2
+c
+En una dirección para los encaminadores (IPv6 Multicast), ¿Qué dirección es de ámbito Link local?
+a) FF02::9
+b) FF02::1
+c) FF05::2
+a
+¿En qué protocolo se usan las direcciones multicast de nodo solicitado?
+a) En el multiprotocolo de conmutaciòn de etiquetas (MPLS)
+b) En el protocolo de descubrimiento de vecinos
+c) En el protocolo de intercambio ordenado del paquete (SPX)
+b
+¿Qué rangos de direcciones tienen las direcciones multicast de nodo solicitado?
+a) FF01:0:0:0:0:1:FF00:0000 - FF01:0:0:0:0:1:FFFF:FFFF
+b) FF02:0:0:0:0:1:FF00:0000 - FF02:0:0:0:0:1:FFFF:FFFF
+c) FF03:0:0:0:0:1:FF00:0000 - FF03:0:0:0:0:1:FFFF:FFFF
+b
+¿Qué indica la siguiente dirección? -> 0:0:0:0:0:0:0:0 (::)
+a) Indica que el interfaz no tiene ninguna dirección asignada
+b) Indica que el interfaz es una dirección broadcast
+c) Es la dirección que han dejado sin uso en honor al diseñador de IPv6, Steve Deering
+a
+¿Qué indica la siguiente dirección? -> 0:0:0:0:0:0:0:1 (::1)
+a) Dirección de loopback
+b) Dirección rango local unicast
+c) Dirección reservada para ejemplos y documentación
+a
+¿A qué dirección es similar en IPv4 la dirección 0:0:0:0:0:0:0:1 en IPv6?
+a) 0:0:0:1
+b) 127.0.0.1
+c) 192.168.0.0
+b
+Dentro del formato del datagrama IPv6, ¿Cuál es el formato que distingue diferentes requisitos de entrega del datagrama, es similar al campo DS (antes ToS) de IPv4?
+a) Hop Limit
+b) Flow Label
+c) Traffic Class
+c
+Dentro del formato del datagrama IPv6, ¿Cuál es el formato que etiqueta el paquete como perteneciente a un flujo para mejorar el procesamiento realizado por los encaminadores de la red?
+a) Hop Limit
+b) Flow Label
+c) Traffic Class
+b
+Dentro del formato del datagrama IPv6, ¿Cuál es el formato que es similar al campo TTL de IPv4?
+a) Hop Limit
+b) Flow Label
+c) Traffic Class
+a
+Dentro del formato del datagrama IPv6, ¿Cuál no pertenece al formato Traffic Class?
+a) DSCP (Differentiated Services Code Point, 6 bits): Clasificación del tráfico en grupos con distintos requisitos de calidad de servicio
+b) ECN (Explicit Congestion Notification, 2 bits): Permite detectar situaciones de congestión en la red sin descartar paquetes
+c) Ambas opciones son correctas
+c
+Dentro del formato del datagrama IPv6, ¿Qué código tiene el formato de Next Header para la fragmentación?
+a) 43
+b) 44
+c) 50
+b
+Dentro del formato del datagrama IPv6, ¿Qué código tiene el formato de Next Header para la Hop-by-hop?
+a) 43
+b) 0
+c) 50
+b
+Dentro del formato del datagrama IPv6, ¿Qué código tiene el formato de Next Header para la Source routing?
+a) 43
+b) 44
+c) 50
+a
+Dentro del formato del datagrama IPv6, ¿Qué código tiene el formato de Next Header para la Encrypted payload?
+a) 43
+b) 44
+c) 50
+c
+Dentro del formato del datagrama IPv6, ¿Qué código tiene el formato de Next Header para la Authentication?
+a) 44
+b) 50
+c) 51
+c
+Dentro del formato del datagrama IPv6, ¿Qué código tiene el formato de Next Header para Null (no next header)?
+a) 51
+b) 59
+c) 60
+b
+Dentro del formato del datagrama IPv6, ¿Qué código tiene el formato de Next Header para Destination?
+a) 51
+b) 59
+c) 60
+c
+Dentro del formato del datagrama IPv6, ¿Qué significa la "M" dentro del formato de la cabecera de fragmentación?
+a) Indica si hay más fragmentos o no
+b) Indica cual es la media de fragmentos que tiene el datagrama
+c) Indica el máximo número de fragmentos que puede tener
+a
+¿Cuál es la MTU mínima en IPv4?
+a) 60 bytes
+b) 64 bytes
+c) 68 bytes
+c
+¿Cuál es el tamaño de paquete mínimo que debe recibir un nodo?
+a) 576 bytes
+b) 724 bytes
+c) 988 bytes
+a
+¿De qué otro protocolo auxiliar NO asume el papel ICMPv6?
+a) ICMPv4
+b) ARP y IGMP
+c) L2F y L2TP
+c
+Los mensajes de error en ICMPv6, ¿Qué tipos usan?
+a) Del 0 al 63
+b) Del 0 al 127
+c) Del 128 al 255
+b
+Los mensajes de información en ICMPv6, ¿Qué tipos usan?
+a) Del 0 al 63
+b) Del 0 al 127
+c) Del 128 al 255
+c
+Los mensajes de información en ICMPv6, ¿Cuál es el tipo para Echo request?
+a) 127
+b) 128
+c) 129
+b
+Los mensajes de información en ICMPv6, ¿Cuál es el tipo para Echo reply?
+a) 127
+b) 128
+c) 129
+c
+¿Qué funciones tiene el descubrimiento de vecinos en ICMPv6?
+a) Resolución de direcciones (ARP) y detección de direcciones duplicadas
+b) Detección de vecino inalcanzable y anuncio de cambios en la dirección de enlace 
+c) Mensajes ICMPv6 Neighbor Proclamation (135) y Neighbor Release (136)
+c
+¿Cómo se llama el mensaje que sirve para averiguar la MAC asociada a una dir. IP usando como destino la dirección multicast de nodo solicitado, para determinar si un nodovecino sigue siendo alcanzable o para detectar si la dir. IP está duplicada?
+a) Neighbour Solicitation
+b) Neighbour Announcement
+c) Neighbour Advertisement
+a
+¿Cómo se llama el mensaje que sirve para responder a un mensaje de solicitud de vecino usando la dir. unicast del destinatario como vecino y para anunciar un cambio en la dirección física de un interfaz, con la dirección multicast FF02::1?
+a) Neighbour Solicitation
+b) Neighbour Announcement
+c) Neighbour Advertisement
+c
+¿Cómo se llama el mensaje que sirve para responder a un mensaje de solicitud de vecino usando la dir. unicast del destinatario como vecino y para anunciar un cambio en la dirección física de un interfaz, con la dirección multicast FF02::1?
+a) Neighbour Solicitation
+b) Neighbour Announcement
+c) Ninguna de las anteriores
+c
+¿Cómo se llama el mensaje que se genera cuando un interfaz se activa para detectar los nodos y realizar la autoconfiguración del interfaz, con la dirección multicast ff02::2 como destino?
+a) Router Solicitation
+b) Router Announcement
+c) Router Advertisement
+a
+¿Cómo se llama el mensaje que se genera cuando un interfaz se activa para detectar los nodos y realizar la autoconfiguración del interfaz, con la dirección multicast ff02::2 como destino?
+a) Router Advertisement
+b) Router Announcement
+c) Ninguna de las anteriores
+c
+¿Cómo se llama el mensaje que lo envían los nodos para anunciar su presencia en la red periódicamente con la dirección multicast ff02::1 como destino o como respuesta a un mensaje de solicitud de encaminador de un host?
+a) Router Solicitation
+b) Router Announcement
+c) Router Advertisement
+c
+¿Qué NO incluye la autoconfiguración en ICMPv6?
+a) El valor del MTU necesario para cada datagrama enviado
+b) El identificador de interfaz, generado según modified-EUI64
+c) El prefijo anunciado por el encaminador
+a
+¿Para qué se usa la dirección de red IPv6 ff02::1:ff61:db90?
+a) Para resolver la dirección física asociada a una de las IP de la máquina.
+b) Para comunicarse con las máquinas del sitio local.
+c) Para comunicarse con las máquinas del enlace.
+a
+¿Cómo se realiza la resolución de direcciones en IPv6?
+a) Mediante el uso del protocolo ARPv6.
+b) A partir del identificador extendido de 64 bits (EUI-64).
+c) Mediante el uso del protocolo ICMPv6.
+c
+Respecto a las opciones en el datagrama de IPv6, ¿cuál de las siguientes afirmaciones es cierta?
+a) Las opciones se usan solo cuando se realiza la fragmentación en origen.
+b) Las opciones se codifican como una cabecera adicional.
+c) No soporta opciones para acelerar el procesamiento de los routers.
+b

@@ -1,0 +1,435 @@
+¿Qué nombre tiene el componente del núcleo que determina el orden de ejecución de los procesos en función de la clase de planificación y de la prioridad de los procesos?
+a) Directorio
+b) Planificador
+c) Señal
+b
+¿Qué tipo de política de planificación es la siguiente? -> Política estándar de tiempo compartido con prioridad 0, que considera el valor de nice (entre -20 y 19, 0 por defecto) para repartir la CPU
+a) SCHED_OTHER
+b) SCHED_FIFO
+c) SCHED_RR
+a
+¿Qué tipo de política de planificación es la siguiente? -> Política de tiempo real FIFO con prioridades entre 1 y 99
+a) SCHED_OTHER
+b) SCHED_FIFO
+c) SCHED_RR
+b
+¿Qué tipo de política de planificación es la siguiente? -> Política de tiempo real FIFO con prioridades entre 1 y 99, pero los procesos con igual prioridad se ejecutan por turnos (round-robin) durante un cuanto de tiempo máximo
+a) SCHED_OTHER
+b) SCHED_FIFO
+c) SCHED_RR
+c
+¿Qué valor en el PID hace referencia al proceso actual?
+a) -1
+b) 0
+c) 1
+b
+El comando chrt nos ofrece acceso a varias funcionalidades del sistema, ¿Cúal de ellas nos permite establecer la política de planificación y/o prioridad?
+a) int sched_setscheduler(pid_t pid, int policy, const struct sched_param *p)
+b) int sched_setparam(pid_t pid, const struct sched_param *p)
+c) int setpriority(int which, int who, int prio)
+a
+El comando chrt nos ofrece acceso a varias funcionalidades del sistema, ¿Cúal de ellas nos permite fijar una nueva prioridad, pero no cambiar la política?
+a) int sched_setscheduler(pid_t pid, int policy, const struct sched_param *p)
+b) int sched_setparam(pid_t pid, const struct sched_param *p)
+c) int setpriority(int which, int who, int prio)
+b
+El comando chrt nos ofrece acceso a varias funcionalidades del sistema, ¿Cúal de ellas nos permite fijar la prioridad (nice) de un proceso?
+a) int sched_setscheduler(pid_t pid, int policy, const struct sched_param *p)
+b) int sched_setparam(pid_t pid, const struct sched_param *p)
+c) int setpriority(int which, int who, int prio)
+c
+El comando chrt nos ofrece acceso a varias funcionalidades del sistema, ¿Cúal de ellas nos permite consultar tanto la política como la prioridad?
+a) int sched_getscheduler(pid_t pid)
+b) int sched_getparam(pid_t pid, struct sched_param *p)
+c) int getpriority(int which, int who)
+a
+El comando chrt nos ofrece acceso a varias funcionalidades del sistema, ¿Cúal de ellas nos permite consultar los parámetros y la prioridad?
+a) int sched_getscheduler(pid_t pid)
+b) int sched_getparam(pid_t pid, struct sched_param *p)
+c) int getpriority(int which, int who)
+b
+El comando chrt nos ofrece acceso a varias funcionalidades del sistema, ¿Cúal de ellas nos permite consultar la prioridad (nice) de un proceso?
+a) int sched_getscheduler(pid_t pid)
+b) int sched_getparam(pid_t pid, struct sched_param *p)
+c) int getpriority(int which, int who)
+c
+En la función int setpriority(int which, int who, int prio), que descripción corresponde con el parámetro which
+a) es un PID, un PGID o un UID, respectivamente, 0 indica el proceso actual, el grupo de procesos del proceso actual o el UID real del proceso actual, respectivamente
+b) es el nuevo valor de nice entre -20 y 19. Valores menores representan una mayor porción de CPU
+c) puede ser PRIO_PROCESS, PRIO_PGRP o PRIO_USER
+c
+En la función int setpriority(int which, int who, int prio), que descripción corresponde con el parámetro who
+a) es un PID, un PGID o un UID, respectivamente, 0 indica el proceso actual, el grupo de procesos del proceso actual o el UID real del proceso actual, respectivamente
+b) es el nuevo valor de nice entre -20 y 19. Valores menores representan una mayor porción de CPU
+c) puede ser PRIO_PROCESS, PRIO_PGRP o PRIO_USER
+a
+En la función int setpriority(int which, int who, int prio), que descripción corresponde con el parámetro prio
+a) es un PID, un PGID o un UID, respectivamente, 0 indica el proceso actual, el grupo de procesos del proceso actual o el UID real del proceso actual, respectivamente
+b) es el nuevo valor de nice entre -20 y 19. Valores menores representan una mayor porción de CPU
+c) puede ser PRIO_PROCESS, PRIO_PGRP o PRIO_USER
+b
+¿Hereda los atributos de planificación la llamada fork()?
+a) Si, si los heredan
+b) No, no los heredan
+c) No, los atributos de planificación son independientes de las llamadas fork()
+a
+¿Qué comando permite accedo a la funcionalidad de la prioridad?
+a) nice
+b) renice
+c) ambas opciones son válidas
+c
+¿Qué es el atributo PID?
+a) número de prioridad de un proceso 
+b) identificador único de un proceso
+c) identificador del grupo de procesos al que pertenecen
+b
+¿Qué es el atributo PPID?
+a) número de prioridad de un proceso 
+b) identificador único de un proceso
+c) identificador único del proceso que lo inició (PID padre)
+c
+¿Qué es el atributo PGID?
+a) número de prioridad grupal de un proceso 
+b) identificador único de un proceso
+c) identificador del grupo de procesos al que pertenecen
+c
+Los grupos de procesos se pueden agrupar en sesiones, ¿Qué les identifica?
+a) SID (Session ID)
+b) PID (Process ID)
+c) IID (Identity ID)
+a
+En la desconexión, todos los procesos asociados a la sesión de ese usuario reciben una señal, por lo que terminan y se eliminan ¿Qué señal es?
+a) SIGSTOP
+b) SIGQUIT
+c) SIGHUP
+c
+¿Cúal es el carácter correcto para fin de cadena?
+a) '\0'
+b) '\n'
+c) '\#'
+a
+¿Qué método obtiene variables de entorno?
+a) char *getenv(const char *name )
+b) int setenv(const char *name, const char *value, int overwrite)
+c) int unsetenv(const char *name)
+a
+¿Qué método establece variables de entorno?
+a) char *getenv(const char *name )
+b) int setenv(const char *name, const char *value, int overwrite)
+c) int unsetenv(const char *name)
+b
+¿Qué método elimina variables de entorno?
+a) char *getenv(const char *name )
+b) int setenv(const char *name, const char *value, int overwrite)
+c) int unsetenv(const char *name)
+c
+¿Qué afirmación NO es correcta respecto a pid_t fork(void)?
+a) Cada proceso dispone de un único identificador
+b) El hijo hereda los cerrojos
+c) El hijo recibe una copia de los descriptores de los ficheros abiertos por el padre
+b
+¿Qué afirmación NO es correcta respecto a pid_t fork(void)?
+a) El hijo hereda las alarmas del padre
+b) El hijo no hereda los cerrojos
+c) El conjunto de señales pendientes del hijo es nulo
+a
+Un proceso puede finalizar por dos motivos, ¿Cuál es el incorrecto?
+a) voluntariamente, llamando a exit (o return desde main())
+b) al recibir una señal (hay múltiples causas)
+c) de manera forzada a través del administrador de tareas
+c
+¿Cuál es la descripción correcta para WNOHANG de options en pid_t waitpid(pid_t pid, int *status, int options)?
+a) retorna sin esperar si no hay hijos que hayan terminado
+b) retorna si el proceso ha sido detenido
+c) retorna si un hijo detenido ha sido reanudado
+a
+¿Cuál es la descripción correcta para WUNTRACED de options en pid_t waitpid(pid_t pid, int *status, int options)?
+a) retorna sin esperar si no hay hijos que hayan terminado
+b) retorna si el proceso ha sido detenido
+c) retorna si un hijo detenido ha sido reanudado
+b
+¿Cuál es la descripción correcta para WCONTINUED de options en pid_t waitpid(pid_t pid, int *status, int options)?
+a) retorna sin esperar si no hay hijos que hayan terminado
+b) retorna si el proceso ha sido detenido
+c) retorna si un hijo detenido ha sido reanudado
+c
+¿Cuál es la descripción correcta para WIFEXITED de status en pid_t waitpid(pid_t pid, int *status, int options)?
+a) indica si el hijo terminó normalmente vía exit() y, en ese caso, WEXITSTATUS(s) devuelve el estado de salida
+b) indica si el hijo terminó al recibir una señal y, en ese caso, WTERMSIG(s) devuelve el número de la señal recibida
+c) ninguna es correcta
+a
+¿Cuál es la descripción correcta para WIFSIGNALED de status en pid_t waitpid(pid_t pid, int *status, int options)?
+a) indica si el hijo terminó normalmente vía exit() y, en ese caso, WEXITSTATUS(s) devuelve el estado de salida
+b) indica si el hijo terminó al recibir una señal y, en ese caso, WTERMSIG(s) devuelve el número de la señal recibida
+c) ninguna es correcta
+b
+¿Qué función tiene el método int getrlimit(int resource, struct rlimit *rlim)?
+a) Obtiene los límites del proceso
+b) Obtiene las regulaciones limitantes del proceso
+c) Obtiene los recursos limítrofes del proceso
+a
+¿Qué función tiene el método int setrlimit(int resource, const struct rlimit *rlim)?
+a) Establece los límites del proceso
+b) Establece las regulaciones limitantes del proceso
+c) Establece los recursos limítrofes del proceso
+a
+¿Qué significa RLIMIT_NOFILE de resource dentro de los métodos getrlimit/setrlimit?
+a) Max. número de procesos
+b) Max. número de descriptores de archivo
+c) Max. tamaño de archivo core (bytes)
+b
+¿Qué significa RLIMIT_CORE de resource dentro de los métodos getrlimit/setrlimit?
+a) Max. número de procesos
+b) Max. número de descriptores de archivo
+c) Max. tamaño de archivo core (bytes)
+c
+¿Qué significa RLIMIT_NPROC de resource dentro de los métodos getrlimit/setrlimit?
+a) Max. número de procesos
+b) Max. número de descriptores de archivo
+c) Max. tamaño de archivo core (bytes)
+a
+¿Qué significa RLIMIT_DATA de resource dentro de los métodos getrlimit/setrlimit?
+a) Max. tamaño de archivo (bytes) 
+b) Max. tamaño del heap (bytes)
+c) Max. tamaño de pila (bytes)
+b
+¿Qué método sirve para obtener el uso de recursos?
+a) char *getenv(const char *name )
+b) int getrlimit(int resource, struct rlimit *rlim)
+c) int getrusage(int who, struct rusage *usage)
+c
+¿Cuál es la señal que hace lo siguiente? -> desconexión de terminal (F, terminar proceso)
+a) SIGHUP
+b) SIGSTOP
+c) SIGQUIT
+a
+¿Cuál es la señal que hace lo siguiente? -> interrupción. Se puede generar con Ctrl+C (F)
+a) SIGHUP
+b) SIGSTOP
+c) SIGINT
+c
+¿Cuál es la señal que hace lo siguiente? -> Finalización. Se puede generar con Ctrl+\ (F y C, volcado de memoria)
+a) SIGQUIT
+b) SIGSTOP
+c) SIGKILL 
+a
+¿Cuál es la señal que hace lo siguiente? -> Parar proceso. No se puede capturar, bloquear o ignorar (P, parar)
+a) SIGTSTP
+b) SIGSTOP
+c) SIGQUIT 
+b
+¿Cuál es la señal que hace lo siguiente? -> Parar proceso. Se puede generar con Ctrl+Z (P)
+a) SIGTSTP
+b) SIGSTOP
+c) SIGQUIT 
+a
+¿Cuál es la señal que hace lo siguiente? -> Reanudar proceso parado (continuar)
+a) SIGCONT
+b) SIGSEGV
+c) SIGHUP 
+a
+¿Cuál es la señal que hace lo siguiente? -> Instrucción ilegal (punteros a funciones mal gestionados) (F y C)
+a) SIGTRAP
+b) SIGSEGV
+c) SIGILL 
+c
+¿Cuál es la señal que hace lo siguiente? -> Ejecución paso a paso, enviada después de cada instrucción (F y C)
+a) SIGTRAP
+b) SIGSEGV
+c) SIGILL 
+a
+¿Cuál es la señal que hace lo siguiente? -> Terminación brusca. No se puede capturar, bloquear o ignorar (F)
+a) SIGQUIT
+b) SIGKILL 
+c) SIGILL 
+b
+¿Cuál es la señal que hace lo siguiente? -> Error de acceso a memoria (alineación o dirección no válida) (F y C)
+a) SIGSEGV
+b) SIGPIPE 
+c) SIGBUS 
+c
+¿Cuál es la señal que hace lo siguiente? -> Violación de segmento de datos (F y C)
+a) SIGSEGV
+b) SIGPIPE 
+c) SIGBUS 
+a
+¿Cuál es la señal que hace lo siguiente? -> Intento de escritura en un tubería sin lectores (F)
+a) SIGSEGV
+b) SIGPIPE 
+c) SIGBUS 
+b
+¿Cuál es la señal que hace lo siguiente? -> Despertador, contador a 0 (F)
+a) SIGALRM
+b) SIGPIPE 
+c) SIGTERM 
+a
+¿Cuál es la señal que hace lo siguiente? -> Terminar proceso (F)
+a) SIGQUIT
+b) SIGKILL  
+c) SIGTERM 
+c
+¿Cuál es la señal que hace lo siguiente? -> Señales de usuario (F)
+a) SIGUSR1
+b) SIGUSR2  
+c) SIGUSR1, SIGUSR2 (Ambas) 
+c
+¿Cuál es la señal que hace lo siguiente? -> Terminación del proceso hijo (I, ignorar)
+a) SIGCHLD
+b) SIGKILL  
+c) SIGTERM 
+a
+¿Cuál es la señal que hace lo siguiente? -> Recepción de datos urgentes en socket (I)
+a) SIGHUP
+b) SIGURG  
+c) SIGTERM 
+b
+¿Qué llamada NO es equivalente a int kill(pid_t pid, int signal), que envía una señal a un proceso?
+a) int raise(int signal)
+b) int abort(void)
+c) int destroy(pid_t pid, int signal)
+c
+¿Cuál es la afirmación correcta sobre conjuntos de señales?
+a) La gestión de señales se puede realizar conjuntamente por su nombre o identificador o individualmente usando conjuntos de señales sigset_t donde cada bit representa una señal
+b) La gestión de señales se puede realizar individualmente por su nombre o identificador o conjuntamente usando conjuntos de señales sigset_t donde cada bit representa una señal
+c) La gestión de señales se puede realizar conjuntamente por su nombre o identificador o individualmente usando conjuntos de señales sigget_t donde cada bit representa una señal
+b
+En la función int sigprocmask(int how, const sigset_t *set, sigset_t *oset), ¿Cúal es el comportamiento de how correcto para SIG_BLOCK ?
+a) Reemplaza el conjunto de señales actuales por set
+b) Elimina el conjunto set del conjunto de señales bloqueadas (puede desbloquearse una señal que no estuviera bloqueada)
+c) Añade el conjunto set al conjunto de señales actualmente bloqueadas (OR)
+c
+En la función int sigprocmask(int how, const sigset_t *set, sigset_t *oset), ¿Cúal es el comportamiento de how correcto para SIG_UNBLOCK ?
+a) Reemplaza el conjunto de señales actuales por set
+b) Elimina el conjunto set del conjunto de señales bloqueadas (puede desbloquearse una señal que no estuviera bloqueada)
+c) Añade el conjunto set al conjunto de señales actualmente bloqueadas (OR)
+b
+En la función int sigprocmask(int how, const sigset_t *set, sigset_t *oset), ¿Cúal es el comportamiento de how correcto para SIG_SETMASK ?
+a) Reemplaza el conjunto de señales actuales por set
+b) Elimina el conjunto set del conjunto de señales bloqueadas (puede desbloquearse una señal que no estuviera bloqueada)
+c) Añade el conjunto set al conjunto de señales actualmente bloqueadas (OR)
+a
+¿Qué método sirve para consultar y establecer las señales bloqueadas?
+a) int sigprocmask(int how, const sigset_t *set, sigset_t *oset)
+b) int sigaction(int signal, const struct sigaction *act, struct sigaction *oldact)
+c) int sigpending(const sigset_t *set)
+a
+¿Qué método sirve para comprobar señales pendientes?
+a) int sigprocmask(int how, const sigset_t *set, sigset_t *oset)
+b) int sigaction(int signal, const struct sigaction *act, struct sigaction *oldact)
+c) int sigpending(const sigset_t *set)
+c
+¿Qué método sirve para obtener y establecer la acción asociada a una señal?
+a) int sigprocmask(int how, const sigset_t *set, sigset_t *oset)
+b) int sigaction(int signal, const struct sigaction *act, struct sigaction *oldact)
+c) int sigpending(const sigset_t *set)
+b
+¿Cuál es la acción por defecto en la recepción de una señal?
+a) no existe una acción por defecto en la recepción de una señal, simplemente se activa la señal
+b) la habilitación de la señal, o bien, activar la señal recibida 
+c) la finalización del proceso, o bien, simplemente ignorar la señal
+c
+En el struct sigaction {void (*sa_handler) (int);sigset_t sa_mask;int sa_flags;...} cual es la descripción correcta para el campo -> sa_handler 
+a) modifica el comportamiento del proceso de gestión de la señal: SA_RESTART, SA_RESETHAND y SA_SIGINFO 
+b) es el nuevo manejador para la señal. Su valor puede ser: SIG_DFL: Para el manejador por defecto. SIG_IGN: Para no atender la señal. Un puntero a una función
+c) es el conjunto de señales que serán bloqueadas durante el tratamiento de la señal. Además, se bloquea la señal en cuestión (si no se indica el flag SA_NODEFER)
+b
+En el struct sigaction {void (*sa_handler) (int);sigset_t sa_mask;int sa_flags;...} cual es la descripción correcta para el campo -> sa_mask  
+a) modifica el comportamiento del proceso de gestión de la señal: SA_RESTART, SA_RESETHAND y SA_SIGINFO 
+b) es el nuevo manejador para la señal. Su valor puede ser: SIG_DFL: Para el manejador por defecto. SIG_IGN: Para no atender la señal. Un puntero a una función
+c) es el conjunto de señales que serán bloqueadas durante el tratamiento de la señal. Además, se bloquea la señal en cuestión (si no se indica el flag SA_NODEFER)
+c
+En el struct sigaction {void (*sa_handler) (int);sigset_t sa_mask;int sa_flags;...} cual es la descripción correcta para el campo -> sa_flags   
+a) modifica el comportamiento del proceso de gestión de la señal: SA_RESTART, SA_RESETHAND y SA_SIGINFO 
+b) es el nuevo manejador para la señal. Su valor puede ser: SIG_DFL: Para el manejador por defecto. SIG_IGN: Para no atender la señal. Un puntero a una función
+c) es el conjunto de señales que serán bloqueadas durante el tratamiento de la señal. Además, se bloquea la señal en cuestión (si no se indica el flag SA_NODEFER)
+a
+Dentro del campo sa_flags del struct sigaction, ¿Cuál corresponde con -> reinicia llamadas al sistema interrumpidas (en caso contrario terminan con EINTR) para compatibilidad con BSD?
+a) SA_RESTART 
+b) SA_SIGINFO 
+c) SA_RESETHAND 
+a
+Dentro del campo sa_flags del struct sigaction, ¿Cuál corresponde con -> restaura el manejador por defecto tras tratar la señal?
+a) SA_RESTART 
+b) SA_SIGINFO 
+c) SA_RESETHAND 
+c
+Dentro del campo sa_flags del struct sigaction, ¿Cuál corresponde con -> usa otro manejador (sa_sigaction) de la función con argumentos adicionales?
+a) SA_RESTART 
+b) SA_SIGINFO 
+c) SA_RESETHAND 
+b
+¿Qué ocurre cuando un manejador termina?
+a) No ocurre nada, se continúa con la siguiente ejecución
+b) Se restaura la ejecución en el punto donde se produjo la señal
+c) Envía una señal de finalización del menejador y continúa en la siguiente ejecución
+b
+¿Cuál NO es una precaución a tomar en el manejador?
+a) Declarar las variables globales como no volatile
+b) No usar funciones no reentrantes, como malloc, free o funciones de la librería stdio
+c) Guardar y restaurar el valor de errno si llama a alguna función que pueda modificarlo
+a
+¿Cuál NO es una precaución a tomar en el manejador?
+a) Declarar las variables globales como volatile
+b) Usar funciones no reentrantes, como malloc, free o funciones de la librería stdio
+c) Guardar y restaurar el valor de errno si llama a alguna función que pueda modificarlo
+b
+¿Cuál NO es una precaución a tomar en el manejador?
+a) Declarar las variables globales como volatile
+b) No usar funciones no reentrantes, como malloc, free o funciones de la librería stdio
+c) Eliminar y restaurar el valor de errno si llama a alguna función que pueda modificarlo
+c
+¿Qué hace el método de int sigsuspend(const sigset_t *set)?
+a) Suspender la ejecución del proceso y ejecutar la siguiente señal
+b) Esperar la ocurrencia de una determinada señal, suspendiendo la ejecución del proceso
+c) Ninguna opcion es correcta
+b
+¿Cuál de las siguientes afirmaciones no es correcta respecto a int sigsuspend(const sigset_t *set)?
+a) La máscara de señales bloqueadas se sustituye temporalmente por el conjunto get, el proceso se suspende hasta que una señal que no esté en la máscara se produzca
+b) Cuando se recibe la señal se ejecuta el manejador asociado a la señal y continúa la ejecución del proceso, restaurando la máscara original
+c) Siempre devuelve -1 y, normalmente, establece errno a EINTR
+a
+¿Cuál de las siguientes afirmaciones no es correcta respecto a int sigsuspend(const sigset_t *set)?
+a) La máscara de señales bloqueadas se sustituye temporalmente por el conjunto set, el proceso se suspende hasta que una señal que no esté en la máscara se produzca
+b) Cuando se recibe la señal se ejecuta el manejador asociado a la señal y se detiene la ejecución del proceso, restaurando la máscara original
+c) Siempre devuelve -1 y, normalmente, establece errno a EINTR
+b
+¿Cuál de las siguientes afirmaciones es correcta respecto a unsigned int alarm(unsigned int secs)?
+a) No se heredan con fork(2), pero sí se mantienen tras execve(2)
+b) Si se heredan con fork(2) y no se se mantienen tras execve(2)
+c) No se heredan con fork(2) y no se mantienen tras execve(2)
+a
+¿Cuál de las siguientes afirmaciones no es correcta respecto a unsigned int alarm(unsigned int secs)?
+a) Se programa el temporizador ITIMER_REAL para generar una señal SIGALRM en secs segundos (si es cero, no se planifica ninguna nueva alarma)
+b) Devuelve el valor de segundos restantes para que se produzca el final de la cuenta (0 si no hay ninguna fijada)
+c) Se pueden mezclar con sleep(3) o cualquier otra función que use el mismo temporizador, como setitimer(2)
+c
+En una tubería sin nombres, ¿Qué ocurre si está vacía?
+a) write(2) se bloqueará hasta que se lean suficientes datos para que se pueda completar la escritura
+b) se bloqueará hasta que haya datos disponibles
+c) el extremo de lectura se abre con el flag O_RDONLY y el de escritura, con O_WRONLY
+b
+En una tubería sin nombres, ¿Qué ocurre si está llena?
+a) write(2) se bloqueará hasta que se lean suficientes datos para que se pueda completar la escritura
+b) se bloqueará hasta que haya datos disponibles
+c) el extremo de lectura se abre con el flag O_RDONLY y el de escritura, con O_WRONLY
+a
+En una tubería sin nombres, ¿Qué ocurre si todos los descriptores de escritura se han cerrado?
+a) write(2) enviará la señal SIGPIPE al proceso y, si se ignora la señal, fallará con EPIPE
+b) el núcleo realiza la sincronización y almacena los datos internamente, sin escribirlos en el sistema de ficheros
+c) read(2) devolverá cero, indicando el fin de fichero
+c
+En una tubería sin nombres, ¿Qué ocurre si todos los descriptores de lectura se han cerrado?
+a) write(2) enviará la señal SIGPIPE al proceso y, si se ignora la señal, fallará con EPIPE
+b) el núcleo realiza la sincronización y almacena los datos internamente, sin escribirlos en el sistema de ficheros
+c) read(2) devolverá cero, indicando el fin de fichero
+a
+En una tubería con nombres, con que flag se abre el extremo de lectura?
+a) O_WRONLY y el de escritura, con O_RDONLY
+b) O_RDONLY y el de escritura, con O_WRONLY
+c) Ninguna de las anteriores
+b
+¿En qué consiste en las tuberías la multiplexación de E/S síncrona?
+a) Consiste en implementar múltiples descriptores de fichero, esperando hasta que uno o varios estén listos para realizar una operación de E/S de forma síncrona
+b) Consiste en implementar múltiples descriptores de fichero, esperando hasta que uno o varios estén listos para realizar una operación de E/S de forma asíncrona
+c) Consiste en monitorizar múltiples descriptores de fichero, esperando hasta que uno o varios estén listos para realizar una operación de E/S de forma síncrona
+c

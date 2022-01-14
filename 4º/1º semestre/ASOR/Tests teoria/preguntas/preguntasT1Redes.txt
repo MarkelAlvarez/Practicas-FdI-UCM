@@ -1,0 +1,120 @@
+¿Cuales de los siguientes protocolos pertenecen a la capa de aplicación?
+a) HTTP, SMTP, TCP, DNS, FTP
+b) HTTP, SMTP, IP, ICMP, FTP
+c) HTTP, SMTP, POP3, DNS, FTP
+c
+¿Cuál es el parámetro para indicar el tiempo que se espera entre sonda y sonda en el temporizador keepalive del protocolo TCP?
+a) tcp_keepalive_time
+b) tcp_keepalive_probes
+c) tcp_keepalive_intvl
+c
+¿Cómo se distingue una máquina en internet?
+a) por su dirección Mac
+b) por su dirección IP
+c) por su puerto
+b
+¿Con qué se identifican las máquinas en la capa de enlace?
+a) por su dirección Mac
+b) por su dirección IP
+c) por su puerto
+a
+¿Cuales son las funciones que nos da el protocolo IP?
+a) Direccionamiento, Routing, Fragmentación
+b) Direccionamiento y Routing pero no Fragmentación
+c) Routing y Fragmentación pero no direccionamiento
+a
+¿Qué protocolo está orientado a conexión?
+a) UDP
+b) TCP
+c) IP
+b
+¿Qué direcciones utilizan las aplicaciones para comunicarse dentro de la misma máquina?
+a) dir broadcast
+b) dir privadas
+c) dir loopback
+c
+¿Qué significa que una dirección es privada?
+a) Que no se reservan para el uso en redes de área local (LAN)
+b) Que no es encaminable en internet, un router cuando ve una dirección privada no la encamina
+c) Son solamente multicast
+b
+¿Cuál es el protocolo de intercambio de mensajes de control en la red?
+a) ARP
+b) ICMP
+c) IP
+b
+¿Cuál es el protocolo que se usa para la traducción de direcciones IP y MAC?
+a) ARP
+b) ICMP
+c) IP
+a
+¿Qué tipo de comunicación necesitamos para preguntar la MAC asociada a una IP?
+a) Unicast
+b) Multicast
+c) Broadcast
+c
+¿Cuántas redes privadas de clase A (/24) hay en el siguiente rango de direcciones: 10.0.0.0 - 10.255.255.255?
+a) 1
+b) 16
+c) 256
+a
+¿Cuántas redes privadas de clase B (/16) hay en el siguiente rango de direcciones: 172.16.0.0 - 172.31.255.255?
+a) 1
+b) 16
+c) 256
+b
+¿Cuántas redes privadas de clase C (/24) hay en el siguiente rango de direcciones: 192.168.0.0 - 192.168.255.255?
+a) 1
+b) 16
+c) 256
+c
+¿Cómo se llama al mensaje del cliente (broadcast) para descubrir los servidores disponibles (puede contener la última dirección IP asignada)?
+a) DHCPREQUEST
+b) DHCPDISCOVER
+c) DHCPOFFER
+b
+¿Cómo se llama a la respuesta de los servidores, con una oferta de parámetros de configuración (puede recibirse más de una)?
+a) DHCPREQUEST
+b) DHCPDISCOVER
+c) DHCPOFFER
+c
+¿Cómo se llama a la petición de oferta del cliente (broadcast, para notificar a todos los servidores) o extensión del tiempo de cesión (El servidor seleccionado se especifica en una opción)?
+a) DHCPREQUEST
+b) DHCPDISCOVER
+c) DHCPOFFER
+a
+¿Cómo se llama al mensaje de confirmación del servidor (broadcast) con parámetros definitivos?
+a) DHCPREQUEST
+b) DHCPACK
+c) Ninguna de los anteriores
+b
+¿Cómo se llama al mensaje del cliente para informar al servidor de que ha finalizado el uso de la dirección IP (no es obligatorio)?
+a) DHCPREQUEST
+b) DHCPDISCOVER
+c) DHCPRELEASE
+c
+¿Cuál es el orden normal de un diagrama de estados y mensajes en DHCP?
+a) Selecting, Requesting, Bound, Renewing, Rebinding
+b) Selecting, Requesting, Rebinding, Renewing, Bound
+c) Selecting, Requesting, Renewing, Rebinding, Bound
+a
+¿Cuál de las siguientes opciones es correcta si tenemos la dirección de red 192.168.128.0/17?
+a) dir broadcast: 255.255.128.0, máscara: 192.168.255.255, rango direcciones: 192.168.128.1-192.168.255.254
+b) dir broadcast: 192.168.255.255, máscara: 255.255.128.0, rango direcciones: 192.168.128.1-192.168.255.254
+c) dir broadcast: 192.168.255.255, máscara: 255.255.255.0, rango direcciones: 192.168.128.1-192.168.255.254
+b
+¿Cuál de los siguientes parámetros NO se puede configurar usando DHCP?
+a) Dirección física (MAC)
+b) Dirección de red (IP)
+c) Router predeterminado
+a
+¿Qué mensaje DHCP se usa para realizar una petición de oferta por parte del cliente?
+a) DHCPDISCOVER
+b) DHCPOFFER
+c) DHCPREQUEST
+c
+Con la introducción de CIDR, se pretende...
+a) ...ampliar el espacio total de direcciones.
+b) ...dividir el espacio de direcciones en bloques de tamaño fijo.
+c) ...aliviar el problema del agotamiento de direcciones.
+c

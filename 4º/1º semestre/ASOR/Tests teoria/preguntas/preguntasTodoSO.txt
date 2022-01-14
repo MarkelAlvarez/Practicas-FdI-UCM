@@ -1,0 +1,1045 @@
+¿Cuál es el estándar más general, adaptado por ANSI e ISO?
+a) ANSI-C/ISO-B 
+b) ANSI-B/ISO-B
+c) ANSI-C/ISO-C
+c
+¿Cómo se llama el estándar de programación que sus contribuciones más importantes son los enlaces simbólicos, sockets, la función del select, etc..?
+a) SVID
+b) BSD
+c) POSIX
+b
+¿Cómo se llama a la descripción formal de las distribuciones comerciales de UNIX por AT&T (Su principal contribución son los mecanismos IPC)?
+a) SVID
+b) POSIX
+c) BSD
+a
+¿Cómo se llama a lo que describe llamadas al sitema y librerías de C, especifica la semántica detallada de la shell y un conjunto mínimo de comandos, además de infertaces detallados para varios lenguajes de programación?
+a) POSIX
+b) SVID
+c) BSD
+a
+¿Cuál es un SO de tipo UNIX de software libre con licencia GNU GPL (Linux utiliza este tipo de software junto con un kernel propio de Linux)?
+a) SVID
+b) GNU
+c) BSD
+b
+¿En qué secciones están definidas las funciones de sistema y librería?
+a) Sección de manual 1/2 respectivamente
+b) Sección de manual 2/3 respectivamente
+c) Sección de manual 3/4 respectivamente
+b
+Indica cuál es correcta para las llamadas al sistema en el código de error
+a) -1 + errno
+b) 0 + errno
+c) NULL + no errno
+a
+Indica cuál es correcta para las llamadas a Librerías en el código de error
+a) -1 + errno
+b) 0 + errno
+c) NULL + no errno
+c
+¿En las llamadas al sistema se reserva espacio para los parámetros en la memoria?
+a) Sí, se reserva un espacio dinámico
+b) Sí, se reserva un espacio estático
+c) No se reserva
+c
+¿En las llamadas a librerías se reserva espacio para los parámetros en la memoria?
+a) Sí, se reserva un espacio dinámico
+b) Sí, se reserva un espacio dinámico o estático
+c) No se reserva
+b
+¿Cuál es el área de ejecución de las llamadas al sistema?
+a) Usuario
+b) Kernel
+c) Usuario/Kernel
+c
+¿Cuál es el área de ejecución de las llamadas a librerías?
+a) Usuario
+b) Kernel
+c) Usuario/Kernel
+a
+¿Se reserva espacio para parámetros en las llamadas al sistema?
+a) No, no se reserva
+b) Si, si se reserva
+c) Si, solamente en las llamadas más importantes
+a
+¿Se reserva espacio para parámetros en las llamadas a librerías?
+a) No, no se reserva
+b) Si, si se reserva
+c) Si, dinámico/estático
+c
+¿Cuál es el formato de cabecera del programa principal correcto?
+a) int main(int argc, char **argv);
+b) int main(int argc, char *argv[]);
+c) Ambas opciones son correctas
+c
+¿Qué se utiliza para comprobar la traza de las llamadas al sistema realizadas por un programa?
+a) strace [argumentos] comando [opciones]
+b) strace [opciones] comando [argumentos]
+c) comando [opciones] strace [argumentos] 
+b
+¿Qué opción de strace muestra esto? -> Recopila el tiempo, las llamadas y errores producidos mostrando un resumen
+a) -c
+b) -f
+c) -T
+a
+¿Qué opción de strace muestra esto? -> Traza los procesos hijos a medida que se crean
+a) -f
+b) -e
+c) -T
+a
+¿Qué opción de strace muestra esto? -> Muestra el tiempo de cada llamada
+a) -f
+b) -e
+c) -T
+c
+¿Qué opción de strace muestra esto? -> Selección del tipo de llamadas a sistema trazadas (process, network, IPC, signal o file)
+a) -e
+b) -e trace=call
+c) -e write=fd
+b
+¿Qué opción de strace muestra esto? -> realiza un volcado completo de los datos escritos en el descriptor de ficheros
+a) -e
+b) -e trace=call
+c) -e write=fd
+c
+¿Qué función se suele usar para la gestión de errores?
+a) void error(const char *s);
+b) void perror(const char *s);
+c) void gerror(const char *s);
+b
+¿En qué variable se obtiene el código de error para la gestión de errores?
+a) En errno, que se fija cuando se produce un error
+b) En err, que se como resultado de error(const char *s)
+c) En strerror, que es respuesta del sistema con una descripción y código del error
+a
+¿Qué función devuelve una cadena que describe el número de error (por convenio las llamadas al sistema devuelven -1 cuando se ha producido un error)?
+a) char *strerror(int errnum)
+b) int *strerror(int errnum)
+c) float *strerror(int errnum)
+a
+¿Qué función establece el id de usuario efectivo del proceso de llamada?
+a) setid(2)
+b) seteuid(2)
+c) setuid(2)
+c
+¿Qué función devuelve información sobre el kernel actual?
+a) long sysconf(int name);
+b) int uname(struct utsname *buffer);
+c) long pathconf(char *path, int name);
+b
+¿Qué función devuelve info sobre el kernel?
+a) string uname(struct utsname *buffer);
+b) char uname(struct utsname *buffer);
+c) int uname(struct utsname *buffer);
+c
+¿Qué significa el código de error "EFAULT"?
+a) No se pudo leer la entrada de la función
+b) Buffer no es válido
+c) Error interno de la fuente del sistema
+b
+¿Qué formato de struct es el correcto al resultado devuelto por uname(struct utsname *buffer)?
+a) struct utsname {char sysname[];char nodename[];char release[];char version[];char machine[];}
+b) struct utsname {char sysname[];char buffer[];char release[];char version[];char machine[];}
+c) struct utsname {char sysname[];char nodename[];char release[];char infosystem[];char machine[];}
+a
+¿Qué función devuelve info sobre el SO?
+a) long sysconf(int name);
+b) char sysconf(int name);
+c) int sysconf(int name);
+a
+¿Con qué función obtenemos limites del sistema o información sobre el SO?
+a) long sysconf(int name);
+b) int uname(struct utsname *buffer);
+c) long pathconf(char *path, int name);
+a
+¿En caso de error, se instancia la variable errno en la función sysconf?
+a) Si, devuelve -1 en caso de error
+b) No, pero devuelve -1 en caso de error
+c) No devuelve nada en caso de error
+b
+¿Qué función devuelve info sobre el sistema de ficheros?
+a) char pathconf(char *path, int name); char fpathconf(int filedes, int name);
+b) int pathconf(char *path, int name); int fpathconf(int filedes, int name);
+c) long pathconf(char *path, int name); long fpathconf(int filedes, int name);
+c
+¿Con qué función obtenemos información sobre el sistema de ficheros?
+a) long sysconf(int name);
+b) int uname(struct utsname *buffer);
+c) long pathconf(char *path, int name);
+c
+¿En caso de error, se instancia la variable errno en la función pathconf/fpathconf?
+a) Si, se instancia errno tanto para error o que no exista
+b) Si, pero solo en caso de error, si no existe no se instancia
+c) No, no se instancia errno
+b
+¿Que significa la E en EUID y EGID?
+a) Erróneo
+b) Ejecutable
+c) Efectivo
+c
+¿Cómo se llama el identificador que se comprueba para conceder permisos?
+a) UID / GID
+b) EUID / EGID
+c) PUID / PGID
+b
+¿Cómo se llaman los identificadores que corresponden a los identificadores del propietario del proceso que, en general, se heredan del proceso que lo creó?
+a) UID / GID
+b) EUID / EGID
+c) PUID / PGID
+a
+¿Cuáles son las funciones para obtener información de un usuario de la base de datos de contraseñas?
+a) struct long *getpwnam(const char *name); // struct long *getpwuid(uid_t uid);
+b) struct char *getpwnam(const char *name); // struct char *getpwuid(uid_t uid);
+c) struct passwd *getpwnam(const char *name); // struct passwd *getpwuid(uid_t uid);
+c
+Cuando se usan las funciones de struct passwd *getpwnam(const char *name) // struct passwd *getpwuid(uid_t uid), ¿Qué devuelve si no encuentra al usuario o si se produce algún error?
+a) -1
+b) NULL
+c) 0
+b
+¿Qué significa el código de error "ENOMEM"?
+a) violación del segmento
+b) Buffer no es válido
+c) No puede reservar memoria para la estructura
+c
+¿Qué función devuelve el tiempo en segundos desde el Epoch?
+a) time_t time(time_t *t);
+b) int time(time_t *t);
+c) time time(time_t *t);
+a
+¿A qué se refiere el Epoch?
+a) Se refiere a 1940-01-01 00:00:00 +0000, UTC
+b) se refiere a 1970-01-01 00:00:00 +0000, UTC
+c) se refiere a 2000-01-01 00:00:00 +0000, UTC
+b
+¿Qué función se usa para obtener y fijar la hora del sistema?
+a) int gettimeofday(struct timeval *tv, struct timezone *tz); int settimeofday(const struct timeval *tv, const struct timezone *tz);
+b) time_t gettimeofday(struct timeval *tv, struct timezone *tz); time_t settimeofday(const struct timeval *tv, const struct timezone *tz);
+c) long gettimeofday(struct timeval *tv, struct timezone *tz); long settimeofday(const struct timeval *tv, const struct timezone *tz);
+a
+¿Qué función se usa para formatear fecha y hora?
+a) void strftime(char *s, size_t max, const char *format, const struct tm *tm);
+b) time_t strftime(char *s, size_t max, const char *format, const struct tm *tm);
+c) size_t strftime(char *s, size_t max, const char *format, const struct tm *tm);
+c
+En la función strftime, ¿Qué quiere decir el parámetro format de %n ?
+a) Retorno de carro
+b) Mes completo
+c) Año bisiesto
+a
+En la función strftime, ¿Qué quiere decir el parámetro format de %p ?
+a) Partición
+b) Parameters
+c) PM, AM
+c
+En la función strftime, ¿Qué quiere decir el parámetro format de %r ?
+a) Reiniciar hora
+b) Regular time from EST (Eastern Standard Time)
+c) Hora en a.m./p.m. (equivalente a "%I:%M:%S %p")
+c
+En la función strftime, ¿Qué ocurre si la longitud devuelta supera los max bytes?
+a) Devuelve -1
+b) Devuelve 0
+c) Devuelve NULL
+b
+Estándares IEEE e ISO derivados de varias versiones de UNIX, principalmente de SVID. Incluye ANSI-C. Describe llamadas al sistema y librerías de C, especifica la semántica detallada de la shell y un conjunto mínimo de comandos, así como interfaces detallados para varios lenguajes de programación.
+a) ANSI-C o ISO-C
+b) POSIX
+c) GNU
+b
+Desde el punto de vista del usuario, qué son los sistemas de ficheros
+a) Colección de ficheros y directorios usados para guardar y organizar la información
+b) Conjunto de tablas y estructuras que permiten gestionar los ficheros y directorios
+c) Conjuntos de archivos que se almacenan en una base de datos gestionados por funciones
+a
+Desde el punto de vista del sistema operativo, qué son los sistemas de ficheros
+a) Colección de ficheros y directorios usados para guardar y organizar la información
+b) Conjunto de tablas y estructuras que permiten gestionar los ficheros y directorios
+c) Conjuntos de archivos que se almacenan en una base de datos gestionados por funciones
+b
+¿Desde qué punto de vista es la siguiente definición? -> Colección de ficheros y directorios usados para guardar y organizar la información
+a) Desde el punto de vista del usuario
+b) Desde el punto de vista del sistema operativo
+c) Desde el punto de vista de la red
+a
+¿Desde qué punto de vista es la siguiente definición? -> Conjunto de tablas y estructuras que permiten gestionar los ficheros y directorios
+a) Desde el punto de vista del usuario
+b) Desde el punto de vista del sistema operativo
+c) Desde el punto de vista de la red
+b
+¿Qué tipos de sistemas de ficheros diferentes existen?
+a) Basados en disco, en red y en memoria
+b) Basados en disco y memoria
+c) Basados en disco, en tablas, en red y en memoria
+a
+¿Qué tipo de sistema de fichero reside en soportes de almacenamiento físicos como discos, duros magnéticos, unidades de estado sólido...
+a) Basados en red (o distribuidos)
+b) Basados en memoria (o pseudo)
+c) Basados en disco
+c
+¿Qué tipo de sistema de fichero se utilizan para acceder a sistemas de ficheros remotos independientemente del tipo
+a) Basados en red (o distribuidos)
+b) Basados en memoria (o pseudo)
+c) Basados en disco
+a
+¿Qué tipo de sistema de fichero residen en memoria principal mientras el SO se está ejecutando
+a) Basados en red (o distribuidos)
+b) Basados en memoria (o pseudo)
+c) Basados en disco
+b
+¿En qué se basan los sistemas de ficheros NFS y SMB?
+a) Basados en red (o distribuidos)
+b) Basados en memoria (o pseudo)
+c) Basados en disco
+a
+¿Qué significa NFS?
+a) Node File System
+b) Network File System
+c) New File System
+b
+¿En qué se basan los sistemas de ficheros ext2-3-4, NTFS, FAT, ZFS?
+a) Basados en red (o distribuidos)
+b) Basados en memoria (o pseudo)
+c) Basados en disco
+c
+¿En qué se basan los sistemas de ficheros procfs, tmpfs?
+a) Basados en red (o distribuidos)
+b) Basados en memoria (o pseudo)
+c) Basados en disco
+b
+¿Qué sistema de ficheros es fiable y tiene un buen rendimiento pero tiene problemas para garantizar la consistencia de las estructuras de datos compartidas
+a) Basados en red (o distribuidos)
+b) Basados en memoria (o pseudo)
+c) Basados en disco
+a
+¿Qué sistema de ficheros no es persistente?
+a) Basados en red (o distribuidos)
+b) Basados en memoria (o pseudo)
+c) Basados en disco
+b
+¿Qué sistema de ficheros es mejor utilizar cuando necesitamos muy buen rendimiento y guardamos datos volátiles?
+a) Basados en red (o distribuidos)
+b) Basados en memoria (o pseudo)
+c) Basados en disco
+b
+¿La interfaz es distinta según el sistema de ficheros?
+a) Sí, existe una distinta por cada sistema de ficheros
+b) Sí, existen dos interfaces diferentes
+c) No, es la misma para todos los sistemas
+c
+¿Cuál es la afirmación correcta sobre los metadatos?
+a) Se escriben siempre en la bitácora inmediatamente, garantizando la consistencia del sistema de ficheros
+b) Se escriben siempre que hay una actualización, garantizando la consistencia del sistema de ficheros
+c) Se escriben en la memoria auxiliar siempre después de una actualización en el sistema
+a
+¿Qué afirmación NO es correcta respecto al Writeback y su modo de escritura de los datos?
+a) Los datos pueden escribirse después de que sus metadatos asociados hayan sido escritos en la bitácora y es el modo más rápido
+b) Pueden perderse datos y aparecer datos antiguos después de un fallo y recuperar el sistema de ficheros a partir de la bitácora
+c) Los datos se escriben en el sistema de ficheros antes de escribir los metadatos en la bitácora y es el modo por defecto en ext3
+c
+¿Qué afirmación SI es correcta respecto al Ordered y su modo de escritura de los datos?
+a) Los datos pueden escribirse después de que sus metadatos asociados hayan sido escritos en la bitácora y es el modo más rápido
+b) Los datos se escriben en el sistema de ficheros antes de escribir los metadatos en la bitácora y es el modo por defecto en ext3
+c) Ofrece mayor protección frente a fallos y es el modo más lento
+b
+¿Qué afirmación SI es correcta respecto al Journal y su modo de escritura de los datos?
+a) Los datos pueden escribirse después de que sus metadatos asociados hayan sido escritos en la bitácora y es el modo más rápido
+b) Los datos se escriben en el sistema de ficheros antes de escribir los metadatos en la bitácora y es el modo por defecto en ext3
+c) Ofrece mayor protección frente a fallos y es el modo más lento
+c
+¿Cómo se llama a la capa de abstracción que se situa por encima de todos los sistemas de ficheros distintos?
+a) Virtual File System
+b) Capa de Sistemas de Ficheros
+c) Fast File System
+a
+¿Cómo se llama a la capa de abstracción que se situa por encima de todos los sistemas de ficheros distintos?
+a) VFS
+b) VFAT
+c) SYNC
+a
+Indica cuál es correcta para el Virtual File System
+a) Establece un enlace bien definido entre el kernel del SO y los diferentes sistemas de ficheros
+b) Proporciona las diferentes llamadas para la gestión de ficheros, independientes del sistema de ficheros
+c) Ambas
+c
+Indica cuál es correcta para el Virtual File System
+a) Permite acceder a múltiples sistemas de ficheros distintos
+b) Permite acceder a un sistema de fichero
+c) Permite acceder simultáneamente a dos sistemas de ficheros únicamente
+a
+¿Cómo optimiza la entrada/salida la VFS (Virtual File System)?
+a) La cache de i-nodos y la cache entradas de directorio (dentry) de VFS
+b) La cache de buffers/páginas (sync)
+c) Ambas
+c
+El el journaling, ¿Cómo se llama al fichero especial que evita la corrupción de datos?
+a) XFS
+b) Bitácora
+c) FFS
+b
+La estructura de grupos de bloques del sistema de fichero está inspirado en...
+a) Bitácora
+b) VFS (Virtual File System)
+c) FFS (Fast File System)
+c
+¿A qué operaciones afecta el journal?
+a) Sólo lectura
+b) Sólo escritura
+c) Lectura y Escritura
+b
+¿Cuáles son las variantes de journaling?
+a) Writeback, Ordered, Journal
+b) Writeback, Readed, Journal
+c) Ninguna de las anteriores
+a
+¿Cuál es la variante de Journaling en la que primero se escriben los datos y luego los metadatos en la bitácora?
+a) Writeback
+b) Ordered
+c) Journal
+b
+¿Cuál es la variante de Journaling más lenta y que ofrece mayor protección?
+a) Writeback
+b) Ordered
+c) Journal
+c
+¿Cuál es la variante de Journaling que escribe tanto los datos como los metadatos en la bitácora?
+a) Writeback
+b) Ordered
+c) Journal
+c
+¿Cuál es la variante de Journaling por defecto en ext3?
+a) Writeback
+b) Ordered
+c) Journal
+b
+¿Cuál es la variante de Journaling más rápida?
+a) Writeback
+b) Ordered
+c) Journal
+a
+¿Qué afirmación NO es correcta respecto al Writeback y su modo de escritura de los datos?
+a) Los datos pueden escribirse después de que sus metadatos asociados hayan sido escritos en la bitácora y es el modo más rápido
+b) Pueden perderse datos y aparecer datos antiguos después de un fallo y recuperar el sistema de ficheros a partir de la bitácora
+c) Los datos se escriben en el sistema de ficheros antes de escribir los metadatos en la bitácora y es el modo por defecto en ext3
+c
+¿Qué afirmación SI es correcta respecto al Ordered y su modo de escritura de los datos?
+a) Los datos pueden escribirse después de que sus metadatos asociados hayan sido escritos en la bitácora y es el modo más rápido
+b) Los datos se escriben en el sistema de ficheros antes de escribir los metadatos en la bitácora y es el modo por defecto en ext3
+c) Ofrece mayor protección frente a fallos y es el modo más lento
+b
+¿Qué afirmación SI es correcta respecto al Journal y su modo de escritura de los datos?
+a) Los datos pueden escribirse después de que sus metadatos asociados hayan sido escritos en la bitácora y es el modo más rápido
+b) Los datos se escriben en el sistema de ficheros antes de escribir los metadatos en la bitácora y es el modo por defecto en ext3
+c) Ofrece mayor protección frente a fallos y es el modo más lento
+c
+Indica cuál es la correcta
+a) stat sigue enlaces simbólicos, mientras que lstat no
+b) stat sigue enlaces simbólicos, mientras que fstat no
+c) lstat obtiene el estado de un fichero mediante un descriptor (open())
+a
+Indica cuál es la correcta
+a) No se necesitan permisos sobre el fichero, pero sí para buscar en PATH
+b) stat sigue enlaces simbólicos, mientras que fstat no
+c) lstat obtiene el estado de un fichero mediante un descriptor (open())
+a
+¿Cúal de los siguientes métodos para obtener el estado de un fichero sigue enlaces simbólicos?
+a) int stat(const char *file_name, struct stat *buf);
+b) int lstat(const char *file_name, struct stat *buf);
+c) int fstat(int filedes, struct stat *buf);
+a
+¿Cúal de los siguientes métodos para obtener el estado de un fichero NO sigue enlaces simbólicos?
+a) int stat(const char *file_name, struct stat *buf);
+b) int lstat(const char *file_name, struct stat *buf);
+c) int fstat(int filedes, struct stat *buf);
+b
+¿Cúal de los siguientes métodos para obtener el estado de un fichero obtiene el estado de un fichero mediante un descriptor (open())?
+a) int stat(const char *file_name, struct stat *buf);
+b) int lstat(const char *file_name, struct stat *buf);
+c) int fstat(int filedes, struct stat *buf);
+c
+Indica cuál es la correcta
+a) int stat(int filedes, struct stat *buf);
+b) int lstat(int filedes, struct stat *buf);
+c) int fstat(int filedes, struct stat *buf);
+c
+¿Qué significa la 's' en los permisos de un fichero?
+a) Que se trata de un enlace simbólico
+b) Que el setuid está activado
+c) Que es un socket
+b
+¿Para qué 3 entidades se establecen los permisos?
+a) Propietario del fichero, grupo propietario, otros 
+b) Usuario, propietario del fichero, grupo propietario
+c) Usuario, grupo y otros
+a
+¿Qué instrucción utilizamos para cambiar los permisos?
+a) chmod
+b) umask
+c) stat
+a
+¿Indica qué tiene que ser cierto para realizar la modificación de los permisos de un fichero?
+a) El UID efectivo del proceso debe ser 0 (root) o coincidir con el del propietario
+b) El UID efectivo del proceso debe ser 1 (root) o coincidir con el del propietario
+c) El UID efectivo del proceso debe coincidir con el del propietario
+a
+¿De que tipo son los permisos de los ficheros?
+a) Lectura, escritura y ejecución
+b) Lectura, escritura y modificación
+c) Lectura, escritura y borrado
+a
+¿En qué orden están los permisos de los ficheros?
+a) rxw
+b) rwx
+c) wxr
+b
+¿Qué función para la creación y apertura de ficheros es correcta?
+a) void open(const char *path, int flags);
+b) int open(const char *path, int flags);
+c) char open(const char *path, int flags);
+b
+¿Qué devuelve la función open?
+a) Devuelve un entero con el tamaño del fichero
+b) Devuelve un descriptor de fichero con el puntero de acceso posicionado al principio del fichero, o -1 si ocurre un error
+c) Devuelve un número -1 si es error y cualquier otro si se ha abierto correctamente
+b
+Indica cuál es correcta
+a) Los permisos indicados en umask son borrados del argumento mode con mode & umask.
+b) Los permisos indicados en umask son borrados del argumento mode con mode & ~umask.
+c) Ninguna de las anteriores
+b
+¿Cuál es el valor por defecto de umask?
+a) 022
+b) S_IWGRP | S_IWOTH
+c) Ambas
+c
+¿Cuál es el valor por defecto de umask?
+a) 022
+b) 0777
+c) 027
+a
+¿Qué funciones del sistema se usan para leer, escribir ficheros?
+a) read, write
+b) fread, fwrite
+c) ambas
+a
+¿Qué funciones de librería se usan para leer, escribir ficheros?
+a) read, write
+b) fread, fwrite
+c) ambas
+b
+¿Qué función utilizamos para crear un enlace rígido (hard link)?
+a) int unlink(const char *name);
+b) int symlink(const char *exist, const char *new);
+c) int link (const char *exist, const char *new);
+c
+¿Qué función utilizamos para crear un enlace enlace simbólico (soft link o symlink)?
+a) int unlink(const char *name);
+b) int symlink(const char *exist, const char *new);
+c) int link (const char *exist, const char *new);
+b
+¿Se puede crear un enlace duro entre ficheros o directorios en distintos sistemas de ficheros, o a pesar de que el fichero original no exista?
+a) No, solo se pueden realizar sobre ficheros en el mismo sistema de ficheros
+b) Sí pero solo directorios, con ficheros no se puede
+c) Sí pero si ya existe el fichero
+a
+¿Al crear un enlace duro o simbólico sobre el nuevo fichero, será sobrescrito?
+a) Sí pero solo si el enlace es rígido
+b) Sí pero solo si el enlace es simbólico
+c) No será sobrescrito
+c
+¿Cón qué función podemos leer el contenido de la ruta de un enlace simbólico?
+a) int read(const char *path, char *b, size_t tb);
+b) int readlink(const char *path, char *b, size_t tb);
+c) int readlk(const char *path, char *b, size_t tb);
+b
+¿Con qué función puede determinarse el tamaño del enlace?
+a) lstat(2)
+b) fstat(2)
+c) stat(2)
+a
+¿Qué función se utiliza para los cerrojos, bloquear regiones de un fichero?
+a) int fcntl(int fd, int cmd);
+b) int fcntl(int fd, int cmd, long arg);
+c) int fcntl(int fd, int cmd, struct flock *lock);
+c
+¿Qué tipo de cerrojo es de lectura o compartido?
+a) F_RDLCK
+b) F_UNLCK
+c) F_WRLCK
+a
+¿Qué tipo de cerrojo es de escritura o exclusivo?
+a) F_RDLCK
+b) F_UNLCK
+c) F_WRLCK
+a
+¿Qué tipos de cerrojos pueden establecerse varios sobre una misma región?
+a) F_RDLCK
+b) F_UNLCK
+c) F_WRLCK
+a
+¿Qué tipo de cerrojo solo puede haber uno en una misma región?
+a) F_RDLCK
+b) F_UNLCK
+c) F_WRLCK
+c
+¿Qué función utilizamos para leer las entradas de un directorio?
+a) DIR *opendir(const char *name);
+b) struct dirent *readdir(DIR *dir);
+c) int mkdir(const char *path, mode_t mode);
+b
+¿Cómo se podrían fijar los permisos rw- r-- r-x de archivo.txt?
+a) $chmod 645 archivo.txt
+b) $chmod u+rw-x,g+r-wx,o+rx-w archivo.txt
+c) Ambas formas
+c
+¿Cuál sería la orden para fijar la máscara y que los nuevos ficheros no tengan permisos de escritura para el grupo y lectura y ejecución para otros?
+a) $umask 027
+b) $umask 025
+c) $umask 024
+b
+¿Qué tipo de enlaces se pueden crear para directorios?
+a) Enlaces rígidos y simbólicos si estamos en el mismo sistema de ficheros
+b) Enlaces rígidos y simbólicos
+c) Únicamente enlaces simbólicos
+c
+¿Cuál es la correcta si queremos redirigir la salida estándar y la salida estándar de error al fichero archivo.txt?
+a) ls > archivo.txt 2>&1
+b) ls 2&1 > archivo.txt
+c) Las dos están bien ya que no importa el orden de las redirecciones
+a
+¿Qué nombre tiene el componente del núcleo que determina el orden de ejecución de los procesos en función de la clase de planificación y de la prioridad de los procesos?
+a) Directorio
+b) Planificador
+c) Señal
+b
+¿Qué tipo de política de planificación es la siguiente? -> Política estándar de tiempo compartido con prioridad 0, que considera el valor de nice (entre -20 y 19, 0 por defecto) para repartir la CPU
+a) SCHED_OTHER
+b) SCHED_FIFO
+c) SCHED_RR
+a
+¿Qué tipo de política de planificación es la siguiente? -> Política de tiempo real FIFO con prioridades entre 1 y 99
+a) SCHED_OTHER
+b) SCHED_FIFO
+c) SCHED_RR
+b
+¿Qué tipo de política de planificación es la siguiente? -> Política de tiempo real FIFO con prioridades entre 1 y 99, pero los procesos con igual prioridad se ejecutan por turnos (round-robin) durante un cuanto de tiempo máximo
+a) SCHED_OTHER
+b) SCHED_FIFO
+c) SCHED_RR
+c
+¿Qué valor en el PID hace referencia al proceso actual?
+a) -1
+b) 0
+c) 1
+b
+El comando chrt nos ofrece acceso a varias funcionalidades del sistema, ¿Cúal de ellas nos permite establecer la política de planificación y/o prioridad?
+a) int sched_setscheduler(pid_t pid, int policy, const struct sched_param *p)
+b) int sched_setparam(pid_t pid, const struct sched_param *p)
+c) int setpriority(int which, int who, int prio)
+a
+El comando chrt nos ofrece acceso a varias funcionalidades del sistema, ¿Cúal de ellas nos permite fijar una nueva prioridad, pero no cambiar la política?
+a) int sched_setscheduler(pid_t pid, int policy, const struct sched_param *p)
+b) int sched_setparam(pid_t pid, const struct sched_param *p)
+c) int setpriority(int which, int who, int prio)
+b
+El comando chrt nos ofrece acceso a varias funcionalidades del sistema, ¿Cúal de ellas nos permite fijar la prioridad (nice) de un proceso?
+a) int sched_setscheduler(pid_t pid, int policy, const struct sched_param *p)
+b) int sched_setparam(pid_t pid, const struct sched_param *p)
+c) int setpriority(int which, int who, int prio)
+c
+El comando chrt nos ofrece acceso a varias funcionalidades del sistema, ¿Cúal de ellas nos permite consultar tanto la política como la prioridad?
+a) int sched_getscheduler(pid_t pid)
+b) int sched_getparam(pid_t pid, struct sched_param *p)
+c) int getpriority(int which, int who)
+a
+El comando chrt nos ofrece acceso a varias funcionalidades del sistema, ¿Cúal de ellas nos permite consultar los parámetros y la prioridad?
+a) int sched_getscheduler(pid_t pid)
+b) int sched_getparam(pid_t pid, struct sched_param *p)
+c) int getpriority(int which, int who)
+b
+El comando chrt nos ofrece acceso a varias funcionalidades del sistema, ¿Cúal de ellas nos permite consultar la prioridad (nice) de un proceso?
+a) int sched_getscheduler(pid_t pid)
+b) int sched_getparam(pid_t pid, struct sched_param *p)
+c) int getpriority(int which, int who)
+c
+En la función int setpriority(int which, int who, int prio), que descripción corresponde con el parámetro which
+a) es un PID, un PGID o un UID, respectivamente, 0 indica el proceso actual, el grupo de procesos del proceso actual o el UID real del proceso actual, respectivamente
+b) es el nuevo valor de nice entre -20 y 19. Valores menores representan una mayor porción de CPU
+c) puede ser PRIO_PROCESS, PRIO_PGRP o PRIO_USER
+c
+En la función int setpriority(int which, int who, int prio), que descripción corresponde con el parámetro who
+a) es un PID, un PGID o un UID, respectivamente, 0 indica el proceso actual, el grupo de procesos del proceso actual o el UID real del proceso actual, respectivamente
+b) es el nuevo valor de nice entre -20 y 19. Valores menores representan una mayor porción de CPU
+c) puede ser PRIO_PROCESS, PRIO_PGRP o PRIO_USER
+a
+En la función int setpriority(int which, int who, int prio), que descripción corresponde con el parámetro prio
+a) es un PID, un PGID o un UID, respectivamente, 0 indica el proceso actual, el grupo de procesos del proceso actual o el UID real del proceso actual, respectivamente
+b) es el nuevo valor de nice entre -20 y 19. Valores menores representan una mayor porción de CPU
+c) puede ser PRIO_PROCESS, PRIO_PGRP o PRIO_USER
+b
+¿Hereda los atributos de planificación la llamada fork()?
+a) Si, si los heredan
+b) No, no los heredan
+c) No, los atributos de planificación son independientes de las llamadas fork()
+a
+¿Qué comando permite accedo a la funcionalidad de la prioridad?
+a) nice
+b) renice
+c) ambas opciones son válidas
+c
+¿Qué es el atributo PID?
+a) número de prioridad de un proceso 
+b) identificador único de un proceso
+c) identificador del grupo de procesos al que pertenecen
+b
+¿Qué es el atributo PPID?
+a) número de prioridad de un proceso 
+b) identificador único de un proceso
+c) identificador único del proceso que lo inició (PID padre)
+c
+¿Qué es el atributo PGID?
+a) número de prioridad grupal de un proceso 
+b) identificador único de un proceso
+c) identificador del grupo de procesos al que pertenecen
+c
+Los grupos de procesos se pueden agrupar en sesiones, ¿Qué les identifica?
+a) SID (Session ID)
+b) PID (Process ID)
+c) IID (Identity ID)
+a
+En la desconexión, todos los procesos asociados a la sesión de ese usuario reciben una señal, por lo que terminan y se eliminan ¿Qué señal es?
+a) SIGSTOP
+b) SIGQUIT
+c) SIGHUP
+c
+¿Cúal es el carácter correcto para fin de cadena?
+a) '\0'
+b) '\n'
+c) '\#'
+a
+¿Qué método obtiene variables de entorno?
+a) char *getenv(const char *name )
+b) int setenv(const char *name, const char *value, int overwrite)
+c) int unsetenv(const char *name)
+a
+¿Qué método establece variables de entorno?
+a) char *getenv(const char *name )
+b) int setenv(const char *name, const char *value, int overwrite)
+c) int unsetenv(const char *name)
+b
+¿Qué método elimina variables de entorno?
+a) char *getenv(const char *name )
+b) int setenv(const char *name, const char *value, int overwrite)
+c) int unsetenv(const char *name)
+c
+¿Qué afirmación NO es correcta respecto a pid_t fork(void)?
+a) Cada proceso dispone de un único identificador
+b) El hijo hereda los cerrojos
+c) El hijo recibe una copia de los descriptores de los ficheros abiertos por el padre
+b
+¿Qué afirmación NO es correcta respecto a pid_t fork(void)?
+a) El hijo hereda las alarmas del padre
+b) El hijo no hereda los cerrojos
+c) El conjunto de señales pendientes del hijo es nulo
+a
+Un proceso puede finalizar por dos motivos, ¿Cuál es el incorrecto?
+a) voluntariamente, llamando a exit (o return desde main())
+b) al recibir una señal (hay múltiples causas)
+c) de manera forzada a través del administrador de tareas
+c
+¿Cuál es la descripción correcta para WNOHANG de options en pid_t waitpid(pid_t pid, int *status, int options)?
+a) retorna sin esperar si no hay hijos que hayan terminado
+b) retorna si el proceso ha sido detenido
+c) retorna si un hijo detenido ha sido reanudado
+a
+¿Cuál es la descripción correcta para WUNTRACED de options en pid_t waitpid(pid_t pid, int *status, int options)?
+a) retorna sin esperar si no hay hijos que hayan terminado
+b) retorna si el proceso ha sido detenido
+c) retorna si un hijo detenido ha sido reanudado
+b
+¿Cuál es la descripción correcta para WCONTINUED de options en pid_t waitpid(pid_t pid, int *status, int options)?
+a) retorna sin esperar si no hay hijos que hayan terminado
+b) retorna si el proceso ha sido detenido
+c) retorna si un hijo detenido ha sido reanudado
+c
+¿Cuál es la descripción correcta para WIFEXITED de status en pid_t waitpid(pid_t pid, int *status, int options)?
+a) indica si el hijo terminó normalmente vía exit() y, en ese caso, WEXITSTATUS(s) devuelve el estado de salida
+b) indica si el hijo terminó al recibir una señal y, en ese caso, WTERMSIG(s) devuelve el número de la señal recibida
+c) ninguna es correcta
+a
+¿Cuál es la descripción correcta para WIFSIGNALED de status en pid_t waitpid(pid_t pid, int *status, int options)?
+a) indica si el hijo terminó normalmente vía exit() y, en ese caso, WEXITSTATUS(s) devuelve el estado de salida
+b) indica si el hijo terminó al recibir una señal y, en ese caso, WTERMSIG(s) devuelve el número de la señal recibida
+c) ninguna es correcta
+b
+¿Qué función tiene el método int getrlimit(int resource, struct rlimit *rlim)?
+a) Obtiene los límites del proceso
+b) Obtiene las regulaciones limitantes del proceso
+c) Obtiene los recursos limítrofes del proceso
+a
+¿Qué función tiene el método int setrlimit(int resource, const struct rlimit *rlim)?
+a) Establece los límites del proceso
+b) Establece las regulaciones limitantes del proceso
+c) Establece los recursos limítrofes del proceso
+a
+¿Qué significa RLIMIT_NOFILE de resource dentro de los métodos getrlimit/setrlimit?
+a) Max. número de procesos
+b) Max. número de descriptores de archivo
+c) Max. tamaño de archivo core (bytes)
+b
+¿Qué significa RLIMIT_CORE de resource dentro de los métodos getrlimit/setrlimit?
+a) Max. número de procesos
+b) Max. número de descriptores de archivo
+c) Max. tamaño de archivo core (bytes)
+c
+¿Qué significa RLIMIT_NPROC de resource dentro de los métodos getrlimit/setrlimit?
+a) Max. número de procesos
+b) Max. número de descriptores de archivo
+c) Max. tamaño de archivo core (bytes)
+a
+¿Qué significa RLIMIT_DATA de resource dentro de los métodos getrlimit/setrlimit?
+a) Max. tamaño de archivo (bytes) 
+b) Max. tamaño del heap (bytes)
+c) Max. tamaño de pila (bytes)
+b
+¿Qué método sirve para obtener el uso de recursos?
+a) char *getenv(const char *name )
+b) int getrlimit(int resource, struct rlimit *rlim)
+c) int getrusage(int who, struct rusage *usage)
+c
+¿Cuál es la señal que hace lo siguiente? -> desconexión de terminal (F, terminar proceso)
+a) SIGHUP
+b) SIGSTOP
+c) SIGQUIT
+a
+¿Cuál es la señal que hace lo siguiente? -> interrupción. Se puede generar con Ctrl+C (F)
+a) SIGHUP
+b) SIGSTOP
+c) SIGINT
+c
+¿Cuál es la señal que hace lo siguiente? -> Finalización. Se puede generar con Ctrl+\ (F y C, volcado de memoria)
+a) SIGQUIT
+b) SIGSTOP
+c) SIGKILL 
+a
+¿Cuál es la señal que hace lo siguiente? -> Parar proceso. No se puede capturar, bloquear o ignorar (P, parar)
+a) SIGTSTP
+b) SIGSTOP
+c) SIGQUIT 
+b
+¿Cuál es la señal que hace lo siguiente? -> Parar proceso. Se puede generar con Ctrl+Z (P)
+a) SIGTSTP
+b) SIGSTOP
+c) SIGQUIT 
+a
+¿Cuál es la señal que hace lo siguiente? -> Reanudar proceso parado (continuar)
+a) SIGCONT
+b) SIGSEGV
+c) SIGHUP 
+a
+¿Cuál es la señal que hace lo siguiente? -> Instrucción ilegal (punteros a funciones mal gestionados) (F y C)
+a) SIGTRAP
+b) SIGSEGV
+c) SIGILL 
+c
+¿Cuál es la señal que hace lo siguiente? -> Ejecución paso a paso, enviada después de cada instrucción (F y C)
+a) SIGTRAP
+b) SIGSEGV
+c) SIGILL 
+a
+¿Cuál es la señal que hace lo siguiente? -> Terminación brusca. No se puede capturar, bloquear o ignorar (F)
+a) SIGQUIT
+b) SIGKILL 
+c) SIGILL 
+b
+¿Cuál es la señal que hace lo siguiente? -> Error de acceso a memoria (alineación o dirección no válida) (F y C)
+a) SIGSEGV
+b) SIGPIPE 
+c) SIGBUS 
+c
+¿Cuál es la señal que hace lo siguiente? -> Violación de segmento de datos (F y C)
+a) SIGSEGV
+b) SIGPIPE 
+c) SIGBUS 
+a
+¿Cuál es la señal que hace lo siguiente? -> Intento de escritura en un tubería sin lectores (F)
+a) SIGSEGV
+b) SIGPIPE 
+c) SIGBUS 
+b
+¿Cuál es la señal que hace lo siguiente? -> Despertador, contador a 0 (F)
+a) SIGALRM
+b) SIGPIPE 
+c) SIGTERM 
+a
+¿Cuál es la señal que hace lo siguiente? -> Terminar proceso (F)
+a) SIGQUIT
+b) SIGKILL  
+c) SIGTERM 
+c
+¿Cuál es la señal que hace lo siguiente? -> Señales de usuario (F)
+a) SIGUSR1
+b) SIGUSR2  
+c) SIGUSR1, SIGUSR2 (Ambas) 
+c
+¿Cuál es la señal que hace lo siguiente? -> Terminación del proceso hijo (I, ignorar)
+a) SIGCHLD
+b) SIGKILL  
+c) SIGTERM 
+a
+¿Cuál es la señal que hace lo siguiente? -> Recepción de datos urgentes en socket (I)
+a) SIGHUP
+b) SIGURG  
+c) SIGTERM 
+b
+¿Qué llamada NO es equivalente a int kill(pid_t pid, int signal), que envía una señal a un proceso?
+a) int raise(int signal)
+b) int abort(void)
+c) int destroy(pid_t pid, int signal)
+c
+¿Cuál es la afirmación correcta sobre conjuntos de señales?
+a) La gestión de señales se puede realizar conjuntamente por su nombre o identificador o individualmente usando conjuntos de señales sigset_t donde cada bit representa una señal
+b) La gestión de señales se puede realizar individualmente por su nombre o identificador o conjuntamente usando conjuntos de señales sigset_t donde cada bit representa una señal
+c) La gestión de señales se puede realizar conjuntamente por su nombre o identificador o individualmente usando conjuntos de señales sigget_t donde cada bit representa una señal
+b
+En la función int sigprocmask(int how, const sigset_t *set, sigset_t *oset), ¿Cúal es el comportamiento de how correcto para SIG_BLOCK ?
+a) Reemplaza el conjunto de señales actuales por set
+b) Elimina el conjunto set del conjunto de señales bloqueadas (puede desbloquearse una señal que no estuviera bloqueada)
+c) Añade el conjunto set al conjunto de señales actualmente bloqueadas (OR)
+c
+En la función int sigprocmask(int how, const sigset_t *set, sigset_t *oset), ¿Cúal es el comportamiento de how correcto para SIG_UNBLOCK ?
+a) Reemplaza el conjunto de señales actuales por set
+b) Elimina el conjunto set del conjunto de señales bloqueadas (puede desbloquearse una señal que no estuviera bloqueada)
+c) Añade el conjunto set al conjunto de señales actualmente bloqueadas (OR)
+b
+En la función int sigprocmask(int how, const sigset_t *set, sigset_t *oset), ¿Cúal es el comportamiento de how correcto para SIG_SETMASK ?
+a) Reemplaza el conjunto de señales actuales por set
+b) Elimina el conjunto set del conjunto de señales bloqueadas (puede desbloquearse una señal que no estuviera bloqueada)
+c) Añade el conjunto set al conjunto de señales actualmente bloqueadas (OR)
+a
+¿Qué método sirve para consultar y establecer las señales bloqueadas?
+a) int sigprocmask(int how, const sigset_t *set, sigset_t *oset)
+b) int sigaction(int signal, const struct sigaction *act, struct sigaction *oldact)
+c) int sigpending(const sigset_t *set)
+a
+¿Qué método sirve para comprobar señales pendientes?
+a) int sigprocmask(int how, const sigset_t *set, sigset_t *oset)
+b) int sigaction(int signal, const struct sigaction *act, struct sigaction *oldact)
+c) int sigpending(const sigset_t *set)
+c
+¿Qué método sirve para obtener y establecer la acción asociada a una señal?
+a) int sigprocmask(int how, const sigset_t *set, sigset_t *oset)
+b) int sigaction(int signal, const struct sigaction *act, struct sigaction *oldact)
+c) int sigpending(const sigset_t *set)
+b
+¿Cuál es la acción por defecto en la recepción de una señal?
+a) no existe una acción por defecto en la recepción de una señal, simplemente se activa la señal
+b) la habilitación de la señal, o bien, activar la señal recibida 
+c) la finalización del proceso, o bien, simplemente ignorar la señal
+c
+En el struct sigaction {void (*sa_handler) (int);sigset_t sa_mask;int sa_flags;...} cual es la descripción correcta para el campo -> sa_handler 
+a) modifica el comportamiento del proceso de gestión de la señal: SA_RESTART, SA_RESETHAND y SA_SIGINFO 
+b) es el nuevo manejador para la señal. Su valor puede ser: SIG_DFL: Para el manejador por defecto. SIG_IGN: Para no atender la señal. Un puntero a una función
+c) es el conjunto de señales que serán bloqueadas durante el tratamiento de la señal. Además, se bloquea la señal en cuestión (si no se indica el flag SA_NODEFER)
+b
+En el struct sigaction {void (*sa_handler) (int);sigset_t sa_mask;int sa_flags;...} cual es la descripción correcta para el campo -> sa_mask  
+a) modifica el comportamiento del proceso de gestión de la señal: SA_RESTART, SA_RESETHAND y SA_SIGINFO 
+b) es el nuevo manejador para la señal. Su valor puede ser: SIG_DFL: Para el manejador por defecto. SIG_IGN: Para no atender la señal. Un puntero a una función
+c) es el conjunto de señales que serán bloqueadas durante el tratamiento de la señal. Además, se bloquea la señal en cuestión (si no se indica el flag SA_NODEFER)
+c
+En el struct sigaction {void (*sa_handler) (int);sigset_t sa_mask;int sa_flags;...} cual es la descripción correcta para el campo -> sa_flags   
+a) modifica el comportamiento del proceso de gestión de la señal: SA_RESTART, SA_RESETHAND y SA_SIGINFO 
+b) es el nuevo manejador para la señal. Su valor puede ser: SIG_DFL: Para el manejador por defecto. SIG_IGN: Para no atender la señal. Un puntero a una función
+c) es el conjunto de señales que serán bloqueadas durante el tratamiento de la señal. Además, se bloquea la señal en cuestión (si no se indica el flag SA_NODEFER)
+a
+Dentro del campo sa_flags del struct sigaction, ¿Cuál corresponde con -> reinicia llamadas al sistema interrumpidas (en caso contrario terminan con EINTR) para compatibilidad con BSD?
+a) SA_RESTART 
+b) SA_SIGINFO 
+c) SA_RESETHAND 
+a
+Dentro del campo sa_flags del struct sigaction, ¿Cuál corresponde con -> restaura el manejador por defecto tras tratar la señal?
+a) SA_RESTART 
+b) SA_SIGINFO 
+c) SA_RESETHAND 
+c
+Dentro del campo sa_flags del struct sigaction, ¿Cuál corresponde con -> usa otro manejador (sa_sigaction) de la función con argumentos adicionales?
+a) SA_RESTART 
+b) SA_SIGINFO 
+c) SA_RESETHAND 
+b
+¿Qué ocurre cuando un manejador termina?
+a) No ocurre nada, se continúa con la siguiente ejecución
+b) Se restaura la ejecución en el punto donde se produjo la señal
+c) Envía una señal de finalización del menejador y continúa en la siguiente ejecución
+b
+¿Cuál NO es una precaución a tomar en el manejador?
+a) Declarar las variables globales como no volatile
+b) No usar funciones no reentrantes, como malloc, free o funciones de la librería stdio
+c) Guardar y restaurar el valor de errno si llama a alguna función que pueda modificarlo
+a
+¿Cuál NO es una precaución a tomar en el manejador?
+a) Declarar las variables globales como volatile
+b) Usar funciones no reentrantes, como malloc, free o funciones de la librería stdio
+c) Guardar y restaurar el valor de errno si llama a alguna función que pueda modificarlo
+b
+¿Cuál NO es una precaución a tomar en el manejador?
+a) Declarar las variables globales como volatile
+b) No usar funciones no reentrantes, como malloc, free o funciones de la librería stdio
+c) Eliminar y restaurar el valor de errno si llama a alguna función que pueda modificarlo
+c
+¿Qué hace el método de int sigsuspend(const sigset_t *set)?
+a) Suspender la ejecución del proceso y ejecutar la siguiente señal
+b) Esperar la ocurrencia de una determinada señal, suspendiendo la ejecución del proceso
+c) Ninguna opcion es correcta
+b
+¿Cuál de las siguientes afirmaciones no es correcta respecto a int sigsuspend(const sigset_t *set)?
+a) La máscara de señales bloqueadas se sustituye temporalmente por el conjunto get, el proceso se suspende hasta que una señal que no esté en la máscara se produzca
+b) Cuando se recibe la señal se ejecuta el manejador asociado a la señal y continúa la ejecución del proceso, restaurando la máscara original
+c) Siempre devuelve -1 y, normalmente, establece errno a EINTR
+a
+¿Cuál de las siguientes afirmaciones no es correcta respecto a int sigsuspend(const sigset_t *set)?
+a) La máscara de señales bloqueadas se sustituye temporalmente por el conjunto set, el proceso se suspende hasta que una señal que no esté en la máscara se produzca
+b) Cuando se recibe la señal se ejecuta el manejador asociado a la señal y se detiene la ejecución del proceso, restaurando la máscara original
+c) Siempre devuelve -1 y, normalmente, establece errno a EINTR
+b
+¿Cuál de las siguientes afirmaciones es correcta respecto a unsigned int alarm(unsigned int secs)?
+a) No se heredan con fork(2), pero sí se mantienen tras execve(2)
+b) Si se heredan con fork(2) y no se se mantienen tras execve(2)
+c) No se heredan con fork(2) y no se mantienen tras execve(2)
+a
+¿Cuál de las siguientes afirmaciones no es correcta respecto a unsigned int alarm(unsigned int secs)?
+a) Se programa el temporizador ITIMER_REAL para generar una señal SIGALRM en secs segundos (si es cero, no se planifica ninguna nueva alarma)
+b) Devuelve el valor de segundos restantes para que se produzca el final de la cuenta (0 si no hay ninguna fijada)
+c) Se pueden mezclar con sleep(3) o cualquier otra función que use el mismo temporizador, como setitimer(2)
+c
+En una tubería sin nombres, ¿Qué ocurre si está vacía?
+a) write(2) se bloqueará hasta que se lean suficientes datos para que se pueda completar la escritura
+b) se bloqueará hasta que haya datos disponibles
+c) el extremo de lectura se abre con el flag O_RDONLY y el de escritura, con O_WRONLY
+b
+En una tubería sin nombres, ¿Qué ocurre si está llena?
+a) write(2) se bloqueará hasta que se lean suficientes datos para que se pueda completar la escritura
+b) se bloqueará hasta que haya datos disponibles
+c) el extremo de lectura se abre con el flag O_RDONLY y el de escritura, con O_WRONLY
+a
+En una tubería sin nombres, ¿Qué ocurre si todos los descriptores de escritura se han cerrado?
+a) write(2) enviará la señal SIGPIPE al proceso y, si se ignora la señal, fallará con EPIPE
+b) el núcleo realiza la sincronización y almacena los datos internamente, sin escribirlos en el sistema de ficheros
+c) read(2) devolverá cero, indicando el fin de fichero
+c
+En una tubería sin nombres, ¿Qué ocurre si todos los descriptores de lectura se han cerrado?
+a) write(2) enviará la señal SIGPIPE al proceso y, si se ignora la señal, fallará con EPIPE
+b) el núcleo realiza la sincronización y almacena los datos internamente, sin escribirlos en el sistema de ficheros
+c) read(2) devolverá cero, indicando el fin de fichero
+a
+En una tubería con nombres, con que flag se abre el extremo de lectura?
+a) O_WRONLY y el de escritura, con O_RDONLY
+b) O_RDONLY y el de escritura, con O_WRONLY
+c) Ninguna de las anteriores
+b
+¿En qué consiste en las tuberías la multiplexación de E/S síncrona?
+a) Consiste en implementar múltiples descriptores de fichero, esperando hasta que uno o varios estén listos para realizar una operación de E/S de forma síncrona
+b) Consiste en implementar múltiples descriptores de fichero, esperando hasta que uno o varios estén listos para realizar una operación de E/S de forma asíncrona
+c) Consiste en monitorizar múltiples descriptores de fichero, esperando hasta que uno o varios estén listos para realizar una operación de E/S de forma síncrona
+c

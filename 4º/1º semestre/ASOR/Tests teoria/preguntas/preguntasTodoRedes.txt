@@ -1,0 +1,2070 @@
+¿Cuales de los siguientes protocolos pertenecen a la capa de aplicación?
+a) HTTP, SMTP, TCP, DNS, FTP
+b) HTTP, SMTP, IP, ICMP, FTP
+c) HTTP, SMTP, POP3, DNS, FTP
+c
+¿Cuál es el parámetro para indicar el tiempo que se espera entre sonda y sonda en el temporizador keepalive del protocolo TCP?
+a) tcp_keepalive_time
+b) tcp_keepalive_probes
+c) tcp_keepalive_intvl
+c
+¿Cómo se distingue una máquina en internet?
+a) por su dirección Mac
+b) por su dirección IP
+c) por su puerto
+b
+¿Con qué se identifican las máquinas en la capa de enlace?
+a) por su dirección Mac
+b) por su dirección IP
+c) por su puerto
+a
+¿Cuales son las funciones que nos da el protocolo IP?
+a) Direccionamiento, Routing, Fragmentación
+b) Direccionamiento y Routing pero no Fragmentación
+c) Routing y Fragmentación pero no direccionamiento
+a
+¿Qué protocolo está orientado a conexión?
+a) UDP
+b) TCP
+c) IP
+b
+¿Qué direcciones utilizan las aplicaciones para comunicarse dentro de la misma máquina?
+a) dir broadcast
+b) dir privadas
+c) dir loopback
+c
+¿Qué significa que una dirección es privada?
+a) Que no se reservan para el uso en redes de área local (LAN)
+b) Que no es encaminable en internet, un router cuando ve una dirección privada no la encamina
+c) Son solamente multicast
+b
+¿Cuál es el protocolo de intercambio de mensajes de control en la red?
+a) ARP
+b) ICMP
+c) IP
+b
+¿Cuál es el protocolo que se usa para la traducción de direcciones IP y MAC?
+a) ARP
+b) ICMP
+c) IP
+a
+¿Qué tipo de comunicación necesitamos para preguntar la MAC asociada a una IP?
+a) Unicast
+b) Multicast
+c) Broadcast
+c
+¿Cuántas redes privadas de clase A (/24) hay en el siguiente rango de direcciones: 10.0.0.0 - 10.255.255.255?
+a) 1
+b) 16
+c) 256
+a
+¿Cuántas redes privadas de clase B (/16) hay en el siguiente rango de direcciones: 172.16.0.0 - 172.31.255.255?
+a) 1
+b) 16
+c) 256
+b
+¿Cuántas redes privadas de clase C (/24) hay en el siguiente rango de direcciones: 192.168.0.0 - 192.168.255.255?
+a) 1
+b) 16
+c) 256
+c
+¿Cómo se llama al mensaje del cliente (broadcast) para descubrir los servidores disponibles (puede contener la última dirección IP asignada)?
+a) DHCPREQUEST
+b) DHCPDISCOVER
+c) DHCPOFFER
+b
+¿Cómo se llama a la respuesta de los servidores, con una oferta de parámetros de configuración (puede recibirse más de una)?
+a) DHCPREQUEST
+b) DHCPDISCOVER
+c) DHCPOFFER
+c
+¿Cómo se llama a la petición de oferta del cliente (broadcast, para notificar a todos los servidores) o extensión del tiempo de cesión (El servidor seleccionado se especifica en una opción)?
+a) DHCPREQUEST
+b) DHCPDISCOVER
+c) DHCPOFFER
+a
+¿Cómo se llama al mensaje de confirmación del servidor (broadcast) con parámetros definitivos?
+a) DHCPREQUEST
+b) DHCPACK
+c) Ninguna de los anteriores
+b
+¿Cómo se llama al mensaje del cliente para informar al servidor de que ha finalizado el uso de la dirección IP (no es obligatorio)?
+a) DHCPREQUEST
+b) DHCPDISCOVER
+c) DHCPRELEASE
+c
+¿Cuál es el orden normal de un diagrama de estados y mensajes en DHCP?
+a) Selecting, Requesting, Bound, Renewing, Rebinding
+b) Selecting, Requesting, Rebinding, Renewing, Bound
+c) Selecting, Requesting, Renewing, Rebinding, Bound
+a
+¿Cuál de las siguientes opciones es correcta si tenemos la dirección de red 192.168.128.0/17?
+a) dir broadcast: 255.255.128.0, máscara: 192.168.255.255, rango direcciones: 192.168.128.1-192.168.255.254
+b) dir broadcast: 192.168.255.255, máscara: 255.255.128.0, rango direcciones: 192.168.128.1-192.168.255.254
+c) dir broadcast: 192.168.255.255, máscara: 255.255.255.0, rango direcciones: 192.168.128.1-192.168.255.254
+b
+¿Cuál de los siguientes parámetros NO se puede configurar usando DHCP?
+a) Dirección física (MAC)
+b) Dirección de red (IP)
+c) Router predeterminado
+a
+¿Qué mensaje DHCP se usa para realizar una petición de oferta por parte del cliente?
+a) DHCPDISCOVER
+b) DHCPOFFER
+c) DHCPREQUEST
+c
+Con la introducción de CIDR, se pretende...
+a) ...ampliar el espacio total de direcciones.
+b) ...dividir el espacio de direcciones en bloques de tamaño fijo.
+c) ...aliviar el problema del agotamiento de direcciones.
+c
+¿Cómo distingo que el tráfico de entrada o salida corresponde a una u otra aplicación?
+a) Por su dirección IP
+b) Por su puerto
+c) Por su dirección MAC
+b
+¿Cómo se identifica un segmento TCP)
+a) Con el primer byte que forma el segmento
+b) Con un número de secuencia SEQ
+c) a y b son correctas
+c
+¿En cuantás zonas se divide el flujo de bytes de información con el mecanismo de la ventana deslizante en la ventana de envío?
+a) 3 fases: segmentos enviados y no confirmados, segmentos no enviados y que se pueden enviar, segmentos no enviados y que no se pueden enviar
+b) 3 fases: segmentos confirmados y consumidos, confirmados y no consumidos, buffer de segmentos
+c) 4 fases: segmentos enviados y confirmados, segmentos enviados y no confirmados, segmentos no enviados y que se pueden enviar, segmentos no enviados y que no se pueden enviar
+c
+¿Cómo es fijado el tamaño de la ventana de envío?
+a) Por el emisor
+b) Por el receptor
+c) El router
+b
+Indica cuál de estas afirmaciones es cierta
+a) Si la ventana de envíos se hace más grande, implica más envíos simultáneos y si la ventana se hace más pequeña, implica menos envíos simultáneos
+b) Si la ventana de envíos se hace más grande, implica menos envíos simultáneos y si la ventana se hace más pequeña, implica menos envíos simultáneos
+c) Si la ventana de envíos se hace más grande, implica menos envíos simultáneos y si la ventana se hace más pequeña, implica más envíos simultáneos
+a
+¿En cuantás zonas se divide el flujo de bytes de información con el mecanismo de la ventana deslizante en la ventana de recepción?
+a) 3 fases: segmentos enviados y no confirmados, segmentos no enviados y que se pueden enviar, segmentos no enviados y que no se pueden enviar
+b) 3 fases: segmentos confirmados y consumidos, confirmados y no consumidos, buffer de segmentos
+c) 4 fases: segmentos confirmados y consumidos, confirmados y no consumidos, segmentos ni confirmados ni consumidos, buffer de segmentos
+b
+¿Que es un ACK?
+a) Identificador del siguiente segmento que se espera confirmar en orden
+b) Identificador del siguiente segmento que se espera confirmar sin orden
+c) Identificador del segmento que se ha recibido correctamente
+a
+¿Qué significa que los ACKs son acumulativos?
+a) Cuando se confirma un segmento, se confirman todos sus anteriores
+b) Que espera que se acumulen antes de confirmarlos
+c) Que al confirmarlo se envía con datos para aprovechar el mensaje
+a
+¿Qué es piggybacking?
+a) Enviar la confirmación (ACK) junto con datos para ahorrar en mensajes y hacer la comunicación más eficientes
+b) Solapar los envíos con las confirmaciones para optimizar la tasa de comunicación
+c) Ambas son correctas
+c
+¿Cuáles de estos flags se encuentran en un segmento TCP?
+a) URG, ACK, PSH, RST, SYN, FIN
+b) URG, ACK, PSH, RST, FIN
+c) URG, ACK, PSH, RST, FIN, TCP
+a
+¿De las contramedidas estudiadas para un ataque TCP SYN Flooding, cuál es la más efectiva?
+a) Filtrar conexiones, limitar el número de clientes que se conectan o detectar IPs suplantadas
+b) Aumentar los recursos del servidor
+c) Usando SYN Cookies, retrasar la asignación de recursos
+c
+¿En qué consiste SYN Cookies?
+a) Guardar el estado de la conexión en el propio número de secuencia que envío de vuelta en el número de la confirmación y si es una conexión lícita, ya reservo los recursos
+b) Realizo la asignación de recursos si detectamos que la IP no está en nuestra lista de suplantadas
+c) Es un ataque DoS (Denegación de servicios)
+a
+¿En qué fase se fija el tamaño máximo del segmento (MSS)?
+a) Establecimiento de la conexión
+b) Transferencia
+c) Finalización
+b
+¿Por quién es fijado el tamaño máximo del segmento (MSS) que se puede enviar?
+a) Es fijado por el emisor
+b) Es fijado por el receptor
+c) Es fijado por cada extremo de forma independiente
+c
+¿Qué o quién limita el máximo tamaño del segmento (MSS) que se puede enviar?
+a) Emisor
+b) Receptor
+c) MTU, no podemos enviar un segmento más grande que lo que entra en un paquete IP
+c
+¿Qué mensaje no tiene el flag ACK activo?
+a) Todos menos el primero
+b) Todos los mensajes
+c) Todos menos el último
+a
+Estamos en el estado LISTEN, recibo un mensaje con el flag SYN activado, mandamos un mensaje SYN+ACK, a qué estado nos vamos?
+a) SYN-SENT
+b) SYN-RCVD
+c) ESTABLISHED
+b
+Estamos en el estado CLOSED, recibo un mensaje con el flag SYN+ACK activado, mandamos un mensaje ACK, a qué estado nos vamos?
+a) SYN-SENT
+b) SYN-RCVD
+c) ESTABLISHED
+a
+Cuando nos intentamos conectar a un puerto que no está abierto o cuando se quiere cerrar una comunicación de forma abrupta, ¿que flag mandamos?
+a) RST
+b) FIN
+c) URG
+a
+¿Cuántos milisegundos máximo se puede retrasar una confirmación?
+a) 100ms
+b) 200ms
+c) 500ms
+c
+Si recibimos un segmento y no tenemos que enviar nada en el otro sentido, ¿esperamos a enviar la confirmación (ACK)?
+a) si
+b) no, enviamos la confirmación al instante
+c) si, esperamos hasta un máximo de 500ms
+c
+Si recibimos un segmento y no tenemos que enviar nada en el otro sentido, ¿esperamos a enviar la confirmación (ACK) si no los tenemos en orden?
+a) si
+b) no, enviamos la confirmación al instante
+c) si, esperamos hasta un máximo de 500ms
+b
+Si recibimos un segmento duplicado y no tenemos que enviar nada en el otro sentido, ¿esperamos a enviar la confirmación (ACK)?
+a) si
+b) no, enviamos la confirmación al instante
+c) si, esperamos hasta un máximo de 500ms
+b
+Si recibimos un segmento que rellena un hueco y no tenemos que enviar nada en el otro sentido, ¿esperamos a enviar la confirmación (ACK)?
+a) si
+b) no, enviamos la confirmación al instante
+c) si, esperamos hasta un máximo de 500ms
+b
+¿Es lo mismo ACK que un SACK?
+a) Si podemos utilizar ambos indistintamente
+b) No, SACK solo es informativo para el emisor
+c) Si ya que además SACK sirve para hacer optimizaciones en los envíos
+b
+¿Cómo se da cuenta de que un segmento no ha llegado?
+a) Nos informa un mensaje ICMP
+b) Porque no recibe el ACK
+c) Se para la comunicación
+b
+¿Cuántos temporizadores de retransmisión tenemos en una comunicación TCP?
+a) Un temporizador por cada conexión
+b) Un temporizador por cada segmento que envío
+c) Un temporizador por cada mensaje
+a
+¿Cuando el temporizador de retransmisión expira, qué segmento enviamos?
+a) El primer segmento de mi ventana
+b) El siguiente segmento que tenía para transmitir
+c) El primer segmento que tengo sin confirmar en mi ventana
+c
+¿Cuándo se resetea el temporizador de retransmisión?
+a) Cada vez que se recibe un ACK
+b) Cada vez que se envía un segmento
+c) Ninguna de las anteriores
+a
+¿Cuándo se para el temporizador de retransmisión?
+a) Si todos han sido confirmados
+b) Si ha expirado el tiempo
+c) Si todavía hay pendientes por confirmar
+a
+Si tenemos 5 conexiones abiertas, ¿cuántos temporizadores tenemos?
+a) Solo 5 temporizadores
+b) Podemos tener tantos como envíos hagamos
+c) Podemos tener 2 por conéxión, por lo que 10 temporizadores
+a
+¿Qué pasa si se pierden los ACK?
+a) La pérdida de un ACK lo recupera uno posterior o se soluciona con la retransmisión por el temporizador del segmento que no se ha confirmado su recepción
+b) Retransmitimos el ACK que se ha perdido
+c) No pasa nada
+a
+¿Qué temporizador TCP está asociado a comunicaciones que dejan de transmitir datos durante un instante?
+a) Temporizador KEEPALIVE
+b) Temporizador TIMEWAIT
+c) Temporizador de persistencia
+a
+¿Qué temporizador TCP evita mantener conexiones indefinidamente?
+a) Temporizador KEEPALIVE
+b) Temporizador TIMEWAIT
+c) Temporizador de persistencia
+a
+¿Cuál es el parámetro para indicar el tiempo que se espera entre sonda y sonda en el temporizador keepalive del protocolo TCP?
+a) tcp_keepalive_time
+b) tcp_keepalive_probes
+c) tcp_keepalive_intvl
+c
+¿Cuál es el parámetro para indicar los segundos en los que una conexión puede estar en silencio en el temporizador keepalive del protocolo TCP?
+a) tcp_keepalive_time
+b) tcp_keepalive_probes
+c) tcp_keepalive_intvl
+a
+¿Cuál es el parámetro para indicar el número de sondas en el temporizador keepalive del protocolo TCP?
+a) tcp_keepalive_time
+b) tcp_keepalive_probes
+c) tcp_keepalive_intvl
+b
+¿Cuando se cierra la conexión?
+a) Cuando no se recibe ningún ACK y ha pasado el tiempo del temporizador KEEALIVE
+b) Cuando ya se han enviado todos los segmentos
+c) Cuando hemos recibido el último ACK
+a
+¿De que longitud se envía el segmento en una SONDA TCP?
+a) longitud 1
+b) longitud 0
+c) longitud con un número aleatorio
+b
+¿Que temporizador TCP utilizamos para ver si se ha caído el extremo o sigue vivo?
+a) Temporizador KEEPALIVE
+b) Temporizador TIMEWAIT
+c) Temporizador de persistencia
+a
+¿Que temporizador TCP está asociado a la finalización de la conexión?
+a) Temporizador KEEPALIVE
+b) Temporizador TIMEWAIT
+c) Temporizador de persistencia
+c
+¿Qué valor máximo toma el temporizador TIMEWAIT? MSL -> tiempo máximo de vida de un segmento en la red
+a) MSL (Maximum Segment Lifetime)
+b) 2 * MSL (Maximum Segment Lifetime)
+c) 3 * MSL (Maximum Segment Lifetime)
+b
+¿Qué temporizador se utiliza para evitar colisiones  de número de secuencias de dos conexiones distintas (nueva y vieja) puerto y nº de secuencia no se pueden reutilizar?
+a) Temporizador KEEPALIVE
+b) Temporizador TIMEWAIT
+c) Temporizador de persistencia
+b
+¿Qué temporizador limita el número de clientes simultáneos que podemos tener?
+a) Temporizador KEEPALIVE
+b) Temporizador de persistencia
+c) Temporizador TIMEWAIT
+c
+¿Qué temporizador está asociado a la recepción de un tamaño de ventana 0?
+a) Temporizador KEEPALIVE
+b) Temporizador de persistencia
+c) Temporizador TIMEWAIT
+b
+¿Qué temporizador está asociado al control de flujo?
+a) Temporizador KEEPALIVE
+b) Temporizador de persistencia
+c) Temporizador TIMEWAIT
+b
+¿Cuando se ve que el extremo tiene la ventana a 0, qué temporizador se arranca asociado a esa recepción de ventana 0?
+a) Temporizador KEEPALIVE
+b) Temporizador de persistencia
+c) Temporizador TIMEWAIT
+b
+¿Cuál es el tiempo de suavizado inicialmente?
+a) RTTs = RTTm
+b) RTTs = RTTm/2
+c) RTTs = (1-alfa) * RTTs + alfa * RTTm   alfa < 1
+a
+¿Cuál es el tiempo de desviación inicialmente?
+a) RTTd = RTTm
+b) RTTd = RTTm/2
+c) RTTd = (1-alfa) * RTTs + alfa * RTTm   alfa < 1
+b
+¿Cuál es el tiempo de suavizado siguientes?
+a) RTTs = RTTm
+b) RTTs = RTTm/2
+c) RTTs = (1-alfa) * RTTs + alfa * RTTm   alfa < 1
+c
+¿Cuál es el tiempo de desviación siguientes?
+a) RTTd = RTTm
+b) RTTd = RTTm/2
+c) RTTd = (1-beta) * RTTd + beta * |RTTs - RTTm|   beta < 1
+c
+¿A qué algoritmo pertenece RTO = y x RTTs (y = 2), fijamos el time-out a 2 veces el tiempo RTT estimado, la desviación no la consideramos?
+a) Jacobson
+b) Jacobson/Karels
+c) Karn
+a
+¿A qué algoritmo pertenece RTO = RTTs + 4 x RTTd?
+a) Jacobson
+b) Jacobson/Karels
+c) Karn
+b
+¿A qué algoritmo pertenece RTO = 2 X RTO exponential backoff?
+a) Jacobson
+b) Jacobson/Karels
+c) Karn
+c
+Calcular el RTO utilizando el algoritmo Jacobson/Karels con alfa = 1/8 y beta = 1/4 siendo RTTm = 1,5 segundos
+a) RTO = 6 segundos
+b) RTO = 4,5 segundos
+c) RTO = 3 segundos
+b
+¿Cómo se controla el flujo?
+a) Mediante el mecanismo de la ventana deslizante
+b) Mediante la ventana de envío, anunciada su tamaño en cada segmento enviado
+c) Mediante la ventana de recepción, anunciada su tamaño en cada ACK
+c
+¿Qué es el síndrome de la ventana trivial (silly window)?
+a) Uso ineficiente de la red cuando la aplicación emisora genera datos a un ritmo muy lento o cuando la aplicación receptora consume datos a un ritmo muy lento
+b) Uso correcto de la red cuando la aplicación emisora genera datos a un ritmo muy lento o cuando la aplicación receptora consume datos a un ritmo muy lento
+c) Uso ineficiente de la red cuando la aplicación emisora genera datos a un ritmo muy rápido o cuando la aplicación receptora consume datos a un ritmo muy lento
+a
+¿Cuál es la mejor solución que existe para el problema del sindrome de la ventana trivial (silly window) en el emisor?
+a) Retrasar los ACK
+b) Algoritmo de Nagle
+c) Algoritmo de Clark
+b
+¿Cuál es la mejor solución que existe para el problema del sindrome de la ventana trivial (silly window) en el receptor?
+a) Retrasar los ACK
+b) Algoritmo de Nagle
+c) Algoritmo de Clark
+c
+El control de la congestión y el flujo son ...
+a) dos cosas iguales
+b) dos cosas diferentes
+c) dos cosas iguales con algunas diferencias
+b
+La pérdida de paquetes en la mayoría de las veces se debe a un problema de ...
+a) flujo
+b) de congestión
+c) de otra cosa
+b
+El emisor utiliza el ritmo de llegada de confirmaciones para regular el ritmo de envío de segmentos de datos, ¿esto lo implementa a través de?
+a) La ventana de congestión CW
+b) La ventana de recepción RW
+c) El mecanismo de la ventana deslizante
+a
+Para el control de flujo se utiliza
+a) La ventana de congestión CW
+b) La ventana de recepción RW
+c) El mecanismo de la ventana deslizante
+b
+Cuando estamos en una situación en la que no hay congestión, es decir sin pérdida o retraso de segmentos, indica cual es la opción correcta
+a) La ventana de congestión alcanza el mismo tamaño que la ventana de recepción CW = RW
+b) La ventana de congestión es de mayor tamaño que la ventana de recepción CW > RW
+c) La ventana de congestión es de distinto tamaño que la ventana de recepción CW != RW
+a
+Cuando hay congestión, el tamaño de CW
+a) Se va reduciendo progresivamente
+b) Se va aumentando progresivamente
+c) Se queda igual
+a
+Cuando no hay congestión, el tamaño de CW
+a) Se va reduciendo progresivamente
+b) Se va aumentando progresivamente
+c) Se queda igual
+b
+¿Cuál es el máximo número de bytes que puede enviar el emisor, AW (Allowed Window)?
+a) AW = RW
+b) AW = min {RW, CW}
+c) AW = max {RW, CW}
+b
+La transmisión comienza con un tamaño de ventana de congestión de...
+a) CW = RW
+b) CW = 0
+c) CW = 1
+c
+Indica a qué fase pertenecen las siguientes características, la CW aumenta en 1 por cada segmento enviado y confirmado, tiene un crecimiento exponencial y esta fase termina cuando el tamaño de CW alcanza el umbral de arranque lento(SST), inicialmente SST = 64 Kbytes
+a) Fase de arranque lento (slow start)
+b) Fase de evitación de congestión (congestion avoidance) 
+c) Fase Constante
+a
+Indica a qué fase pertenecen las siguientes características, la CW se incrementa en 1 cada vez que se envía y se confirma una ventana completa, tiene un crecimiento lineal y esta fase termina cuando CW alcanza el tamaño de la ventana de recepción RW
+a) Fase de arranque lento (slow start)
+b) Fase de evitación de congestión (congestion avoidance) 
+c) Fase Constante
+b
+Indica a qué fase pertenecen las siguientes características, la CW se mantiene con el valor de RW (CW = RW)
+a) Fase de arranque lento (slow start)
+b) Fase de evitación de congestión (congestion avoidance) 
+c) Fase Constante
+c
+¿Cómo detectamos la congestión en la red?
+a) Recepción de 3 ACKs duplicados
+b) Expiración del temporizador de retransmisión (RTO)
+c) Con ambas
+c
+¿Cuándo es un nivel leve de congestión?
+a) Recepción de 3 ACKs duplicados
+b) Expiración del temporizador de retransmisión (RTO)
+c) Ambas
+a
+¿Cuándo es un nivel elevado de congestión?
+a) Recepción de 3 ACKs duplicados
+b) Expiración del temporizador de retransmisión (RTO)
+c) Ambas
+b
+Indica a qué nivel de control de congestión corresponde las siguientes características: se activa el método de recuperación rápida, se reduce el valor de CW, SST se reduce a la mitad del valor de CW y ejecutamos la fase de evitación de congestión
+a) Recepción de 3 ACKs duplicados (Nivel leve)
+b) Expiración del temporizador de retransmisión (RTO) (Nivel elevado)
+c) Expiración del temporizador de persistencia (Nivel elevado)
+a
+Indica a qué nivel de control de congestión corresponde las siguientes características: no llegan confirmaciones (tráfico en la red interrumpido), reducimos el valor de SST a la mitad de su CW, se inicializa CW a 1 y se ejecuta la fase de arranque lento
+a) Recepción de 3 ACKs duplicados (Nivel leve)
+b) Expiración del temporizador de retransmisión (RTO) (Nivel elevado)
+c) Expiración del temporizador de persistencia (Nivel elevado)
+b
+Los mecanismos que hemos estudiado para controlar la congestión, sirven para otros protocolos aparte de TCP?
+a) Si, sirven para otros además de TCP
+b) Sirven para TCP y UDP que son ambos protocolos de la capa de transporte
+c) Únicamente sirven para TCP
+c
+¿Qué es SST?
+a) Umbral de arranque lento
+b) Comienzo en el estado de transmisión
+c) Slow Start Thres
+a
+Indica en el control de la congestión cual es correcta en la fase de arranque
+a) CW <= SST
+b) CW >= SST
+c) CW = SST
+a
+Indica en el control de la congestión cual es correcta en la fase de evitación de la congestión
+a) SST <= CW < RW
+b) SST < CW < RW
+c) SST < CW <= RW
+b
+Indica en el control de la congestión cual es correcta en la fase de evitación de la congestión
+a) CW < SST < RW
+b) SST < CW < RW
+c) SST < RW < CW
+b
+Indica en el control de la congestión cual es correcta en la fase constante
+a) CW = RW
+b) SST < CW < RW
+c) CW <= SST
+a
+¿Cómo está implementado DNS?
+a) Como una base de datos relacional
+b) Como una base de datos distribuida
+c) Como una base de datos centralizada
+b
+Indica cual de las siguientes afirmaciones es falsa
+a) DNS está implementado como una BD distribuida
+b) DNS está definido en aproximadamente 107 RFCs
+c) DNS además de tener la base de datos, es el encargado de tener los algoritmos para hacer consultas sobre la misma
+b
+Indica cuál es correcta
+a) DNS recibe y realiza consultas sobre los nombres de dominio
+b) DNS recibe y realiza consultas sobre las IPs
+c) Ambas son correctas
+a
+Indica cuál es la respuesta correcta
+a) Cada sitio guarda información únicamente de sus sistemas
+b) Cada sitio guarda información únicamente de sí mismo
+c) Cada sitio guarda información de todo
+a
+Indica cuál es correcta
+a) DNS está implementada como una BD relacional
+b) Está definido en aproximadamente 202 RFCs
+c) DNS se intercambia y comparte la información con otros sitios
+c
+¿Cuál es la implementación que hemos elegido para implementar DNS?
+a) BIND
+b) Microsoft DNS
+c) Unbound
+a
+Indica cuál de las siguientes afirmaciones es correcta
+a) DNS define un mecanismo para encontrar servicios de red
+b) DNS define herramientas servidor (resolvers) para consultar la BD
+c) DNS define un espacio de nombres distribuido de dominios y direcciones IP
+a
+Indica cuál de las siguientes afirmaciones es correcta
+a) DNS define un mecanismo para encontrar servicios de applicación
+b) DNS define herramientas cliente (resolvers) para consultar la BD
+c) DNS define un espacio de nombres distribuido de dominios y direcciones IP
+b
+Indica cuál de las siguientes afirmaciones es correcta
+a) DNS define un mecanismo para encontrar servicios de applicación
+b) DNS define herramientas servidor (resolvers) para consultar la BD
+c) DNS define un espacio de nombres jerárquico de nombres de dominio y direcciones IP
+c
+La parte de arriba de la jerarquía se denomina...
+a) raíz y es el primer nivel compuesto por 13 servidores de nombres
+b) raíz y es el primer nivel compuesto por 12 servidores de nombres
+c) raíz y es el primer nivel compuesto por 11 servidores de nombres
+a
+La parte de Dominio raíz en DNS está compuesta por 13 servidores de nombres, cuyas máquinas son...
+a) unicast
+b) multicast
+c) anycast
+c
+La parte de Dominio raíz en DNS está compuesta por 13 servidores de nombres, cuyas máquinas son...
+a) anycast
+b) multicast
+c) broadcast
+a
+¿Cómo se llama a los Dominios de primer nivel?
+a) TLDs
+b) Zona
+c) ICANN
+a
+¿Por qué organización están gestionados los dominios de primer nivel?
+a) CDN
+b) IANA
+c) ICANN
+c
+¿Qué incluye cada zona en los dominios de primer nivel?
+a) Incluye los servidores de nombres de los subdominios
+b) Incluye los servidores de nombres autorizados y los servidores de nombres de los subdominios
+c) Ninguna es correcta
+b
+¿Cómo se denomina a los nombres de dominio completamente cualificados?
+a) FCDN
+b) FQDN
+c) DNSF
+b
+¿Cuál es el dominio que se encarga de las resoluciones inversas en DNS?
+a) Prototcolo INDS (Inverse Name Domain Server)
+b) [a-m].root-servers.net
+c) in-addr.arpa
+c
+¿Cuál sería el FQDN de la IP 147.96.80.3/24?
+a) 3.80.96.147.in-addr.arpa.
+b) 3.80.96.147
+c) 147.96.80.3.in-addr.arpa.
+a
+¿Cuál sería el FQDN de la IP 63.173.189.1/24?
+a) 1.189.173.63.in-addr.arpa.
+b) 1.189.173.63
+c) 63.173.189.1.in-addr.arpa.
+a
+¿Qué consulta DNS se debe hacer para averiguar el nombre de dominio asociado a la IP 147.96.1.2?
+a) 147.96.1.2.in-addr.arpa PTR
+b) 2.1.96.147.in-addr.arpa PTR
+c) 1.2.96.147.in-addr.arpa PTR
+b
+Indica la restricción en los nombres de dominios que sea falsa
+a) No hay límite en el número de subdominios de la jerarquía
+b) El FQDN puede ocupar un máximo de 256 caracteres (incluyendo los puntos)
+c) Cada sección del FQDN puede tener un máximo de 64 caracteres
+c
+Indica la restricción en los nombres de dominios que sea falsa
+a) No hay límite en el número de subdominios de la jerarquía
+b) El FQDN puede ocupar un máximo de 128 caracteres (incluyendo los puntos)
+c) Cada sección del FQDN puede tener un máximo de 63 caracteres
+b
+Indica la restricción en los nombres de dominios que sea falsa
+a) Hay un límite en el número de subdominios de la jerarquía
+b) El FQDN puede ocupar un máximo de 256 caracteres (incluyendo los puntos)
+c) Cada sección del FQDN puede tener un máximo de 63 caracteres
+a
+Indica la restricción en los nombres de dominios que sea falsa
+a) No hay límite en el número de subdominios de la jerarquía
+b) Formados por caracteres alfanuméricos, guiones y especiales
+c) No diferencia entre mayúsculas y minúsculas
+b
+Indica la restricción en los nombres de dominios que sea falsa
+a) Cada sección del FQDN puede tener un máximo de 256 caracteres
+b) El FQDN puede ocupar un máximo de 63 caracteres (incluyendo los puntos)
+c) Ambas
+c
+Indica la restricción en los nombres de dominios que sea falsa
+a) Hay diferencia entre mayúsculas y minúsculas
+b) Formados por caracteres alfanuméricos y guiones
+c) No hay límite en el número de subdominios de la jerarquía
+a
+¿Un dominio puede ser diferente a otro si el mismo está en minúsculas o mayúsculas?
+a) Sí, son dominios diferentes
+b) No, ambos son el mismo dominio
+c) No, ya que tienen diferentes IPs asociadas
+b
+¿Podríamos poner la ñ en nuestro dominio por ejemplo en españa?
+a) Si se puede, de ello se encarga el Punycode que codifica caracteres inválidos por otros válidos
+b) No se puede ya que solamente permite formatos alfanuméricos y guiones
+c) No se puede, solo permite caracteres en formato ASCII y no en UTF-8
+a
+La BD de DNS se estructura en...
+a) tablas
+b) ficheros
+c) registros
+c
+Los servidores guardan los registros de sus dominios en...
+a) tablas
+b) ficheros de zona
+c) registros
+b
+¿Los registros son estándar, independientemente de la implementación?
+a) Sí
+b) No
+c) No, cada implementación tiene los suyos
+a
+DNS especifica el protocolo de transmisión o de transferencia de datos entre los servidores ¿Qué transporte utiliza principalmente el protocolo DNS?
+a) Principalmente, UDP en el puerto 53
+b) Principalmente, TCP en el puerto 53
+c) Cualquiera de los dos protocolos
+c
+¿Qué transporte utiliza principalmente el protocolo DNS cuando las consultas son muy grandes de más de 512 bytes?
+a) Principalmente, UDP en el puerto 53
+b) TCP
+c) Cualquiera de los dos protocolos
+b
+Indica cual es falsa
+a) Cachear la resolución de direcciones mejora notablemente la eficiencia
+b) La relación nombre-IP es prácticamente estática
+c) Las respuestas se cachean durante un TTL que es fijo
+c
+Indica cual es falsa
+a) Cachear la resolución de direcciones no mejora notablemente la eficiencia
+b) La relación nombre-IP es prácticamente estática
+c) Las respuestas se cachean durante un TTL que puede variar según en el nivel que esté
+a
+Indica cual es falsa
+a) Cachear la resolución de direcciones mejora notablemente la eficiencia
+b) La relación nombre-IP es prácticamente dinámica
+c) Las respuestas se cachean durante un TTL que puede variar según en el nivel que esté
+b
+Los certificados de seguridad se emiten al
+a) Nombre del Dominio
+b) A la dirección IP
+c) Al servidor donde está el dominio
+a
+¿En qué casos la cache es negativa?
+a) Ningún dominio encaja en la IP
+b) El registro solicitado existe para el recurso
+c) El servidor no responde o no se puede alcanzar por problemas de red
+c
+¿En qué casos la cache es negativa?
+a) Ningún dominio encaja en el nombre buscado
+b) El registro solicitado no existe para el recurso
+c) a y b correctas
+c
+¿Qué servidores de nombres hay?
+a) Autoritativos, De cache, recursivos y no-recursivos
+b) Autoritativos, De cache, recursivos
+c) Autoritativos, De cache
+a
+¿Qué servidores de nombres representan oficialmente a la zona?
+a) Autoritativos
+b) De cache
+c) Recursivos y no-recursivos
+a
+¿Qué servidores de nombres parten de una lista de servidores del dominio raíz?
+a) Autoritativos
+b) De cache
+c) Recursivos y no-recursivos
+b
+¿Qué servidores de nombres guardan los resultados de las búsquedas realizadas y reducen la latencia de las consultas y el tráfico DNS en la red?
+a) Autoritativos
+b) De cache
+c) Recursivos y no-recursivos
+b
+¿Qué servidores de nombres cuando no disponen el registro de la consulta devuelven una referencia al servidor de nombres que puede tenerlo?
+a) Autoritativos
+b) No-recursivos
+c) Recursivos 
+b
+¿Qué servidores de nombres resuelven cada referencia hasta devolver la respuesta al cliente?
+a) Autoritativos
+b) No-recursivos
+c) Recursivos 
+c
+Los servidores Autoritativos suelen ser...
+a) De cache
+b) Recursivos
+c) No recursivos
+c
+En la configuración de los clientes deben usarse servidores...
+a) De cache
+b) Recursivos
+c) No recursivos
+b
+La especificación de DNS establece que debe haber...
+a) Un servidor primario y al menos uno secundario por zona
+b) Un servidor primario por zona
+c) Dos servidores primarios mínimo por zona
+a
+Formato del registro (RFCs 1034 y 2181)
+a) [name] [ttl] [class] type data
+b) [name] [ttl] type data
+c) [name] [ttl] [class] type
+a
+¿Un mismo NS puede tener más de una IP?
+a) sí
+b) No
+c) Sí pero solo una IPV4 y otra IPV6
+a
+Sin DNS, ¿el correo electrónico funcionaría?
+a) No
+b) Puede dar fallos
+c) Sí por el protocolo SMTP
+a
+¿Cuál tiene mayor prioridad?
+a) example.com. IN MX 30 mail
+b) example.com. IN MX 20 mail2.example.com.
+c) example.com. IN MX 10 mail3
+c
+Indica cuál es incorrecta
+a) CNAME permite definir un alias para el nombre canónico
+b) Los registros CNAME deben siempre apuntar a una IP
+c) Un alias definido por un CNAME no debe tener otros registros
+b
+Indica cuál es incorrecta
+a) CNAME permite definir un alias para el nombre canónico
+b) Los registros CNAME deben siempre apuntar a un dominio (nunca a una IP)
+c) Un alias definido por un CNAME puede tener otros registros
+c
+Indica cuál es incorrecta
+a) MX y NS pueden apuntar a un CNAME
+b) Los registros CNAME deben siempre apuntar a un dominio (nunca a una IP)
+c) Un alias definido por un CNAME no debe tener otros registros
+a
+Indica cual sería el tipo de resgistro para web.ucm.es TIPO www.ucm.es
+a) A
+b) CNAME
+c) NS
+b
+Indica cual sería el tipo de resgistro para 147.96.1.2 TIPO www.ucm.es
+a) PTR
+b) NS
+c) A
+a
+Indica cual sería el tipo de resgistro para www.ucm.es TIPO 147.96.1.2 
+a) PTR
+b) A
+c) NS
+b
+Indica cual sería el tipo de resgistro para ucm.es TIPO mail.ucm.es
+a) A
+b) NS
+c) MX
+c
+¿Firewall es lo mismo que filtrado de paquetes?
+a) Sí es lo mismo
+b) No es lo mismo 
+c) Sí es lo mismo solamente que el firewall es la base principal de seguridad
+b
+Indica cuál de estas afirmaciones es correcta
+a) El firewall es lo mismo que el filtrado de paquetes
+b) El firewall se contruye a partir del filtrado de paquetes
+c) Ninguna es correcta
+b
+Indica cuál de estas afirmaciones es correcta
+a) Un firewall establece las políticas de seguridad que luego son implementadas con sus funciones: filtrado de paquetes de red, registro de actividad, traducción de direcciones
+b) El firewall es lo mismo que el filtrado de paquetes y sus funciones son: filtrado de paquetes de red (IPTABLES), registro de actividad, traducción de direcciones
+c) Hay tres tipos de firewalls: en función del estado (stateless/stateful), en función de la capa(de red o aplicación) y en función de filtrado de paquetes(iptables)
+a
+La connection tracking (conntrack) solo sirve para...
+a) Sirve para todo tipo de protocolos incluso ICMP
+b) Protocolos orientados a conexión como TCP
+c) Para protocolos de la capa de transporte: TCP y UDP 
+a
+¿Qué es el connection tracking (conntrack)?
+a) Una componente del Kernel de Linux que sirve para ver el estado de la conexión si es TCP y se utiliza en el filtrado de paquetes
+b) Una componente del Kernel de Linux que sirve para ver el estado de la conexión si está establecida y coincide con un protocolo de transporte y se utiliza en el filtrado de paquetes
+c) Una componente del Kernel de Linux que sigue la pista de si un paquete pertenece o no a una conexión o está relacionado con otros paquetes
+c
+¿Qué función tiene IPTABLES?
+a) Filtrado de paquetes y Resgistro de actividad
+b) Única y exclusivamente filtrado de paquetes
+c) Filtrado de paquetes y traducción de direcciones
+b
+¿Qué partes forman una regla en IPTABLES?
+a) Patrón y acción
+b) Patrón, acción y número de la regla
+c) Protocolo, condiciones y número de la regla
+a
+¿Qué es el patrón de una regla en el filtrado de paquetes?
+a) Si se le aplica esa regla, el patrón es si se acepta o se rechaza el paquete
+b) El patrón nos indica solamente la red en la que se aplica la regla de filtrado
+c) Son las condiciones que deben darse en el paquete para aplicar las acciones de regla
+c
+¿Qué es la acción de una regla en el filtrado de paquetes?
+a) ACCEPT, REJECT, DROP
+b) El acción nos indica solamente la red en la que se aplica la regla de filtrado
+c) Son las condiciones que deben darse en el paquete para aplicar la regla
+a
+¿Cuándo se realiza la acción de la regla en el filtrado de paquetes?
+a) Si el patrón encaja con nuestro paquete
+b) Si estamos en la red correcta
+c) Cuando la regla es genérica siempre, si es particular tenemos que ver si encaja con nuestro patrón
+a
+¿Qué reglas se aplican primero?
+a) Las reglas genéricas
+b) Las reglas particulares
+c) No importa el orden
+b
+¿Cómo se estructuran un conjunto de reglas?
+a) Ficheros especiales
+b) En un fichero específico dentro del Kernel de Linux
+c) Tablas
+c
+Imaginemos que tenemos una tabla de reglas, su tuvieramos tres y ninguna se aplica, ¿Qué pasaría?
+a) Se aplica la acción por defecto
+b) No se aplica ninguna regla
+c) Pasaríamos a la siguiente tabla
+a
+Listas de reglas que se aplican en orden a los paquetes en un punto determinado de su procesamiento ¿Cómo se llaman?
+a) Conjunto de reglas
+b) Cadenas
+c) Tablas
+b
+Conjunto de cadenas destinados a diferentes tipos de procesamiento, ¿Qué son?
+a) Tablas
+b) Cadenas
+c) Conjunto de reglas
+a
+Indica qué afirmación es correcta
+a) Una regla puede mover un paquete a otra cadena
+b) Todo paquete de entrada/salida del sistema atraviesa al menos dos cadenas
+c) Si un paquete no encaja en ninguna de las reglas, no se aplica la política de la cadena
+a
+Indica qué afirmación es falsa
+a) Una regla puede mover un paquete a otra cadena
+b) Todo paquete de entrada/salida del sistema atraviesa al menos una cadena
+c) Si un paquete no encaja en ninguna de las reglas, no se aplica la política de la cadena
+c
+Indica qué afirmación es correcta
+a) Una regla no puede mover un paquete a otra cadena
+b) Todo paquete de entrada/salida del sistema atraviesa al menos una cadena
+c) Si un paquete no encaja en ninguna de las reglas, no se aplica la política de la cadena
+b
+Indica qué afirmación es correcta
+a) Una regla no puede mover un paquete a otra cadena
+b) Todo paquete de entrada/salida del sistema atraviesa al menos dos cadenas
+c) Si un paquete no encaja en ninguna de las reglas, se aplica la política de la cadena
+c
+¿Cuál es la tabla que bloquea o permite el tránsito de un paquete?
+a) Tabla Mangle
+b) Tabla NAT
+c) Tabla Filter
+c
+¿Cuál es la tabla que reescribe las direcciones origen o destino y puertos de un paquete?
+a) Tabla Filter
+b) Tabla NAT
+c) Tabla Mangle
+b
+¿Cuál es la tabla que todo paquete del sistema atraviesa?
+a) Tabla Filter
+b) Tabla NAT
+c) Tabla Mangle
+a
+¿Cuál es la tabla que sirve para cambiar algunos campos del paquete?
+a) Tabla Filter
+b) Tabla NAT
+c) Tabla Mangle
+c
+¿Cuál es la tabla que altera la cabecera del tráfico (MTUs, MSS o TOS) y que tiene todas las cadenas?
+a) Tabla Filter
+b) Tabla NAT
+c) Tabla Mangle
+c
+¿A qué tabla pertenecen las cadenas INPUT, OUTPUT Y FORWARD?
+a) Tabla Filter
+b) Tabla NAT
+c) Tabla Mangle
+a
+¿A qué tabla pertenecen las cadenas PREROUTING, POSTROUTING Y OUTPUT?
+a) Tabla Filter
+b) Tabla NAT
+c) Tabla Mangle
+b
+¿A qué cadena pertenecen los paquetes destinados al sistema?
+a) FORWARD
+b) OUTPUT
+c) INPUT
+c
+¿A qué cadena pertenecen los paquetes generados en el sistema?
+a) FORWARD
+b) OUTPUT
+c) INPUT
+b
+¿A qué cadena pertenecen los paquetes que atraviesan el sistema (encaminados)?
+a) FORWARD
+b) OUTPUT
+c) INPUT
+a
+¿A qué cadena pertenecen los paquetes de entrada antes de la decisión de encaminamiento?
+a) PREROUTING
+b) POSTROUTING
+c) OUTPUT
+a
+¿A qué cadena pertenecen los paquetes de salida después de la decisión de encaminamiento?
+a) PREROUTING
+b) POSTROUTING
+c) OUTPUT
+b
+¿A qué cadena pertenecen los paquetes de salida generados localmente?
+a) PREROUTING
+b) POSTROUTING
+c) OUTPUT
+c
+¿Qué cadena se usa en DNAT?
+a) PREROUTING
+b) POSTROUTING
+c) OUTPUT
+a
+¿Qué cadena se usa en SNAT?
+a) PREROUTING
+b) POSTROUTING
+c) OUTPUT
+b
+¿Qué pasa en mi ordenador cuando llega un paquete?
+a) Pasa por la regla INPUT
+b) Pasa por la regla PREROUTING
+c) Pasa por la regla FORWARD
+b
+Indica cuales son los objetivos de las reglas
+a) INPUT, OUTPUT, FORWARD
+b) ACCEPT, REJECT, DROP, LOG
+c) ACCEPT, REJECT, DROP
+b
+¿Qué objetivo es igual que DROP pero envía un ICMP de un tipo que puede definirse?
+a) LOG
+b) REJECT
+c) Ninguno
+b
+¿Qué parámetro sirve para establecer la política por defecto para cadenas INPUT, OUTPUT y FORWARD?
+a) -P
+b) -A
+c) -S
+a
+¿Cuáles son la definición de reglas según el estado de la conexión?
+a) NEW, ESTABLISHED, RELATED, INVALID, CLOSED
+b) NEW, ESTABLISHED, RELATED, FIN
+c) NEW, ESTABLISHED, RELATED, INVALID
+c
+¿En qué consiste en NAT la traducción estática?
+a) Asignación de N dirrecciones privadas a N direcciones públicas
+b) Asignación de N direcciones privadas a 1 dirección pública
+c) Asignación de N dirrecciones privadas a M direcciones públicas siendo (M < N)
+a
+¿En qué consiste en NAT la traducción estática?
+a) Asignación de N dirrecciones privadas a N direcciones públicas
+b) Asignación fija
+c) Ambas
+c
+¿En qué consiste en NAT la traducción Dinámica?
+a) Asignación de N dirrecciones privadas a M direcciones públicas siendo (M < N)
+b) Asignación dinámica, sólo pueden acceder a Internet M máquinas a la vez
+c) Ambas
+c
+¿En qué consiste en NAT la traducción Dinámica?
+a) Asignación de N dirrecciones privadas a M direcciones públicas siendo (M < N)
+b) Asignación dinámica, sólo pueden acceder a Internet N máquinas a la vez
+c) Asignación de N dirrecciones privadas a N direcciones públicas
+a
+¿En qué consiste en NAT la traducción Dinámica?
+a) Asignación de N dirrecciones privadas a M direcciones públicas siendo (M <= N)
+b) Asignación dinámica, sólo pueden acceder a Internet M máquinas a la vez
+c) Asignación de N dirrecciones privadas a M direcciones públicas siendo (M > N)
+b
+¿En qué consiste en NAT la traducción Dinámica?
+a) Asignación de N dirrecciones privadas a M direcciones públicas siendo (M < N)
+b) Asignación dinámica, sólo pueden acceder a Internet N máquinas a la vez
+c) Asignación de N dirrecciones privadas a M direcciones públicas siendo (M > N)
+a
+¿En qué consiste en NAT el NAPT - Masquerading?
+a) Asignación de N direcciones privadas a 1 dirección pública
+b) Asignación de N direcciones públicas a 1 dirección privada
+c) Asignación de N direcciones privadas a M direcciones públicas
+a
+¿Cuál es el propósito del objetivo MASQUERADE en una regla de iptables?
+a) Realizar DNAT con direcciones públicas dinámicas
+b) Realizar SNAT con direcciones públicas dinámicas
+c) Realizar SNAT con direcciones públicas estáticas
+b
+¿En qué consiste en NAT el Port Forwarding - Virtual Servers?
+a) Asignación de N direcciones privadas a 1 dirección pública
+b) Asignación de 1 dirección pública a N direcciones privadas
+c) Asignación de N direcciones privadas a M direcciones públicas
+b
+¿Qué cadenas se usan para NAT el Port Forwarding - Virtual Servers?
+a) DNAT por lo que PREROUTING y también OUTPUT
+b) SNAT por lo que POSTROUTING y también OUTPUT
+c) DNAT por lo que POSTROUTING y también OUTPUT
+a
+Dentro de las limitaciones de IPv4, ¿Cuántos bits tienen sus direcciones?
+a) 8
+b) 16
+c) 32
+c
+Además del uso de CIDR, ¿Cuál de las siguientes no es una solución al direccionamiento de IPv4?
+a) Uso de intranets con direcciones privadas (NAT)
+b) Uso de direcciones Unicast, Multicast y Anycast
+c) Uso de direcciones dinámicas (DHCP)
+b
+¿IPv4 tiene seguridad?
+a) Si, gracias al uso de DHCP
+b) Si, con la extensión IPSec
+c) No, no tiene seguridad
+b
+¿Cuántos bits forman el espacio de dirección en IPv6?
+a) 64
+b) 128
+c) 256
+b
+¿Cuál de las siguientes carácteristicas NO pertenece a IPv6?
+a) Longitud de direcciones de 128 bits
+b) Clases A, B y C o CIDR
+c) Unicast, Multicast, Anycast
+b
+¿Cuál de las siguientes carácteristicas NO pertenece a IPv6?
+a) Longitud de direcciones de 32 bits
+b) Direcciones sin clase
+c) Unicast, Multicast, Anycast
+a
+¿Cuál de las siguientes carácteristicas NO pertenece a IPv6?
+a) Longitud de direcciones de 128 bits
+b) Unicast, Multicast, Anycast
+c) Unicast, Multicast, Broadcast
+c
+¿Cuál de las siguientes carácteristicas SI pertenece a IPv6?
+a) Formato de cabecera simple. Longitud fija
+b) Formato de cabecera complejo. Longitud variable
+c) Formato de cabecera variable. Longitud estática
+a
+¿Cuál de las siguientes carácteristicas NO pertenece a IPv6?
+a) Unicast
+b) Multicast
+c) Broadcast
+c
+¿Cuál de las siguientes carácteristicas NO pertenece a IPv6?
+a) Seguridad
+b) Soporte tráfico en tiempo real
+c) Todas pertenecen a IPv6
+c
+¿Cuál de las siguientes carácteristicas NO pertenece a IPv6?
+a) Calidad de servicio
+b) Soporte tráfico en tiempo real
+c) Todas pertenecen a IPv6
+c
+¿IPv4 tiene direcciones de tipo anycast?
+a) No, es una característica de IPv6
+b) Si, viene de serie en IPv4
+c) Si, está implementado como un unicast compartido
+c
+¿IPv6 tiene direcciones de tipo broadcast?
+a) No, es una característica básica de IPv4
+b) Si, viene de serie en IPv6
+c) Si, está implementado como dirección multicast de un link local "all nodes"
+c
+¿Cuál de las siguientes carácteristicas NO tiene IPv4?
+a) Calidad de servicio, aunque no soportado totalmente
+b) Soporte de tráfico en tiempo real
+c) Seguridad, pero solamente a través de la extensión IPsec
+b
+¿Cómo se llama al tipo de dirección que identifica a un único interfaz en la red y un paquete dirigido a una dirección de este tipo se entregará únicamente al interfaz identificado con dicha dirección IP?
+a) Unicast
+b) Multicast
+c) Anycast
+a
+¿Cómo se llama al tipo de dirección que identifica a un grupo de interfaces, además un paquete dirigido a una dirección de este tipo se entrega a todos los interfaces identificados con esa dirección y no existe dirección de broadcast?
+a) Unicast
+b) Multicast
+c) Anycast
+b
+¿Cómo se llama al tipo de dirección que identifica a un grupo de interfaces, además un paquete dirigido a una dirección de este tipo se entrega a uno solo de los interfaces identificados con esa dirección, normalmente al más cercano, en función de la métrica usada por el protocolo de encaminamiento?
+a) Unicast
+b) Multicast
+c) Anycast
+c
+¿Cuál es la definición para Unicast?
+a) Dirección que identifica a un grupo de interfaces, además un paquete dirigido a una dirección de este tipo se entrega a todos los interfaces identificados con esa dirección y no existe dirección de broadcast
+b) Dirección que identifica a un único interfaz en la red y un paquete dirigido a una dirección de este tipo se entregará únicamente al interfaz identificado con dicha dirección IP
+c) Dirección que identifica a un grupo de interfaces, además un paquete dirigido a una dirección de este tipo se entrega a uno solo de los interfaces identificados con esa dirección, normalmente al más cercano, en función de la métrica usada por el protocolo de encaminamiento
+b
+¿Cuál es la definición para Multicast?
+a) Dirección que identifica a un único interfaz en la red y un paquete dirigido a una dirección de este tipo se entregará únicamente al interfaz identificado con dicha dirección IP
+b) Dirección que identifica a un grupo de interfaces, además un paquete dirigido a una dirección de este tipo se entrega a uno solo de los interfaces identificados con esa dirección, normalmente al más cercano, en función de la métrica usada por el protocolo de encaminamiento
+c) Dirección que identifica a un grupo de interfaces, además un paquete dirigido a una dirección de este tipo se entrega a todos los interfaces identificados con esa dirección y no existe dirección de broadcast
+c
+¿Cuál es la definición para Anycast?
+a) Dirección que identifica a un único interfaz en la red y un paquete dirigido a una dirección de este tipo se entregará únicamente al interfaz identificado con dicha dirección IP
+b) Dirección que identifica a un grupo de interfaces, además un paquete dirigido a una dirección de este tipo se entrega a todos los interfaces identificados con esa dirección y no existe dirección de broadcast
+c) Dirección que identifica a un grupo de interfaces, además un paquete dirigido a una dirección de este tipo se entrega a uno solo de los interfaces identificados con esa dirección, normalmente al más cercano, en función de la métrica usada por el protocolo de encaminamiento
+c
+¿Cuál es la definición para Unicast?
+a) Dirección que identifica a un grupo de interfaces, además un paquete dirigido a una dirección de este tipo se entrega a uno solo de los interfaces identificados con esa dirección, normalmente al más cercano, en función de la métrica usada por el protocolo de encaminamiento
+b) Dirección que identifica a un grupo de interfaces, además un paquete dirigido a una dirección de este tipo se entrega a todos los interfaces identificados con esa dirección y no existe dirección de broadcast
+c) Dirección que identifica a un único interfaz en la red y un paquete dirigido a una dirección de este tipo se entregará únicamente al interfaz identificado con dicha dirección IP
+c
+¿Cuál es la definición para Multicast?
+c) Dirección que identifica a un grupo de interfaces, además un paquete dirigido a una dirección de este tipo se entrega a todos los interfaces identificados con esa dirección y no existe dirección de broadcast
+a) Dirección que identifica a un único interfaz en la red y un paquete dirigido a una dirección de este tipo se entregará únicamente al interfaz identificado con dicha dirección IP
+b) Dirección que identifica a un grupo de interfaces, además un paquete dirigido a una dirección de este tipo se entrega a uno solo de los interfaces identificados con esa dirección, normalmente al más cercano, en función de la métrica usada por el protocolo de encaminamiento
+a
+¿Cuál es la definición para Anycast?
+a) Dirección que identifica a un único interfaz en la red y un paquete dirigido a una dirección de este tipo se entregará únicamente al interfaz identificado con dicha dirección IP
+b) Dirección que identifica a un grupo de interfaces, además un paquete dirigido a una dirección de este tipo se entrega a todos los interfaces identificados con esa dirección y no existe dirección de broadcast
+c) Dirección que identifica a un grupo de interfaces, además un paquete dirigido a una dirección de este tipo se entrega a uno solo de los interfaces identificados con esa dirección, normalmente al más cercano, en función de la métrica usada por el protocolo de encaminamiento
+c
+¿Cuántos grupos tiene la dirección IPv6?
+a) 8
+b) 12
+c) 16
+a
+¿Cuántos bits tiene cada grupo de la dirección IPv6?
+a) 8 bits
+b) 16 bits
+c) 32 bits
+b
+¿Qué es el Ámbito (scope)?
+a) Longitud fija de un área reservada en la red del ordenador, donde el programa almacena valores fijos
+b) Espacio en el sistema de almacenaje (memoria principal de un ordenador) y un nombre simbólico (un identificador) que está asociado a dicho espacio
+c) Determina la región de la topología de la red de validez de la dirección
+c
+¿Cómo se llama al Ámbito válido dentro del enlace en el que está conectado la interfaz de red (por ejemplo, una LAN)?
+a) Enlace local (link-local)
+b) Sitio local (site-local)
+c) Global
+a
+¿Cómo se llama al Ámbito válido dentro de un sitio, que puede estar formado por una o varias redes interconectadas mediante encaminadores (p.e. campus universitario)?
+a) Enlace local (link-local)
+b) Sitio local (site-local)
+c) Global
+b
+¿Cómo se llama al Ámbito válido en todo internet?
+a) Enlace local (link-local)
+b) Sitio local (site-local)
+c) Global
+c
+¿Cómo se llama a la región conexa de la red de un ámbito determinado?
+a) Área
+b) Zona
+c) Scope
+b
+¿Qué nombre recibe la siguiente dirección? -> ::/8
+a) Reserved Address
+b) Unique Local Address (ULA)
+c) Link-Local Unicast Address
+a
+¿Qué nombre recibe la siguiente dirección? -> ::/8
+a) Reserved Address
+b) Unique Local Address (ULA)
+c) Link-Local Unicast Address
+a
+¿Qué nombre recibe la siguiente dirección? -> 2000::/3
+a) Link-Local Unicast Address
+b) Unique Local Address (ULA)
+c) Global Unicast Address
+c
+¿Qué nombre recibe la siguiente dirección? -> FE80::/10
+a) Link-Local Unicast Address
+b) Site-Local Unicast Address 
+c) Unique Local Address (ULA)
+a
+¿Qué nombre recibe la siguiente dirección? -> FEC0::/10
+a) Link-Local Unicast Address
+b) Site-Local Unicast Address 
+c) Unique Local Address (ULA)
+b
+¿Qué nombre recibe la siguiente dirección? -> FC00::/7
+a) Link-Local Unicast Address
+b) Site-Local Unicast Address 
+c) Unique Local Address (ULA)
+c
+¿Qué nombre recibe la siguiente dirección? -> FF00::/8
+a) Reserved Address
+b) Multicast Address 
+c) Global Unicast Address
+b
+¿Cuál es la dirección correcta para el siguiente tipo de dirección? -> Reserved Address
+a) 2000::/3
+b) FEC0::/10
+c) ::/8
+c
+¿Cuál es la dirección correcta para el siguiente tipo de dirección? -> Global Unicast Address
+a) 2000::/3
+b) FEC0::/10
+c) FC00::/7
+a
+¿Cuál es la dirección correcta para el siguiente tipo de dirección? -> Link-Local Unicast Address
+a) FEC0::/10
+b) FE80::/10
+c) FC00::/7
+b
+¿Cuál es la dirección correcta para el siguiente tipo de dirección? -> Site-Local Unicast Address
+a) FE80::/10
+b) FC00::/7
+c) FEC0::/10
+c
+¿Cuál es la dirección correcta para el siguiente tipo de dirección? -> Unique Local Address (ULA)
+a) FEC0::/10
+b) FE80::/10
+c) FC00::/7
+c
+¿Cuál es la dirección correcta para el siguiente tipo de dirección? -> Multicast Address
+a) FF00::/8
+b) FE80::/10
+c) FC00::/7
+a
+¿IPv4 define un rango de direcciones para enlace local?
+a) Si, en 169.254/16 (RFC 3927)
+b) Si, con la extensión IPlocal
+c) No, IPv4 no tiene direcciones de enlace local
+a
+¿Cuál es la afirmación que NO es correcta respecto a los enlaces locales en IPv6?
+a) Una zona de enlace local consiste en un único enlace y todos los interfaces conectados a ese enlace
+b) Siempre se encaminan fuera de la zona de ámbito del enlace y es un espacio de direcciones plano
+c) Su principal uso es la autoconfiguración y el descubrimiento de vecinos
+b
+¿Cuál es la afirmación que NO es correcta respecto a Unique Local Address (ULA) en IPv6?
+a) Unique Local Addresses, definidas en el RFC 4193 para sustituir a las antiguas direcciones de sitio local (fec0::/10) definidas en el RFC 3879
+b) Direcciones multicast privadas que pueden usarse en intranets jerárquicas, pero son encaminables en Internet (aunque su ámbito es global)
+c) Permiten la auto-configuración
+b
+¿Cuál es la afirmación que NO es correcta respecto a direcciones Unicast Globales en IPv6?
+a) Todas las Direcciones Unicast Globales tienen 001 en sus tres bits de mayor peso, por lo que el prefijo es FE80::/10
+b) Permiten la auto-configuración
+c) Direcciones unicast globales, definidas en el RFC 3587
+a
+En una dirección IPv6 Multicast, ¿Qué significa el flag 0000?
+a) Permanent
+b) Transient
+c) Fleeting
+a
+En una dirección IPv6 Multicast, ¿Qué significa el flag 0001?
+a) Permanent
+b) Transient
+c) Fleeting
+b
+En una dirección IPv6 Multicast, ¿Qué significa el scope 0000?
+a) Reserved
+b) Interface local
+c) Link local
+a
+En una dirección IPv6 Multicast, ¿Qué significa el scope 0001?
+a) Site local
+b) Interface local
+c) Link local
+b
+En una dirección IPv6 Multicast, ¿Qué significa el scope 0010?
+a) Site local
+b) Link local
+c) Organizational local
+b
+En una dirección IPv6 Multicast, ¿Qué significa el scope 0101?
+a) Site local
+b) Link local
+c) Organizational local
+a
+En una dirección IPv6 Multicast, ¿Qué significa el scope 1000?
+a) Site local
+b) Link local
+c) Organizational local
+c
+En una dirección IPv6 Multicast, ¿Qué significa el scope 1110?
+a) Global
+b) Link local
+c) Reserved
+a
+En una dirección IPv6 Multicast, ¿Qué significa el scope 1111?
+a) Global
+b) Link local
+c) Reserved
+c
+En una dirección IPv6 Multicast, ¿Qué valor tiene el scope Reserved?
+a) 0000
+b) 1111
+c) Ambas opciones son válidas
+c
+En una dirección IPv6 Multicast, ¿Qué valor tiene el scope Interface local?
+a) 0001
+b) 0010
+c) 0101
+a
+En una dirección IPv6 Multicast, ¿Qué valor tiene el scope Link local?
+a) 0001
+b) 0010
+c) 0101
+b
+En una dirección IPv6 Multicast, ¿Qué valor tiene el scope Site local?
+a) 0001
+b) 0010
+c) 0101
+c
+En una dirección IPv6 Multicast, ¿Qué valor tiene el scope Organizational local?
+a) 1000
+b) 1110
+c) 0101
+a
+En una dirección IPv6 Multicast, ¿Qué valor tiene el scope Global?
+a) 1000
+b) 1110
+c) 0101
+b
+En una dirección para los computadores (IPv6 Multicast), ¿Qué ámbito tiene la siguiente dirección? -> FF01::1
+a) Site local
+b) Interface local
+c) Link local
+b
+En una dirección para los computadores (IPv6 Multicast), ¿Qué ámbito tiene la siguiente dirección? -> FF02::1
+a) Site local
+b) Interface local
+c) Link local
+c
+En una dirección para los computadores (IPv6 Multicast), ¿Qué dirección es de ámbito Interface local?
+a) FF00::1
+b) FF01::1
+c) FF02::1
+b
+En una dirección para los computadores (IPv6 Multicast), ¿Qué dirección es de ámbito Link local?
+a) FF00::1
+b) FF01::1
+c) FF02::1
+c
+En una dirección para los encaminadores (IPv6 Multicast), ¿Qué ámbito tiene la siguiente dirección? -> FF05::2
+a) Site local
+b) Interface local
+c) Link local
+a
+En una dirección para los encaminadores (IPv6 Multicast), ¿Qué ámbito tiene la siguiente dirección? -> FF02::9
+a) Site local
+b) Interface local
+c) Link local
+c
+En una dirección para los encaminadores (IPv6 Multicast), ¿Qué dirección es de ámbito Site local?
+a) FF02::9
+b) FF02::1
+c) FF05::2
+c
+En una dirección para los encaminadores (IPv6 Multicast), ¿Qué dirección es de ámbito Link local?
+a) FF02::9
+b) FF02::1
+c) FF05::2
+a
+¿En qué protocolo se usan las direcciones multicast de nodo solicitado?
+a) En el multiprotocolo de conmutaciòn de etiquetas (MPLS)
+b) En el protocolo de descubrimiento de vecinos
+c) En el protocolo de intercambio ordenado del paquete (SPX)
+b
+¿Qué rangos de direcciones tienen las direcciones multicast de nodo solicitado?
+a) FF01:0:0:0:0:1:FF00:0000 - FF01:0:0:0:0:1:FFFF:FFFF
+b) FF02:0:0:0:0:1:FF00:0000 - FF02:0:0:0:0:1:FFFF:FFFF
+c) FF03:0:0:0:0:1:FF00:0000 - FF03:0:0:0:0:1:FFFF:FFFF
+b
+¿Qué indica la siguiente dirección? -> 0:0:0:0:0:0:0:0 (::)
+a) Indica que el interfaz no tiene ninguna dirección asignada
+b) Indica que el interfaz es una dirección broadcast
+c) Es la dirección que han dejado sin uso en honor al diseñador de IPv6, Steve Deering
+a
+¿Qué indica la siguiente dirección? -> 0:0:0:0:0:0:0:1 (::1)
+a) Dirección de loopback
+b) Dirección rango local unicast
+c) Dirección reservada para ejemplos y documentación
+a
+¿A qué dirección es similar en IPv4 la dirección 0:0:0:0:0:0:0:1 en IPv6?
+a) 0:0:0:1
+b) 127.0.0.1
+c) 192.168.0.0
+b
+Dentro del formato del datagrama IPv6, ¿Cuál es el formato que distingue diferentes requisitos de entrega del datagrama, es similar al campo DS (antes ToS) de IPv4?
+a) Hop Limit
+b) Flow Label
+c) Traffic Class
+c
+Dentro del formato del datagrama IPv6, ¿Cuál es el formato que etiqueta el paquete como perteneciente a un flujo para mejorar el procesamiento realizado por los encaminadores de la red?
+a) Hop Limit
+b) Flow Label
+c) Traffic Class
+b
+Dentro del formato del datagrama IPv6, ¿Cuál es el formato que es similar al campo TTL de IPv4?
+a) Hop Limit
+b) Flow Label
+c) Traffic Class
+a
+Dentro del formato del datagrama IPv6, ¿Cuál no pertenece al formato Traffic Class?
+a) DSCP (Differentiated Services Code Point, 6 bits): Clasificación del tráfico en grupos con distintos requisitos de calidad de servicio
+b) ECN (Explicit Congestion Notification, 2 bits): Permite detectar situaciones de congestión en la red sin descartar paquetes
+c) Ambas opciones son correctas
+c
+Dentro del formato del datagrama IPv6, ¿Qué código tiene el formato de Next Header para la fragmentación?
+a) 43
+b) 44
+c) 50
+b
+Dentro del formato del datagrama IPv6, ¿Qué código tiene el formato de Next Header para la Hop-by-hop?
+a) 43
+b) 0
+c) 50
+b
+Dentro del formato del datagrama IPv6, ¿Qué código tiene el formato de Next Header para la Source routing?
+a) 43
+b) 44
+c) 50
+a
+Dentro del formato del datagrama IPv6, ¿Qué código tiene el formato de Next Header para la Encrypted payload?
+a) 43
+b) 44
+c) 50
+c
+Dentro del formato del datagrama IPv6, ¿Qué código tiene el formato de Next Header para la Authentication?
+a) 44
+b) 50
+c) 51
+c
+Dentro del formato del datagrama IPv6, ¿Qué código tiene el formato de Next Header para Null (no next header)?
+a) 51
+b) 59
+c) 60
+b
+Dentro del formato del datagrama IPv6, ¿Qué código tiene el formato de Next Header para Destination?
+a) 51
+b) 59
+c) 60
+c
+Dentro del formato del datagrama IPv6, ¿Qué significa la "M" dentro del formato de la cabecera de fragmentación?
+a) Indica si hay más fragmentos o no
+b) Indica cual es la media de fragmentos que tiene el datagrama
+c) Indica el máximo número de fragmentos que puede tener
+a
+¿Cuál es la MTU mínima en IPv4?
+a) 60 bytes
+b) 64 bytes
+c) 68 bytes
+c
+¿Cuál es el tamaño de paquete mínimo que debe recibir un nodo?
+a) 576 bytes
+b) 724 bytes
+c) 988 bytes
+a
+¿De qué otro protocolo auxiliar NO asume el papel ICMPv6?
+a) ICMPv4
+b) ARP y IGMP
+c) L2F y L2TP
+c
+Los mensajes de error en ICMPv6, ¿Qué tipos usan?
+a) Del 0 al 63
+b) Del 0 al 127
+c) Del 128 al 255
+b
+Los mensajes de información en ICMPv6, ¿Qué tipos usan?
+a) Del 0 al 63
+b) Del 0 al 127
+c) Del 128 al 255
+c
+Los mensajes de información en ICMPv6, ¿Cuál es el tipo para Echo request?
+a) 127
+b) 128
+c) 129
+b
+Los mensajes de información en ICMPv6, ¿Cuál es el tipo para Echo reply?
+a) 127
+b) 128
+c) 129
+c
+¿Qué funciones tiene el descubrimiento de vecinos en ICMPv6?
+a) Resolución de direcciones (ARP) y detección de direcciones duplicadas
+b) Detección de vecino inalcanzable y anuncio de cambios en la dirección de enlace 
+c) Mensajes ICMPv6 Neighbor Proclamation (135) y Neighbor Release (136)
+c
+¿Cómo se llama el mensaje que sirve para averiguar la MAC asociada a una dir. IP usando como destino la dirección multicast de nodo solicitado, para determinar si un nodovecino sigue siendo alcanzable o para detectar si la dir. IP está duplicada?
+a) Neighbour Solicitation
+b) Neighbour Announcement
+c) Neighbour Advertisement
+a
+¿Cómo se llama el mensaje que sirve para responder a un mensaje de solicitud de vecino usando la dir. unicast del destinatario como vecino y para anunciar un cambio en la dirección física de un interfaz, con la dirección multicast FF02::1?
+a) Neighbour Solicitation
+b) Neighbour Announcement
+c) Neighbour Advertisement
+c
+¿Cómo se llama el mensaje que sirve para responder a un mensaje de solicitud de vecino usando la dir. unicast del destinatario como vecino y para anunciar un cambio en la dirección física de un interfaz, con la dirección multicast FF02::1?
+a) Neighbour Solicitation
+b) Neighbour Announcement
+c) Ninguna de las anteriores
+c
+¿Cómo se llama el mensaje que se genera cuando un interfaz se activa para detectar los nodos y realizar la autoconfiguración del interfaz, con la dirección multicast ff02::2 como destino?
+a) Router Solicitation
+b) Router Announcement
+c) Router Advertisement
+a
+¿Cómo se llama el mensaje que se genera cuando un interfaz se activa para detectar los nodos y realizar la autoconfiguración del interfaz, con la dirección multicast ff02::2 como destino?
+a) Router Advertisement
+b) Router Announcement
+c) Ninguna de las anteriores
+c
+¿Cómo se llama el mensaje que lo envían los nodos para anunciar su presencia en la red periódicamente con la dirección multicast ff02::1 como destino o como respuesta a un mensaje de solicitud de encaminador de un host?
+a) Router Solicitation
+b) Router Announcement
+c) Router Advertisement
+c
+¿Qué NO incluye la autoconfiguración en ICMPv6?
+a) El valor del MTU necesario para cada datagrama enviado
+b) El identificador de interfaz, generado según modified-EUI64
+c) El prefijo anunciado por el encaminador
+a
+¿Para qué se usa la dirección de red IPv6 ff02::1:ff61:db90?
+a) Para resolver la dirección física asociada a una de las IP de la máquina.
+b) Para comunicarse con las máquinas del sitio local.
+c) Para comunicarse con las máquinas del enlace.
+a
+¿Cómo se realiza la resolución de direcciones en IPv6?
+a) Mediante el uso del protocolo ARPv6.
+b) A partir del identificador extendido de 64 bits (EUI-64).
+c) Mediante el uso del protocolo ICMPv6.
+c
+Respecto a las opciones en el datagrama de IPv6, ¿cuál de las siguientes afirmaciones es cierta?
+a) Las opciones se usan solo cuando se realiza la fragmentación en origen.
+b) Las opciones se codifican como una cabecera adicional.
+c) No soporta opciones para acelerar el procesamiento de los routers.
+b
+¿Cómo se llama la acción de encontrar un camino, desde el origen al destino, a través de nodos de conmutación o routers intermedios?
+a) Hosting
+b) Encaminamiento
+c) Switching
+b
+¿Cómo se llama la acción de conectar varios dispositivos a través de la misma red dentro de una misma oficina o edificio?
+a) Hosting
+b) Encaminamiento
+c) Switching
+c
+¿Cuál de los siguientes grupos son métricas de encaminamiento?
+a) Número de saltos y distancia geográfica
+b) Retardo promedio, ancho de banda y nivel de tráfico
+c) Todas son válidas
+c
+¿Cuál es la métrica de encaminamiento que tiene en cuenta el nivel de uso de las líneas, para intentar utilizar aquellas líneas con menor nivel de saturación?
+a) Nivel del tráfico
+b) Ancho de banda
+c) Retardo promedio
+a
+¿Cuál es la métrica de encaminamiento que tiene en cuenta el número de encaminadores y/o redes intermedias que tiene que atravesar el paquete para alcanzar el destino?
+a) Distancia geográfica
+b) Número de saltos
+c) Nivel de tráfico
+b
+¿Cuál es la métrica de encaminamiento que tiene en cuenta la distancia (en Km) que tiene que recorrer el paquete para alcanzar el destino?
+a) Número de saltos
+b) Nivel de tráfico
+c) Distancia geográfica
+c
+¿Cuál es la métrica de encaminamiento que tiene en cuenta el retardo de las líneas?
+a) Nivel del tráfico
+b) Ancho de banda
+c) Retardo promedio
+c
+¿Cuál es la métrica de encaminamiento que tiene en cuenta la velocidad de transmisión de las líneas por las que tiene que circular el paquete?
+a) Retardo promedio
+b) Nivel del tráfico
+c) Ancho de banda
+c
+¿Cuál es la métrica de encaminamiento que tiene en cuenta el nivel de uso de las líneas, para intentar utilizar aquellas líneas con menor nivel de saturación?
+a) Ancho de banda
+b) Retardo promedio
+c) Ninguna de las anteriores
+c
+¿Cuál es la métrica de encaminamiento que tiene en cuenta el número de encaminadores y/o redes intermedias que tiene que atravesar el paquete para alcanzar el destino?
+a) Distancia geográfica
+b) Nivel de tráfico
+c) Ninguna de las anteriores
+c
+¿Qué hace un encaminador cuando recibe un paquete?
+a) Espera a tener todos los paquetes para comprobar la seguridad antes de reenviar los paquetes
+b) Lo reenvía según le llega por el enlace adecuado para alcanzar el destino
+c) Ninguna de las anteriores es correcta
+b
+¿Mediante que se realiza la elección del enlace en los reenvíos de paquetes?
+a) Tablas de encaminamiento
+b) Etiquetas
+c) Ambas son correctas
+c
+¿Qué características presentan las tablas de encaminamiento?
+a) Encaminamiento por siguiente salto (next hop routing), entradas en la tabla (caminos) por host, red o por defecto y las entradas de red pueden ser con o sin clase
+b) Entradas en la tabla (caminos) por host, red o por defecto, campo Flow Label en la cabecera IPv6 y MPLS (Multiprotocol Label Switching)
+c) Entradas en la tabla (caminos) por host, red o por defecto, entradas de red pueden ser con o sin clase y MPLS (Multiprotocol Label Switching)
+a
+¿Qué características presentan las etiquetas?
+a) Reduce la complejidad de la tabla de encaminamiento, no se usa siempre el mismo circuito (entrega en orden y tiempo no predecible), campo Flow Label en la cabecera IPv6 y MPLS (Multiprotocol Label Switching)
+b) Reduce la complejidad de la tabla de encaminamiento, se usa siempre el mismo circuito (entrega en orden y tiempo predecible), campo Flow Label en la cabecera IPv6 y MPLS (Multiprotocol Label Switching)
+c) Reduce la complejidad de la tabla de encaminamiento, no se usa siempre el mismo circuito (entrega en orden y tiempo no predecible), campo Flow Label en la cabecera IPv4 y MPLS (Multiprotocol Label Switching)
+b
+¿Qué sugiere el principio de optimalidad de Bellman?
+a) Dada una secuencia óptima de decisiones, toda subsecuencia de ella es, a su vez, óptima
+b) Los encaminadores solo necesitan saber la identidad del siguiente encaminador y no de toda la ruta
+c) Ambas son correctas
+c
+¿Qué información tiene una tabla de encaminamiento en terminos generales?
+a) Destino, máscara o prefijo de red (CIDR), métrica asociada al camino, interfaz (entrega directa) y/o siguiente salto (entrega indirecta)
+b) Destino, máscara o prefijo de red (CIDR), métrica asociada al camino e interfaz
+c) Destino, máscara o prefijo de red (CIDR), métrica asociada al camino, interfaz (entrega indirecta) y/o siguiente salto (entrega directa)
+a
+¿Con qué se corresponden las entradas destino en las tablas de encaminamiento?
+a) Host específico, con la red o con un camino para los paquetes que no encajen en ninguna entrada
+b) Host específico, con la red o con el destino por defecto
+c) Ambas definiciones son correctas
+c
+¿Cómo se llama a que las rutas se ordenen de mayor a menor prefijo?
+a) Highest achievable prefix
+b) Maximum sortable prefix
+c) Longest prefix match
+c
+¿En qué se basa el encaminamiento en internet?
+a) Encaminamiento jerárquico y proximidad regional
+b) CIDR y encaminamiento jerárquico
+c) Proximidad regional y limitación de la información intercambiada
+b
+¿Cuál es el encaminamiento que no tiene en cuenta la topología de la red, usa únicamente información local y las técnicas más comunes son Encaminamiento aleatorio, Encaminamiento aislado e Inundación?
+a) Encaminamiento dinámico
+b) Encaminamiento estático
+c) Encaminamiento local
+c
+¿Cuál es el encaminamiento que no tiene en cuenta la topología de la red, usa únicamente información local y las técnicas más comunes son Encaminamiento aleatorio, Encaminamiento aislado e Inundación?
+a) Encaminamiento dinámico
+b) Encaminamiento estático
+c) Ninguna de las anteriores
+c
+¿Cuál es el encaminamiento en el que sus decisiones de encaminamiento consideran la topología de la red y además, las tablas de encaminamiento se construyen manualmente y no se adaptan a los cambios de la red?
+a) Encaminamiento dinámico
+b) Encaminamiento estático
+c) Encaminamiento local
+b
+¿Cuál es el encaminamiento donde las tablas de encaminamiento se construyen de forma automática, mediante el intercambio periódico de información entre los encaminadores y además, permite adaptar automáticamente el encaminamiento a los cambios en la topología de la red?
+a) Encaminamiento dinámico
+b) Encaminamiento estático
+c) Encaminamiento local
+a
+¿Cuál es la técnica más común en el encaminamiento dinámico?
+a) Encaminamiento por vector de distancias (ej. RIP)
+b) Encaminamiento por estado de los enlaces (ej. OSPF)
+c) Ambas respuestas son correctas
+c
+¿Cuál es la técnica más común en el encaminamiento dinámico?
+a) Encaminamiento por vector de distancias (ej. RIP) y encaminamiento por estado de los enlaces (ej. OSPF)
+b) Encaminamiento por vector de proximidades (ej. RIP) y encaminamiento por estado de los routers (ej. OSPF)
+c) Ninguna respuesta es correcta
+a
+¿Debido a qué existe un problema de convergencia en los vectores de distancias?
+a) Si uno de los enlaces se rompe por cualquier motivo, en su tabla de rutas pondría que está a una distancia infinita del destino
+b) Cuando un enlace aumenta su distancia estos cambios tardan en propagarse y además, las actualizaciones para comunicar un enlace caído pueden no converger
+c) Ambas respuestas son correctas
+c
+¿Qué es un horizonte dividido (split horizon)?
+a) Los destinos aprendidos a través de un determinado enlace nunca se difunden a través de dicho enlace
+b) Los destinos aprendidos a través de un determinado enlace sí se difunden a través de dicho enlace, pero con distancia infinita 
+c) Cuando un encaminador detecta una modificación en su tabla de rutas inmediatamente difunde esta información a sus vecinos
+a
+¿Qué es un horizonte dividido con ruta inversa envenenada (poisoned reverse)?
+a) Los destinos aprendidos a través de un determinado enlace nunca se difunden a través de dicho enlace
+b) Los destinos aprendidos a través de un determinado enlace sí se difunden a través de dicho enlace, pero con distancia infinita 
+c) Cuando un encaminador detecta una modificación en su tabla de rutas inmediatamente difunde esta información a sus vecinos
+b
+¿Qué son las actualizaciones forzadas (triggered updates)?
+a) Los destinos aprendidos a través de un determinado enlace nunca se difunden a través de dicho enlace
+b) Los destinos aprendidos a través de un determinado enlace sí se difunden a través de dicho enlace, pero con distancia infinita 
+c) Cuando un encaminador detecta una modificación en su tabla de rutas inmediatamente difunde esta información a sus vecinos
+c
+¿A qué hace referencia el siguiente ejemplo: El nodo B anunciará al nodo A que el destino X está a distancia infinita?
+a) Horizonte dividido (split horizon)
+b) Horizonte dividido con ruta inversa envenenada (poisoned reverse)
+c) Actualizaciones forzadas (triggered updates)
+b
+¿A qué hace referencia el siguiente ejemplo: El nodo B no enviará al nodo A información sobre el destino X?
+a) Horizonte dividido (split horizon)
+b) Horizonte dividido con ruta inversa envenenada (poisoned reverse)
+c) Actualizaciones forzadas (triggered updates)
+a
+¿Cuál es el ejemplo correcto para la solución de small infinity, establecer el infinito a un número pequeño?
+a) En RIP el infinito se establece en 16 saltos (una distancia de 16 se considera inalcanzable y, por tanto, las rutas tienen un límite de 15 saltos)
+b) En OSPF, el número de saltos no se puede calcular debido a lo grande que es, entonces se establece el límite a un número muy pequeño
+c) En BGP, la distancia máxima entre saltos se establece a 4, puesto que para mayores de 4 se considera que el destino no se puede alcanzar
+a
+¿Cuál es la explicación correcta para los protocolos basados en estado del enlace?
+a) Cada encaminador mantiene una base de datos (link state database) con la información sobre la topología exacta de la red
+b) La opción a y además, se identifica sus nodos vecinos y distancia (estado de enlace) y se anuncia esta información a todos los nodos de la red (inundación)
+c) Todo es correcto y además se usa el algoritmo de Dijsktra para construir un mapa de rutas
+c
+¿Quién es un claro ejemplo de uso de los protocolos basados en estado del enlace?
+a) RIP
+b) OSPF
+c) BGP
+b
+¿Qué afirmación no es la correcta respecto al Sistema Autónomo (Autonomous Systems, AS)?
+a) Un AS es una conjunto de redes y encaminadores gestionados y administrados por una misma autoridad
+b) Un AS se comunica con otro AS mediante el protocolo EIGRP (Enhanced Interior Gateway Routing Protocol)
+c) Cada AS se identifica mediante un número de AS (AS Number, ASN)
+b
+¿Qué afirmación no es la correcta respecto a los encaminadores internos del AS?
+a) Conocen el camino a otros ASs y utilizan protocolos de encaminamiento denominados EGP (Exterior Gateway Protocol)
+b) Interconectan únicamente redes dentro del propio AS y utilizan protocolos de encaminamiento denominados IGP (Interior Gateway Protocol)
+c) Sólo conocen en detalle la organización del AS local y desconocen el camino a otros ASs
+a
+¿Qué afirmación no es la correcta respecto a los encaminadores externos o frontera (border router) del AS?
+a) Interconectan varios ASs y conocen el camino a otros ASs, pero no conocen la organización interna de los mismos
+b) Utilizan protocolos de encaminamiento denominados IGP (Interior Gateway Protocol)
+c) Utilizan protocolos de encaminamiento denominados EGP (Exterior Gateway Protocol)
+b
+¿Cuál de los siguientes protocolos no es un Protocolo Interno (IGP)?
+a) RIP y OSPF
+b) EIGRP y IS-IS
+c) EGP y BGP
+c
+¿Cuál de los siguientes protocolos no es un Protocolo Externo (EGP)?
+a) EIGRP
+b) BGP
+c) EGP
+a
+¿Cuál es la afirmación que no es correcta?
+a) EIGRP -> RFC7868 (may 2016)
+b) OSPF -> RFC2453 (jun 1998)
+c) IS-IS -> RFC1195 (dec 1990)
+b
+¿Cuál es la afirmación que no es correcta?
+a) RIP versión 1 -> RFC 1058 (1993) y RIP versión 2 -> RFC 2453 (1998)
+b) RIPng for IPv6 -> RFC 2080 (1997)
+c) Todas las respuestas son correctas
+c
+¿Cuál es la métrica utilizada en el protocolo RIP?
+a) Número de saltos
+b) Distancia entre saltos
+c) Ninguna de las respuestas son correctas
+a
+¿A qué puerto van dirigidos los mensajes que se encapsulan en datagramas UDP en RIP?
+a) Puerto 21
+b) Puerto 189
+c) Puerto 520
+c
+¿En cuántos saltos se establece el infinito en RIP?
+a) 8 saltos
+b) 16 saltos
+c) 32 saltos
+b
+¿Que mecanismo/s puede utilizar RIP?
+a) Horizonte dividido y horizonte dividido con ruta inversa envenenada
+b) Actualizaciones forzadas
+c) Todas las respuestas son correctas
+c
+¿En RIP cómo se llama a la salicitud que se envía cuando se conecta a la red (0.0.0.0) o cuando caduca una entrada en la tabla?
+a) Discover
+b) Request
+c) Response
+b
+¿En RIP cómo se llama a la respuesta que se difunde periódicamente (broadcast) con los vectores de distancia o en respuesta a una solicitud, también usando actualizaciones forzadas cuando cambia la red?
+a) Offer
+b) Request
+c) Response
+c
+¿En RIP cómo se llama al temporizador que tiene intervalo de envío de mensajes RESPONSE para anunciar los vectores de distancia, donde RIP establece un valor de 30s para este temporizador?
+a) Temporizador periódico
+b) Temporizador de expiración
+c) Temporizador de recolección de basura
+a
+¿En RIP cómo se llama al temporizador que controla el periodo de validez de una entrada en la tabla de encaminamiento, donde si no recibe actualización de la entrada durante 180s la entrada deja de considerarse válida?
+a) Temporizador periódico
+b) Temporizador de expiración
+c) Temporizador de recolección de basura
+b
+¿En RIP cómo se llama al temporizador que cuando una entrada de la tabla de rutas expira el encaminador no la elimina inmediatamente, si no que se sigue anunciando con métrica 16 durante un periodo adicional de 120s?
+a) Temporizador periódico
+b) Temporizador de expiración
+c) Temporizador de recolección de basura
+c
+¿Cuál de los siguientes apartados no son limitaciones de RIP versión 1?
+a) Gran cantidad de tráfico broadcast y no tiene soporte para CIDR
+b) No admite sistemas que no compartan el mismo SO y no funciona bien en redes pequeñas
+c) No autentica la información del encaminamiento y no admite caminos alternativos
+b
+Dentro de las limitaciones de RIP versión 1, ¿Por qué genera gran cantidad de tráfico broadcast?
+a) Debido a la difusión constante de las métricas utilizadas (mensajes REQUEST)
+b) Debido a la difusión periódica de los vectores de distancias (mensajes RESPONSE)
+c) Falso, no es una limitación de RIP versión 1
+b
+Además de dar soporte para multicast (224.0.0.9), ¿Cuál de las siguientes opciones no mejora RIP versión 2 respecto a la versión 1?
+a) Soporte para direcciones sin clase
+b) Soporte para eliminar el conteo a infinito
+c) Soporte para autentificación
+b
+En RIP versión 2 a que hace referencia el 2 en el algoritmo de autentificación
+a) Ninguno
+b) Contraseña de 16 bytes en plano
+c) Resumen del mensaje con clave
+b
+En RIP versión 2 a que hace referencia el 0 en el algoritmo de autentificación
+a) Ninguno
+b) Contraseña de 16 bytes en plano
+c) Resumen del mensaje con clave
+a
+En RIP versión 2 a que hace referencia el 3 en el algoritmo de autentificación
+a) Ninguno
+b) Contraseña de 16 bytes en plano
+c) Resumen del mensaje con clave
+c
+¿Qué es RIPng?
+a) Es la adaptación del protocolo RIP-2 para IPv6
+b) Es la tercera versión del protocolo RIP
+c) Se llama así a la versión de RIP que incorpora Switching
+a
+¿A qué puerto van dirigidos los datagramas UDP de los mensajes encapsulados en RIPng?
+a) 519
+b) 520
+c) 521
+c
+¿Cúal de las siguientes afirmaciones sobre OSPF no es correcta?
+a) Se desarrolló como alternativa a RIP para aliviar sus limitaciones
+b) Desarrolla la técnica de inundación de red y mejora el ancho de banda
+c) Utiliza un protocolo propio de encapsulado (89) y direcciones multicast
+b
+En OSPF, ¿Cómo se llama a los mecanismos para hacer un particionado lógico de la red y reducir el intercambio de información?
+a) Zonas
+b) Áreas
+c) Región
+b
+En OSPF, ¿Cómo se llama al área especial que siempre está conectada a otras áreas?
+a) Spine
+b) Pillar
+c) Backbone
+c
+En OSPF, ¿Cómo se llama al tipo de encaminador que está localizado en un área y mantiene sólo información de la topología de su área?
+a) Internal Router (IR)
+b) Area Border Router (ABR)
+c) Autonomous System Boundary Router (ASBR)
+a
+En OSPF, ¿Cómo se llama al tipo de encaminador que está conectado a dos o más áreas, una de ellas la 0 y que mantiene una DB para cada una de las áreas a las que está conectado?
+a) Internal Router (IR)
+b) Area Border Router (ABR)
+c) Autonomous System Boundary Router (ASBR)
+b
+En OSPF, ¿Cómo se llama al tipo de encaminador que está situado en la frontera del AS, transmite rutas externas a la red OSPF y que puede inyectar rutas aprendidas mediante otro protocolo, como RIP?
+a) Internal Router (IR)
+b) Area Border Router (ABR)
+c) Autonomous System Boundary Router (ASBR)
+c
+En OSPF, además de definir las redes multi-acceso con broadcast y multi-acceso sin broadcast, ¿Cúal de las siguientes redes no está definida?
+a) punto-a-punto
+b) punto-multipunto
+c) punto-acceso
+c
+En OSPF, como se llaman a dos encaminadores si comparten un enlace común, pertenecen a la misma área y usan el mismo mecanismo de autentificación:
+a) Limítrofes
+b) Vecinos
+c) Adyacentes
+b
+En OSPF, como se llaman a dos encaminadores si además de ser vecinos, intercambian información de estado de los enlaces entre ellos, lo que permite limitar la info intercambiada entre encaminadores, estas relaciones se desarrollan según el tipo de red:
+a) Limítrofes
+b) Fronterizos
+c) Adyacentes
+c
+¿Para qué sirve el protocolo OSPF Hello?
+a) Sirve para el descubrimiento y mantenimiento de los vecinos
+b) Sirve para establecer la ruta de saltos entre vecinos
+c) Mensaje inicial de tipo broadcast para comunicar la creación de un nuevo encaminador en la red
+a
+En OSPF, para el establecimiento de las adyacencias se sigue un proceso de varias fases, ¿Cuáles son?
+a) Intercambio de la base de datos, establecimiento de la base de datos y generación (carga) de la base de datos
+b) Intercambio de la base de datos y generación (carga) de la base de datos
+c) Establecimiento de la base de datos y generación (carga) de la base de datos
+b
+En BGP, ¿Cómo se llama el tipo de AS que está conectado únicamente a otro AS, además de ser destino u origen para el tráfico (ISP)?
+a) Stub
+b) Multihomed
+c) Tránsito
+a
+En BGP, ¿Cómo se llama el tipo de AS que está conectado a varios AS, además de ser destino y origen del tráfico de red?
+a) Tránsito
+b) Stub
+c) Multihomed
+c
+En BGP, ¿Cómo se llama el tipo de AS que está conectado a varios AS, es destino y origen del tráfico de red y además, permite el tráfico de tránsito?
+a) Stub
+b) Tránsito 
+c) Multihomed
+b
+En BGP, ¿Mediante qué puerto se realiza la comunicación entre encaminadores con TCP?
+a) 179
+b) 180
+c) 181
+a
+En BGP, ¿Cómo se llama al mensaje que realiza el establecimiento de la sesión BGP, contiene el identificador del AS y el encaminador, así como parámetro de configuración?
+a) OPEN
+b) KEEPALIVE
+c) UPDATE
+a
+En BGP, ¿Cómo se llama al mensaje que realiza la actualización incremental de la info de encaminamiento donde cada mensaje puede incluir una red alcanzable en CIDR con sus atributos?
+a) NOTIFICATION
+b) KEEPALIVE
+c) UPDATE
+c
+En BGP, ¿Cómo se llama al mensaje que se envía a los vecinos cuando se detecta un error, por lo que implica un cierre de sesión y donde las rutas asociadas se invalidan? 
+a) NOTIFICATION
+b) KEEPALIVE
+c) UPDATE
+a
+En BGP, ¿Cómo se llama al mensaje que se usa para asegurar que la sesión permanezca activa en respuesta a un mensaje OPEN y periódicamente para informar de la presencia del encaminador?
+a) NOTIFICATION
+b) KEEPALIVE
+c) UPDATE
+b
+En los mensajes UPDATE en BGP cual es el atributo que debe ser admitido por todas las implementaciones BGP (pueden ser obligatorios o discrecionales)?
+a) Bien conocidos
+b) Opcionales
+c) Ninguna de las anteriores
+a
+En los mensajes UPDATE en BGP cual es el atributo que son específicos de cada implementación, pueden ser transitivos o no?
+a) Bien conocidos
+b) Opcionales
+c) Ninguna de las anteriores
+b
+En los mensajes UPDATE en BGP, ¿De qué tipo es el atributo ORIGIN?
+a) Conocidos y discrecionales
+b) Conocidos y obligatorios
+c) Opcionales
+b
+En los mensajes UPDATE en BGP, ¿De qué tipo es el atributo AS_PATH?
+a) Conocidos y discrecionales
+b) Conocidos y obligatorios
+c) Opcionales
+b
+En los mensajes UPDATE en BGP, ¿De qué tipo es el atributo NEXT_HOP?
+a) Conocidos y discrecionales
+b) Conocidos y obligatorios
+c) Opcionales
+b
+En los mensajes UPDATE en BGP, ¿Cuál es el atributo que es la ruta como secuencia de ASs?
+a) ORIGIN
+b) AS_PATH
+c) NEXT_HOP
+b
+En los mensajes UPDATE en BGP, ¿Cuál es el atributo que es la dirección IP del siguiente salto con el fin de alcanzar el destino?
+a) ORIGIN
+b) AS_PATH
+c) NEXT_HOP
+c
+En los mensajes UPDATE en BGP, ¿Cuál es el atributo que tiene el origen de la información de ruta (IGP, EGP o INCOMPLETE)(No debe modificarse por otro encaminador BGP)?
+a) ORIGIN
+b) AS_PATH
+c) NEXT_HOP
+a
+Cuando se recibe un segmento TCP con un número de secuencia que ya se ha recibido previamente...
+a) Se puede retrasar la confirmación del número de secuencia recibido.
+b) Se confirma inmediatamente el número de secuencia esperado.
+c) No es necesario confirmar nada
+b
+El estado TIME-WAIT del protocolo TCP sirve para...  
+a) Implementar el cierre ordenado de tres vías (3-way)
+b) Impedir una nueva conexión con los mismos parámetros
+c) Poder retransmitir los últimos datos enviados antes del cierre
+b
+Cuando se recibe un segmento TCP con un número de secuencia mayor al esperado...
+a) Se puede retrasar la confirmación del número de secuencia recibido.
+b) No es necesario confirmar nada.
+c) Se confirma inmediatamente el número de secuencia esperado.
+c
+La tabla Filter de iptables sirve para…
+a) Cambiar algunos campos de un paquete, como TOS o TTL.
+b) Bloquear o permitir el tránsito de un paquete.
+c) Reescribir las direcciones origen/destino y puertos de un paquete.
+b
+La tabla NAT de iptables sirve para…
+a) Cambiar algunos campos de un paquete, como TOS o TTL.
+b) Bloquear o permitir el tránsito de un paquete.
+c) Reescribir las direcciones y puertos origen/destino de un paquete.
+c
+Respecto a las direcciones IP, el servicio de nombres de dominio (DNS)... 
+a) Establece un dominio específico para buscar su nombre de dominio asociado.
+b) DNS solo maneja la traducción de nombres de dominio en IP.
+c) Solo permite las búsquedas inversas para los dominios TLD (top level domains).
+a
+Los servidores autoritativos de una base de datos DNS…
+a) Guardan los resultados de las búsquedas realizadas.
+b) Suelen ser recursivos.
+c) Representan oficialmente a la zona.
+c
+En el protocolo RIP con horizonte dividido, los anuncios del vector de distancias enviados por un enlace incluyen...
+a) Las redes alcanzables y su distancia.
+b) Las redes alcanzables y su distancia si ésta es menor que 16.
+c) Las redes alcanzables no aprendidas por ese enlace y su distancia.
+c
+¿Cuál de las siguientes afirmaciones sobre el protocolo BGP es cierta?
+a) Los encaminadores construyen un grafo de AS completo de la red.
+b) Los encaminadores intercambian la lista de AS a una red destino.
+c) Los encaminadores intercambian los AS alcanzables y el número de saltos para llegar a ellos.
+b
+En una red de encaminadores que usan el protocolo OSPF, el área 0 es…
+a) La que interconecta todas las demás áreas de la topología del AS.
+b) En la que están los encaminadores de frontera de AS (ASBR).
+c) El área del AS en la que están los clientes de red.
+a

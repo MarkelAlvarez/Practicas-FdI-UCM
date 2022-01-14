@@ -1,0 +1,440 @@
+¿Cómo se llama la acción de encontrar un camino, desde el origen al destino, a través de nodos de conmutación o routers intermedios?
+a) Hosting
+b) Encaminamiento
+c) Switching
+b
+¿Cómo se llama la acción de conectar varios dispositivos a través de la misma red dentro de una misma oficina o edificio?
+a) Hosting
+b) Encaminamiento
+c) Switching
+c
+¿Cuál de los siguientes grupos son métricas de encaminamiento?
+a) Número de saltos y distancia geográfica
+b) Retardo promedio, ancho de banda y nivel de tráfico
+c) Todas son válidas
+c
+¿Cuál es la métrica de encaminamiento que tiene en cuenta el nivel de uso de las líneas, para intentar utilizar aquellas líneas con menor nivel de saturación?
+a) Nivel del tráfico
+b) Ancho de banda
+c) Retardo promedio
+a
+¿Cuál es la métrica de encaminamiento que tiene en cuenta el número de encaminadores y/o redes intermedias que tiene que atravesar el paquete para alcanzar el destino?
+a) Distancia geográfica
+b) Número de saltos
+c) Nivel de tráfico
+b
+¿Cuál es la métrica de encaminamiento que tiene en cuenta la distancia (en Km) que tiene que recorrer el paquete para alcanzar el destino?
+a) Número de saltos
+b) Nivel de tráfico
+c) Distancia geográfica
+c
+¿Cuál es la métrica de encaminamiento que tiene en cuenta el retardo de las líneas?
+a) Nivel del tráfico
+b) Ancho de banda
+c) Retardo promedio
+c
+¿Cuál es la métrica de encaminamiento que tiene en cuenta la velocidad de transmisión de las líneas por las que tiene que circular el paquete?
+a) Retardo promedio
+b) Nivel del tráfico
+c) Ancho de banda
+c
+¿Cuál es la métrica de encaminamiento que tiene en cuenta el nivel de uso de las líneas, para intentar utilizar aquellas líneas con menor nivel de saturación?
+a) Ancho de banda
+b) Retardo promedio
+c) Ninguna de las anteriores
+c
+¿Cuál es la métrica de encaminamiento que tiene en cuenta el número de encaminadores y/o redes intermedias que tiene que atravesar el paquete para alcanzar el destino?
+a) Distancia geográfica
+b) Nivel de tráfico
+c) Ninguna de las anteriores
+c
+¿Qué hace un encaminador cuando recibe un paquete?
+a) Espera a tener todos los paquetes para comprobar la seguridad antes de reenviar los paquetes
+b) Lo reenvía según le llega por el enlace adecuado para alcanzar el destino
+c) Ninguna de las anteriores es correcta
+b
+¿Mediante que se realiza la elección del enlace en los reenvíos de paquetes?
+a) Tablas de encaminamiento
+b) Etiquetas
+c) Ambas son correctas
+c
+¿Qué características presentan las tablas de encaminamiento?
+a) Encaminamiento por siguiente salto (next hop routing), entradas en la tabla (caminos) por host, red o por defecto y las entradas de red pueden ser con o sin clase
+b) Entradas en la tabla (caminos) por host, red o por defecto, campo Flow Label en la cabecera IPv6 y MPLS (Multiprotocol Label Switching)
+c) Entradas en la tabla (caminos) por host, red o por defecto, entradas de red pueden ser con o sin clase y MPLS (Multiprotocol Label Switching)
+a
+¿Qué características presentan las etiquetas?
+a) Reduce la complejidad de la tabla de encaminamiento, no se usa siempre el mismo circuito (entrega en orden y tiempo no predecible), campo Flow Label en la cabecera IPv6 y MPLS (Multiprotocol Label Switching)
+b) Reduce la complejidad de la tabla de encaminamiento, se usa siempre el mismo circuito (entrega en orden y tiempo predecible), campo Flow Label en la cabecera IPv6 y MPLS (Multiprotocol Label Switching)
+c) Reduce la complejidad de la tabla de encaminamiento, no se usa siempre el mismo circuito (entrega en orden y tiempo no predecible), campo Flow Label en la cabecera IPv4 y MPLS (Multiprotocol Label Switching)
+b
+¿Qué sugiere el principio de optimalidad de Bellman?
+a) Dada una secuencia óptima de decisiones, toda subsecuencia de ella es, a su vez, óptima
+b) Los encaminadores solo necesitan saber la identidad del siguiente encaminador y no de toda la ruta
+c) Ambas son correctas
+c
+¿Qué información tiene una tabla de encaminamiento en terminos generales?
+a) Destino, máscara o prefijo de red (CIDR), métrica asociada al camino, interfaz (entrega directa) y/o siguiente salto (entrega indirecta)
+b) Destino, máscara o prefijo de red (CIDR), métrica asociada al camino e interfaz
+c) Destino, máscara o prefijo de red (CIDR), métrica asociada al camino, interfaz (entrega indirecta) y/o siguiente salto (entrega directa)
+a
+¿Con qué se corresponden las entradas destino en las tablas de encaminamiento?
+a) Host específico, con la red o con un camino para los paquetes que no encajen en ninguna entrada
+b) Host específico, con la red o con el destino por defecto
+c) Ambas definiciones son correctas
+c
+¿Cómo se llama a que las rutas se ordenen de mayor a menor prefijo?
+a) Highest achievable prefix
+b) Maximum sortable prefix
+c) Longest prefix match
+c
+¿En qué se basa el encaminamiento en internet?
+a) Encaminamiento jerárquico y proximidad regional
+b) CIDR y encaminamiento jerárquico
+c) Proximidad regional y limitación de la información intercambiada
+b
+¿Cuál es el encaminamiento que no tiene en cuenta la topología de la red, usa únicamente información local y las técnicas más comunes son Encaminamiento aleatorio, Encaminamiento aislado e Inundación?
+a) Encaminamiento dinámico
+b) Encaminamiento estático
+c) Encaminamiento local
+c
+¿Cuál es el encaminamiento que no tiene en cuenta la topología de la red, usa únicamente información local y las técnicas más comunes son Encaminamiento aleatorio, Encaminamiento aislado e Inundación?
+a) Encaminamiento dinámico
+b) Encaminamiento estático
+c) Ninguna de las anteriores
+c
+¿Cuál es el encaminamiento en el que sus decisiones de encaminamiento consideran la topología de la red y además, las tablas de encaminamiento se construyen manualmente y no se adaptan a los cambios de la red?
+a) Encaminamiento dinámico
+b) Encaminamiento estático
+c) Encaminamiento local
+b
+¿Cuál es el encaminamiento donde las tablas de encaminamiento se construyen de forma automática, mediante el intercambio periódico de información entre los encaminadores y además, permite adaptar automáticamente el encaminamiento a los cambios en la topología de la red?
+a) Encaminamiento dinámico
+b) Encaminamiento estático
+c) Encaminamiento local
+a
+¿Cuál es la técnica más común en el encaminamiento dinámico?
+a) Encaminamiento por vector de distancias (ej. RIP)
+b) Encaminamiento por estado de los enlaces (ej. OSPF)
+c) Ambas respuestas son correctas
+c
+¿Cuál es la técnica más común en el encaminamiento dinámico?
+a) Encaminamiento por vector de distancias (ej. RIP) y encaminamiento por estado de los enlaces (ej. OSPF)
+b) Encaminamiento por vector de proximidades (ej. RIP) y encaminamiento por estado de los routers (ej. OSPF)
+c) Ninguna respuesta es correcta
+a
+¿Debido a qué existe un problema de convergencia en los vectores de distancias?
+a) Si uno de los enlaces se rompe por cualquier motivo, en su tabla de rutas pondría que está a una distancia infinita del destino
+b) Cuando un enlace aumenta su distancia estos cambios tardan en propagarse y además, las actualizaciones para comunicar un enlace caído pueden no converger
+c) Ambas respuestas son correctas
+c
+¿Qué es un horizonte dividido (split horizon)?
+a) Los destinos aprendidos a través de un determinado enlace nunca se difunden a través de dicho enlace
+b) Los destinos aprendidos a través de un determinado enlace sí se difunden a través de dicho enlace, pero con distancia infinita 
+c) Cuando un encaminador detecta una modificación en su tabla de rutas inmediatamente difunde esta información a sus vecinos
+a
+¿Qué es un horizonte dividido con ruta inversa envenenada (poisoned reverse)?
+a) Los destinos aprendidos a través de un determinado enlace nunca se difunden a través de dicho enlace
+b) Los destinos aprendidos a través de un determinado enlace sí se difunden a través de dicho enlace, pero con distancia infinita 
+c) Cuando un encaminador detecta una modificación en su tabla de rutas inmediatamente difunde esta información a sus vecinos
+b
+¿Qué son las actualizaciones forzadas (triggered updates)?
+a) Los destinos aprendidos a través de un determinado enlace nunca se difunden a través de dicho enlace
+b) Los destinos aprendidos a través de un determinado enlace sí se difunden a través de dicho enlace, pero con distancia infinita 
+c) Cuando un encaminador detecta una modificación en su tabla de rutas inmediatamente difunde esta información a sus vecinos
+c
+¿A qué hace referencia el siguiente ejemplo: El nodo B anunciará al nodo A que el destino X está a distancia infinita?
+a) Horizonte dividido (split horizon)
+b) Horizonte dividido con ruta inversa envenenada (poisoned reverse)
+c) Actualizaciones forzadas (triggered updates)
+b
+¿A qué hace referencia el siguiente ejemplo: El nodo B no enviará al nodo A información sobre el destino X?
+a) Horizonte dividido (split horizon)
+b) Horizonte dividido con ruta inversa envenenada (poisoned reverse)
+c) Actualizaciones forzadas (triggered updates)
+a
+¿Cuál es el ejemplo correcto para la solución de small infinity, establecer el infinito a un número pequeño?
+a) En RIP el infinito se establece en 16 saltos (una distancia de 16 se considera inalcanzable y, por tanto, las rutas tienen un límite de 15 saltos)
+b) En OSPF, el número de saltos no se puede calcular debido a lo grande que es, entonces se establece el límite a un número muy pequeño
+c) En BGP, la distancia máxima entre saltos se establece a 4, puesto que para mayores de 4 se considera que el destino no se puede alcanzar
+a
+¿Cuál es la explicación correcta para los protocolos basados en estado del enlace?
+a) Cada encaminador mantiene una base de datos (link state database) con la información sobre la topología exacta de la red
+b) La opción a y además, se identifica sus nodos vecinos y distancia (estado de enlace) y se anuncia esta información a todos los nodos de la red (inundación)
+c) Todo es correcto y además se usa el algoritmo de Dijsktra para construir un mapa de rutas
+c
+¿Quién es un claro ejemplo de uso de los protocolos basados en estado del enlace?
+a) RIP
+b) OSPF
+c) BGP
+b
+¿Qué afirmación no es la correcta respecto al Sistema Autónomo (Autonomous Systems, AS)?
+a) Un AS es una conjunto de redes y encaminadores gestionados y administrados por una misma autoridad
+b) Un AS se comunica con otro AS mediante el protocolo EIGRP (Enhanced Interior Gateway Routing Protocol)
+c) Cada AS se identifica mediante un número de AS (AS Number, ASN)
+b
+¿Qué afirmación no es la correcta respecto a los encaminadores internos del AS?
+a) Conocen el camino a otros ASs y utilizan protocolos de encaminamiento denominados EGP (Exterior Gateway Protocol)
+b) Interconectan únicamente redes dentro del propio AS y utilizan protocolos de encaminamiento denominados IGP (Interior Gateway Protocol)
+c) Sólo conocen en detalle la organización del AS local y desconocen el camino a otros ASs
+a
+¿Qué afirmación no es la correcta respecto a los encaminadores externos o frontera (border router) del AS?
+a) Interconectan varios ASs y conocen el camino a otros ASs, pero no conocen la organización interna de los mismos
+b) Utilizan protocolos de encaminamiento denominados IGP (Interior Gateway Protocol)
+c) Utilizan protocolos de encaminamiento denominados EGP (Exterior Gateway Protocol)
+b
+¿Cuál de los siguientes protocolos no es un Protocolo Interno (IGP)?
+a) RIP y OSPF
+b) EIGRP y IS-IS
+c) EGP y BGP
+c
+¿Cuál de los siguientes protocolos no es un Protocolo Externo (EGP)?
+a) EIGRP
+b) BGP
+c) EGP
+a
+¿Cuál es la afirmación que no es correcta?
+a) EIGRP -> RFC7868 (may 2016)
+b) OSPF -> RFC2453 (jun 1998)
+c) IS-IS -> RFC1195 (dec 1990)
+b
+¿Cuál es la afirmación que no es correcta?
+a) RIP versión 1 -> RFC 1058 (1993) y RIP versión 2 -> RFC 2453 (1998)
+b) RIPng for IPv6 -> RFC 2080 (1997)
+c) Todas las respuestas son correctas
+c
+¿Cuál es la métrica utilizada en el protocolo RIP?
+a) Número de saltos
+b) Distancia entre saltos
+c) Ninguna de las respuestas son correctas
+a
+¿A qué puerto van dirigidos los mensajes que se encapsulan en datagramas UDP en RIP?
+a) Puerto 21
+b) Puerto 189
+c) Puerto 520
+c
+¿En cuántos saltos se establece el infinito en RIP?
+a) 8 saltos
+b) 16 saltos
+c) 32 saltos
+b
+¿Que mecanismo/s puede utilizar RIP?
+a) Horizonte dividido y horizonte dividido con ruta inversa envenenada
+b) Actualizaciones forzadas
+c) Todas las respuestas son correctas
+c
+¿En RIP cómo se llama a la salicitud que se envía cuando se conecta a la red (0.0.0.0) o cuando caduca una entrada en la tabla?
+a) Discover
+b) Request
+c) Response
+b
+¿En RIP cómo se llama a la respuesta que se difunde periódicamente (broadcast) con los vectores de distancia o en respuesta a una solicitud, también usando actualizaciones forzadas cuando cambia la red?
+a) Offer
+b) Request
+c) Response
+c
+¿En RIP cómo se llama al temporizador que tiene intervalo de envío de mensajes RESPONSE para anunciar los vectores de distancia, donde RIP establece un valor de 30s para este temporizador?
+a) Temporizador periódico
+b) Temporizador de expiración
+c) Temporizador de recolección de basura
+a
+¿En RIP cómo se llama al temporizador que controla el periodo de validez de una entrada en la tabla de encaminamiento, donde si no recibe actualización de la entrada durante 180s la entrada deja de considerarse válida?
+a) Temporizador periódico
+b) Temporizador de expiración
+c) Temporizador de recolección de basura
+b
+¿En RIP cómo se llama al temporizador que cuando una entrada de la tabla de rutas expira el encaminador no la elimina inmediatamente, si no que se sigue anunciando con métrica 16 durante un periodo adicional de 120s?
+a) Temporizador periódico
+b) Temporizador de expiración
+c) Temporizador de recolección de basura
+c
+¿Cuál de los siguientes apartados no son limitaciones de RIP versión 1?
+a) Gran cantidad de tráfico broadcast y no tiene soporte para CIDR
+b) No admite sistemas que no compartan el mismo SO y no funciona bien en redes pequeñas
+c) No autentica la información del encaminamiento y no admite caminos alternativos
+b
+Dentro de las limitaciones de RIP versión 1, ¿Por qué genera gran cantidad de tráfico broadcast?
+a) Debido a la difusión constante de las métricas utilizadas (mensajes REQUEST)
+b) Debido a la difusión periódica de los vectores de distancias (mensajes RESPONSE)
+c) Falso, no es una limitación de RIP versión 1
+b
+Además de dar soporte para multicast (224.0.0.9), ¿Cuál de las siguientes opciones no mejora RIP versión 2 respecto a la versión 1?
+a) Soporte para direcciones sin clase
+b) Soporte para eliminar el conteo a infinito
+c) Soporte para autentificación
+b
+En RIP versión 2 a que hace referencia el 2 en el algoritmo de autentificación
+a) Ninguno
+b) Contraseña de 16 bytes en plano
+c) Resumen del mensaje con clave
+b
+En RIP versión 2 a que hace referencia el 0 en el algoritmo de autentificación
+a) Ninguno
+b) Contraseña de 16 bytes en plano
+c) Resumen del mensaje con clave
+a
+En RIP versión 2 a que hace referencia el 3 en el algoritmo de autentificación
+a) Ninguno
+b) Contraseña de 16 bytes en plano
+c) Resumen del mensaje con clave
+c
+¿Qué es RIPng?
+a) Es la adaptación del protocolo RIP-2 para IPv6
+b) Es la tercera versión del protocolo RIP
+c) Se llama así a la versión de RIP que incorpora Switching
+a
+¿A qué puerto van dirigidos los datagramas UDP de los mensajes encapsulados en RIPng?
+a) 519
+b) 520
+c) 521
+c
+¿Cúal de las siguientes afirmaciones sobre OSPF no es correcta?
+a) Se desarrolló como alternativa a RIP para aliviar sus limitaciones
+b) Desarrolla la técnica de inundación de red y mejora el ancho de banda
+c) Utiliza un protocolo propio de encapsulado (89) y direcciones multicast
+b
+En OSPF, ¿Cómo se llama a los mecanismos para hacer un particionado lógico de la red y reducir el intercambio de información?
+a) Zonas
+b) Áreas
+c) Región
+b
+En OSPF, ¿Cómo se llama al área especial que siempre está conectada a otras áreas?
+a) Spine
+b) Pillar
+c) Backbone
+c
+En OSPF, ¿Cómo se llama al tipo de encaminador que está localizado en un área y mantiene sólo información de la topología de su área?
+a) Internal Router (IR)
+b) Area Border Router (ABR)
+c) Autonomous System Boundary Router (ASBR)
+a
+En OSPF, ¿Cómo se llama al tipo de encaminador que está conectado a dos o más áreas, una de ellas la 0 y que mantiene una DB para cada una de las áreas a las que está conectado?
+a) Internal Router (IR)
+b) Area Border Router (ABR)
+c) Autonomous System Boundary Router (ASBR)
+b
+En OSPF, ¿Cómo se llama al tipo de encaminador que está situado en la frontera del AS, transmite rutas externas a la red OSPF y que puede inyectar rutas aprendidas mediante otro protocolo, como RIP?
+a) Internal Router (IR)
+b) Area Border Router (ABR)
+c) Autonomous System Boundary Router (ASBR)
+c
+En OSPF, además de definir las redes multi-acceso con broadcast y multi-acceso sin broadcast, ¿Cúal de las siguientes redes no está definida?
+a) punto-a-punto
+b) punto-multipunto
+c) punto-acceso
+c
+En OSPF, como se llaman a dos encaminadores si comparten un enlace común, pertenecen a la misma área y usan el mismo mecanismo de autentificación:
+a) Limítrofes
+b) Vecinos
+c) Adyacentes
+b
+En OSPF, como se llaman a dos encaminadores si además de ser vecinos, intercambian información de estado de los enlaces entre ellos, lo que permite limitar la info intercambiada entre encaminadores, estas relaciones se desarrollan según el tipo de red:
+a) Limítrofes
+b) Fronterizos
+c) Adyacentes
+c
+¿Para qué sirve el protocolo OSPF Hello?
+a) Sirve para el descubrimiento y mantenimiento de los vecinos
+b) Sirve para establecer la ruta de saltos entre vecinos
+c) Mensaje inicial de tipo broadcast para comunicar la creación de un nuevo encaminador en la red
+a
+En OSPF, para el establecimiento de las adyacencias se sigue un proceso de varias fases, ¿Cuáles son?
+a) Intercambio de la base de datos, establecimiento de la base de datos y generación (carga) de la base de datos
+b) Intercambio de la base de datos y generación (carga) de la base de datos
+c) Establecimiento de la base de datos y generación (carga) de la base de datos
+b
+En BGP, ¿Cómo se llama el tipo de AS que está conectado únicamente a otro AS, además de ser destino u origen para el tráfico (ISP)?
+a) Stub
+b) Multihomed
+c) Tránsito
+a
+En BGP, ¿Cómo se llama el tipo de AS que está conectado a varios AS, además de ser destino y origen del tráfico de red?
+a) Tránsito
+b) Stub
+c) Multihomed
+c
+En BGP, ¿Cómo se llama el tipo de AS que está conectado a varios AS, es destino y origen del tráfico de red y además, permite el tráfico de tránsito?
+a) Stub
+b) Tránsito 
+c) Multihomed
+b
+En BGP, ¿Mediante qué puerto se realiza la comunicación entre encaminadores con TCP?
+a) 179
+b) 180
+c) 181
+a
+En BGP, ¿Cómo se llama al mensaje que realiza el establecimiento de la sesión BGP, contiene el identificador del AS y el encaminador, así como parámetro de configuración?
+a) OPEN
+b) KEEPALIVE
+c) UPDATE
+a
+En BGP, ¿Cómo se llama al mensaje que realiza la actualización incremental de la info de encaminamiento donde cada mensaje puede incluir una red alcanzable en CIDR con sus atributos?
+a) NOTIFICATION
+b) KEEPALIVE
+c) UPDATE
+c
+En BGP, ¿Cómo se llama al mensaje que se envía a los vecinos cuando se detecta un error, por lo que implica un cierre de sesión y donde las rutas asociadas se invalidan? 
+a) NOTIFICATION
+b) KEEPALIVE
+c) UPDATE
+a
+En BGP, ¿Cómo se llama al mensaje que se usa para asegurar que la sesión permanezca activa en respuesta a un mensaje OPEN y periódicamente para informar de la presencia del encaminador?
+a) NOTIFICATION
+b) KEEPALIVE
+c) UPDATE
+b
+En los mensajes UPDATE en BGP cual es el atributo que debe ser admitido por todas las implementaciones BGP (pueden ser obligatorios o discrecionales)?
+a) Bien conocidos
+b) Opcionales
+c) Ninguna de las anteriores
+a
+En los mensajes UPDATE en BGP cual es el atributo que son específicos de cada implementación, pueden ser transitivos o no?
+a) Bien conocidos
+b) Opcionales
+c) Ninguna de las anteriores
+b
+En los mensajes UPDATE en BGP, ¿De qué tipo es el atributo ORIGIN?
+a) Conocidos y discrecionales
+b) Conocidos y obligatorios
+c) Opcionales
+b
+En los mensajes UPDATE en BGP, ¿De qué tipo es el atributo AS_PATH?
+a) Conocidos y discrecionales
+b) Conocidos y obligatorios
+c) Opcionales
+b
+En los mensajes UPDATE en BGP, ¿De qué tipo es el atributo NEXT_HOP?
+a) Conocidos y discrecionales
+b) Conocidos y obligatorios
+c) Opcionales
+b
+En los mensajes UPDATE en BGP, ¿Cuál es el atributo que es la ruta como secuencia de ASs?
+a) ORIGIN
+b) AS_PATH
+c) NEXT_HOP
+b
+En los mensajes UPDATE en BGP, ¿Cuál es el atributo que es la dirección IP del siguiente salto con el fin de alcanzar el destino?
+a) ORIGIN
+b) AS_PATH
+c) NEXT_HOP
+c
+En los mensajes UPDATE en BGP, ¿Cuál es el atributo que tiene el origen de la información de ruta (IGP, EGP o INCOMPLETE)(No debe modificarse por otro encaminador BGP)?
+a) ORIGIN
+b) AS_PATH
+c) NEXT_HOP
+a
+En el protocolo RIP con horizonte dividido, los anuncios del vector de distancias enviados por un enlace incluyen...
+a) Las redes alcanzables y su distancia.
+b) Las redes alcanzables y su distancia si ésta es menor que 16.
+c) Las redes alcanzables no aprendidas por ese enlace y su distancia.
+c
+¿Cuál de las siguientes afirmaciones sobre el protocolo BGP es cierta?
+a) Los encaminadores construyen un grafo de AS completo de la red.
+b) Los encaminadores intercambian la lista de AS a una red destino.
+c) Los encaminadores intercambian los AS alcanzables y el número de saltos para llegar a ellos.
+b
+En una red de encaminadores que usan el protocolo OSPF, el área 0 es…
+a) La que interconecta todas las demás áreas de la topología del AS.
+b) En la que están los encaminadores de frontera de AS (ASBR).
+c) El área del AS en la que están los clientes de red.
+a

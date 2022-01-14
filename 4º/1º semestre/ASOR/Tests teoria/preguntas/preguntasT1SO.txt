@@ -1,0 +1,250 @@
+¿Cuál es el estándar más general, adaptado por ANSI e ISO?
+a) ANSI-C/ISO-B 
+b) ANSI-B/ISO-B
+c) ANSI-C/ISO-C
+c
+¿Cómo se llama el estándar de programación que sus contribuciones más importantes son los enlaces simbólicos, sockets, la función del select, etc..?
+a) SVID
+b) BSD
+c) POSIX
+b
+¿Cómo se llama a la descripción formal de las distribuciones comerciales de UNIX por AT&T (Su principal contribución son los mecanismos IPC)?
+a) SVID
+b) POSIX
+c) BSD
+a
+¿Cómo se llama a lo que describe llamadas al sitema y librerías de C, especifica la semántica detallada de la shell y un conjunto mínimo de comandos, además de infertaces detallados para varios lenguajes de programación?
+a) POSIX
+b) SVID
+c) BSD
+a
+¿Cuál es un SO de tipo UNIX de software libre con licencia GNU GPL (Linux utiliza este tipo de software junto con un kernel propio de Linux)?
+a) SVID
+b) GNU
+c) BSD
+b
+¿En qué secciones están definidas las funciones de sistema y librería?
+a) Sección de manual 1/2 respectivamente
+b) Sección de manual 2/3 respectivamente
+c) Sección de manual 3/4 respectivamente
+b
+Indica cuál es correcta para las llamadas al sistema en el código de error
+a) -1 + errno
+b) 0 + errno
+c) NULL + no errno
+a
+Indica cuál es correcta para las llamadas a Librerías en el código de error
+a) -1 + errno
+b) 0 + errno
+c) NULL + no errno
+c
+¿En las llamadas al sistema se reserva espacio para los parámetros en la memoria?
+a) Sí, se reserva un espacio dinámico
+b) Sí, se reserva un espacio estático
+c) No se reserva
+c
+¿En las llamadas a librerías se reserva espacio para los parámetros en la memoria?
+a) Sí, se reserva un espacio dinámico
+b) Sí, se reserva un espacio dinámico o estático
+c) No se reserva
+b
+¿Cuál es el área de ejecución de las llamadas al sistema?
+a) Usuario
+b) Kernel
+c) Usuario/Kernel
+c
+¿Cuál es el área de ejecución de las llamadas a librerías?
+a) Usuario
+b) Kernel
+c) Usuario/Kernel
+a
+¿Se reserva espacio para parámetros en las llamadas al sistema?
+a) No, no se reserva
+b) Si, si se reserva
+c) Si, solamente en las llamadas más importantes
+a
+¿Se reserva espacio para parámetros en las llamadas a librerías?
+a) No, no se reserva
+b) Si, si se reserva
+c) Si, dinámico/estático
+c
+¿Cuál es el formato de cabecera del programa principal correcto?
+a) int main(int argc, char **argv);
+b) int main(int argc, char *argv[]);
+c) Ambas opciones son correctas
+c
+¿Qué se utiliza para comprobar la traza de las llamadas al sistema realizadas por un programa?
+a) strace [argumentos] comando [opciones]
+b) strace [opciones] comando [argumentos]
+c) comando [opciones] strace [argumentos] 
+b
+¿Qué opción de strace muestra esto? -> Recopila el tiempo, las llamadas y errores producidos mostrando un resumen
+a) -c
+b) -f
+c) -T
+a
+¿Qué opción de strace muestra esto? -> Traza los procesos hijos a medida que se crean
+a) -f
+b) -e
+c) -T
+a
+¿Qué opción de strace muestra esto? -> Muestra el tiempo de cada llamada
+a) -f
+b) -e
+c) -T
+c
+¿Qué opción de strace muestra esto? -> Selección del tipo de llamadas a sistema trazadas (process, network, IPC, signal o file)
+a) -e
+b) -e trace=call
+c) -e write=fd
+b
+¿Qué opción de strace muestra esto? -> realiza un volcado completo de los datos escritos en el descriptor de ficheros
+a) -e
+b) -e trace=call
+c) -e write=fd
+c
+¿Qué función se suele usar para la gestión de errores?
+a) void error(const char *s);
+b) void perror(const char *s);
+c) void gerror(const char *s);
+b
+¿En qué variable se obtiene el código de error para la gestión de errores?
+a) En errno, que se fija cuando se produce un error
+b) En err, que se como resultado de error(const char *s)
+c) En strerror, que es respuesta del sistema con una descripción y código del error
+a
+¿Qué función devuelve una cadena que describe el número de error (por convenio las llamadas al sistema devuelven -1 cuando se ha producido un error)?
+a) char *strerror(int errnum)
+b) int *strerror(int errnum)
+c) float *strerror(int errnum)
+a
+¿Qué función establece el id de usuario efectivo del proceso de llamada?
+a) setid(2)
+b) seteuid(2)
+c) setuid(2)
+c
+¿Qué función devuelve información sobre el kernel actual?
+a) long sysconf(int name);
+b) int uname(struct utsname *buffer);
+c) long pathconf(char *path, int name);
+b
+¿Qué función devuelve info sobre el kernel?
+a) string uname(struct utsname *buffer);
+b) char uname(struct utsname *buffer);
+c) int uname(struct utsname *buffer);
+c
+¿Qué significa el código de error "EFAULT"?
+a) No se pudo leer la entrada de la función
+b) Buffer no es válido
+c) Error interno de la fuente del sistema
+b
+¿Qué formato de struct es el correcto al resultado devuelto por uname(struct utsname *buffer)?
+a) struct utsname {char sysname[];char nodename[];char release[];char version[];char machine[];}
+b) struct utsname {char sysname[];char buffer[];char release[];char version[];char machine[];}
+c) struct utsname {char sysname[];char nodename[];char release[];char infosystem[];char machine[];}
+a
+¿Qué función devuelve info sobre el SO?
+a) long sysconf(int name);
+b) char sysconf(int name);
+c) int sysconf(int name);
+a
+¿Con qué función obtenemos limites del sistema o información sobre el SO?
+a) long sysconf(int name);
+b) int uname(struct utsname *buffer);
+c) long pathconf(char *path, int name);
+a
+¿En caso de error, se instancia la variable errno en la función sysconf?
+a) Si, devuelve -1 en caso de error
+b) No, pero devuelve -1 en caso de error
+c) No devuelve nada en caso de error
+b
+¿Qué función devuelve info sobre el sistema de ficheros?
+a) char pathconf(char *path, int name); char fpathconf(int filedes, int name);
+b) int pathconf(char *path, int name); int fpathconf(int filedes, int name);
+c) long pathconf(char *path, int name); long fpathconf(int filedes, int name);
+c
+¿Con qué función obtenemos información sobre el sistema de ficheros?
+a) long sysconf(int name);
+b) int uname(struct utsname *buffer);
+c) long pathconf(char *path, int name);
+c
+¿En caso de error, se instancia la variable errno en la función pathconf/fpathconf?
+a) Si, se instancia errno tanto para error o que no exista
+b) Si, pero solo en caso de error, si no existe no se instancia
+c) No, no se instancia errno
+b
+¿Que significa la E en EUID y EGID?
+a) Erróneo
+b) Ejecutable
+c) Efectivo
+c
+¿Cómo se llama el identificador que se comprueba para conceder permisos?
+a) UID / GID
+b) EUID / EGID
+c) PUID / PGID
+b
+¿Cómo se llaman los identificadores que corresponden a los identificadores del propietario del proceso que, en general, se heredan del proceso que lo creó?
+a) UID / GID
+b) EUID / EGID
+c) PUID / PGID
+a
+¿Cuáles son las funciones para obtener información de un usuario de la base de datos de contraseñas?
+a) struct long *getpwnam(const char *name); // struct long *getpwuid(uid_t uid);
+b) struct char *getpwnam(const char *name); // struct char *getpwuid(uid_t uid);
+c) struct passwd *getpwnam(const char *name); // struct passwd *getpwuid(uid_t uid);
+c
+Cuando se usan las funciones de struct passwd *getpwnam(const char *name) // struct passwd *getpwuid(uid_t uid), ¿Qué devuelve si no encuentra al usuario o si se produce algún error?
+a) -1
+b) NULL
+c) 0
+b
+¿Qué significa el código de error "ENOMEM"?
+a) violación del segmento
+b) Buffer no es válido
+c) No puede reservar memoria para la estructura
+c
+¿Qué función devuelve el tiempo en segundos desde el Epoch?
+a) time_t time(time_t *t);
+b) int time(time_t *t);
+c) time time(time_t *t);
+a
+¿A qué se refiere el Epoch?
+a) Se refiere a 1940-01-01 00:00:00 +0000, UTC
+b) se refiere a 1970-01-01 00:00:00 +0000, UTC
+c) se refiere a 2000-01-01 00:00:00 +0000, UTC
+b
+¿Qué función se usa para obtener y fijar la hora del sistema?
+a) int gettimeofday(struct timeval *tv, struct timezone *tz); int settimeofday(const struct timeval *tv, const struct timezone *tz);
+b) time_t gettimeofday(struct timeval *tv, struct timezone *tz); time_t settimeofday(const struct timeval *tv, const struct timezone *tz);
+c) long gettimeofday(struct timeval *tv, struct timezone *tz); long settimeofday(const struct timeval *tv, const struct timezone *tz);
+a
+¿Qué función se usa para formatear fecha y hora?
+a) void strftime(char *s, size_t max, const char *format, const struct tm *tm);
+b) time_t strftime(char *s, size_t max, const char *format, const struct tm *tm);
+c) size_t strftime(char *s, size_t max, const char *format, const struct tm *tm);
+c
+En la función strftime, ¿Qué quiere decir el parámetro format de %n ?
+a) Retorno de carro
+b) Mes completo
+c) Año bisiesto
+a
+En la función strftime, ¿Qué quiere decir el parámetro format de %p ?
+a) Partición
+b) Parameters
+c) PM, AM
+c
+En la función strftime, ¿Qué quiere decir el parámetro format de %r ?
+a) Reiniciar hora
+b) Regular time from EST (Eastern Standard Time)
+c) Hora en a.m./p.m. (equivalente a "%I:%M:%S %p")
+c
+En la función strftime, ¿Qué ocurre si la longitud devuelta supera los max bytes?
+a) Devuelve -1
+b) Devuelve 0
+c) Devuelve NULL
+b
+Estándares IEEE e ISO derivados de varias versiones de UNIX, principalmente de SVID. Incluye ANSI-C. Describe llamadas al sistema y librerías de C, especifica la semántica detallada de la shell y un conjunto mínimo de comandos, así como interfaces detallados para varios lenguajes de programación.
+a) ANSI-C o ISO-C
+b) POSIX
+c) GNU
+b
