@@ -1,6 +1,6 @@
 # Test de teoria para preparar examen
 
-Este código y preguntas son un fork del repositoria de [@IsaNuTor](https://github.com/IsaNuTor/ASOR) mejorado para tener selección de temas, menus, realización de tests por modulos o temas, etc.
+Este código y preguntas son un fork del repositorio de [@IsaNuTor](https://github.com/IsaNuTor/ASOR) mejorado para tener selección de temas, menus, realización de tests por modulos o temas, etc.
 
 Compilar el programa en tanto en Linux como en Windows se puede usar `gcc`:
 ```console
