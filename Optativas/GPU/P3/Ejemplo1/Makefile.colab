@@ -1,0 +1,22 @@
+CC=gcc
+GCC=gcc
+
+CFLAGS=-O3 -lm -lrt -std=c99
+OPENACC_FLAGS=-fopenacc -lcuda
+
+
+NAME=axpy
+
+default: host gpu
+
+host:
+	$(CC) $(CFLAGS) $(NAME).c -o $(NAME).host.exe
+
+gpu: gcc
+
+gcc:
+	$(GCC) -o $(NAME).gcc.exe $(NAME).c $(CFLAGS) $(OPENACC_FLAGS)
+
+
+clean: 
+	rm -f __hmpp_*  *.exe

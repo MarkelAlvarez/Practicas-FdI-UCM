@@ -1,0 +1,2 @@
+cuda-gdb report in http://docs.nvidia.com/cuda/cuda-gdb
+To compile nvcc -g -G fuente.cu -o exec
