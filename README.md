@@ -32,3 +32,8 @@ En este repositorio se encuentran las practicas realizadas de las siguientes asi
 		- [ASOR](https://github.com/MarkelAlvarez/Practicas-FdI-UCM/tree/master/4%C2%BA/1%C2%BA%20semestre/ASOR)
 	- [2º semestre](https://github.com/MarkelAlvarez/Practicas-FdI-UCM/tree/master/4%C2%BA/2%C2%BA%20semestre)
 		- [ECO](https://github.com/MarkelAlvarez/Practicas-FdI-UCM/tree/master/4%C2%BA/2%C2%BA%20semestre/ECO)
+- [Optativas](https://github.com/MarkelAlvarez/Practicas-FdI-UCM/tree/master/Optativas)
+  - [APCC](https://github.com/MarkelAlvarez/Practicas-FdI-UCM/tree/master/Optativas/APCC)
+  - [CC](https://github.com/MarkelAlvarez/Practicas-FdI-UCM/tree/master/Optativas/CC)
+  - [GPU](https://github.com/MarkelAlvarez/Practicas-FdI-UCM/tree/master/Optativas/GPU)
+  - [MIN](https://github.com/MarkelAlvarez/Practicas-FdI-UCM/tree/master/Optativas/MIN)
